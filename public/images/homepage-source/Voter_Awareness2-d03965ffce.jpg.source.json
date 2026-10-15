@@ -1,0 +1,22 @@
+{
+  "id": "homepage-d03965ffce29",
+  "sourceUrl": "https://snjb.org/engineering/uploads/event/item/Voter_Awareness2.jpg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Voter Awareness Program",
+  "roles": [
+    "event",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Voter_Awareness2-d03965ffce.jpg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 359739,
+  "sha256": "fdfe82d1c8199355493f9b1e2f04174966982803e105037b86da2e8cd299c250",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/event/item/Voter_Awareness2.jpg",
+  "dimensions": [
+    1280,
+    960
+  ]
+}

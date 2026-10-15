@@ -1,0 +1,22 @@
+{
+  "id": "homepage-9d6e04002178",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/Cognizant_Logo.jpg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Congnizant",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Cognizant_Logo-9d6e040021.jpg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 48325,
+  "sha256": "0a52ca0ca0b0a936a37960d37331349a1485ecff157a980be7e29924fd062841",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/Cognizant_Logo.jpg",
+  "dimensions": [
+    1206,
+    633
+  ]
+}

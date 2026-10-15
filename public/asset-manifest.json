@@ -1,0 +1,1047 @@
+{
+  "preparedDate": "2026-10-13",
+  "institution": "SNJB’s Late Sau. Kantabai Bhavarlalji Jain College of Engineering",
+  "tagline": "Vision Through Knowledge. Life Through Character.",
+  "palette": {
+    "deepTeal": "#1E4A4D",
+    "freshTeal": "#23737A",
+    "orange": "#EE672B",
+    "mist": "#E9F3F2"
+  },
+  "policy": "Every photographic UI asset is a processed derivative; no generative alteration of faces or scene content.",
+  "videoProvenance": "/media/media-provenance.json",
+  "emblemProvenance": "/emblem-provenance.json",
+  "publicationNote": "Official-site photographs are used for this institutional redesign preview; confirm current imagery and authorised publication assets before launch.",
+  "missingAssets": [
+    {
+      "id": "idea-lab",
+      "reason": "Official IDEA Lab home page currently provides a banner rather than a facility photograph. No unrelated laboratory is substituted.",
+      "sourcePage": "https://snjb.org/engineering/home-idea-lab"
+    },
+    {
+      "id": "current-drone-master",
+      "reason": "A current campus master is not supplied. The redesign now includes processed 10-second desktop/mobile aerial edits from the official archival film uploaded 28 January 2019; see media-provenance.json."
+    }
+  ],
+  "assets": [
+    {
+      "id": "campus-hero",
+      "source": "https://snjb.org/engineering/uploads/slider/item/08.jpg",
+      "page": "https://snjb.org/engineering/Home",
+      "category": "campus",
+      "alt": "SNJB engineering college entrance and curved facade in Chandwad",
+      "focalPoint": [
+        0.44,
+        0.5
+      ],
+      "sourceDimensions": [
+        1349,
+        533
+      ],
+      "path": "/images/campus-hero.webp",
+      "smallPath": "/images/campus-hero-small.webp",
+      "previewPath": "/images/campus-hero-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        960,
+        600
+      ],
+      "smallDimensions": [
+        600,
+        375
+      ],
+      "previewDimensions": [
+        40,
+        25
+      ],
+      "bytes": 56696,
+      "sourceSha256": "87b005c97daa0fdef91a23fb276c7237ef22bcd7488098ba9cfc6a7f65e77f73",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ]
+    },
+    {
+      "id": "campus-wide",
+      "source": "https://snjb.org/engineering/uploads/slider/item/08.jpg",
+      "page": "https://snjb.org/engineering/Home",
+      "category": "campus",
+      "alt": "SNJB engineering college building and entrance canopy",
+      "sourceDimensions": [
+        1349,
+        533
+      ],
+      "path": "/images/campus-wide.webp",
+      "smallPath": "/images/campus-wide-small.webp",
+      "previewPath": "/images/campus-wide-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1349,
+        533
+      ],
+      "smallDimensions": [
+        600,
+        237
+      ],
+      "previewDimensions": [
+        40,
+        16
+      ],
+      "bytes": 112796,
+      "sourceSha256": "87b005c97daa0fdef91a23fb276c7237ef22bcd7488098ba9cfc6a7f65e77f73",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ]
+    },
+    {
+      "id": "library",
+      "source": "https://snjb.org/engineering/uploads/slider/item/libraryimgFile5ab4f5d79bb36.jpg",
+      "page": "https://snjb.org/engineering/student-corner/library-student-corner",
+      "category": "facility",
+      "alt": "Reading and study space inside the SNJB college library",
+      "trim": [
+        3,
+        3,
+        773,
+        276
+      ],
+      "sourceDimensions": [
+        776,
+        279
+      ],
+      "path": "/images/library.webp",
+      "smallPath": "/images/library-small.webp",
+      "previewPath": "/images/library-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        800,
+        600
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 53542,
+      "sourceSha256": "dc4718bd994cdfa7fa556e119bf740ddb8440b446dfb07bbf3dcf025ad5c119f",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ]
+    },
+    {
+      "id": "computer-lab",
+      "source": "https://snjb.org/engineering/uploads/computer-engineering/CSL_comp_110.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/laboratories-computer",
+      "category": "facility",
+      "title": "Computer Science Laboratory",
+      "alt": "Computer Science Laboratory at SNJB with workstations arranged for practical learning",
+      "sourceDimensions": [
+        1280,
+        960
+      ],
+      "path": "/images/computer-lab.webp",
+      "smallPath": "/images/computer-lab-small.webp",
+      "previewPath": "/images/computer-lab-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 127678,
+      "sourceSha256": "ce807f3ed2f9f528b6fedef8230e84a46e7eee343791221763bc33cbe61f6305",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ]
+    },
+    {
+      "id": "software-lab",
+      "source": "https://snjb.org/engineering/uploads/computer-engineering/SL_KMS.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/laboratories-computer",
+      "category": "facility",
+      "title": "Software Laboratory",
+      "alt": "Software Laboratory at SNJB Computer Engineering",
+      "sourceDimensions": [
+        1600,
+        900
+      ],
+      "path": "/images/software-lab.webp",
+      "smallPath": "/images/software-lab-small.webp",
+      "previewPath": "/images/software-lab-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 115108,
+      "sourceSha256": "f20e3398a97295eea8c5523cd089d526846040fa6a5315bb0bcfa9d68750cc5d",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ]
+    },
+    {
+      "id": "programming-lab",
+      "source": "https://snjb.org/engineering/uploads/media/2024/03/IMG_9770_thumb.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/laboratories-computer",
+      "category": "facility",
+      "title": "Programming Laboratory",
+      "alt": "Programming Laboratory with computer workstations at SNJB",
+      "sourceDimensions": [
+        1200,
+        600
+      ],
+      "path": "/images/programming-lab.webp",
+      "smallPath": "/images/programming-lab-small.webp",
+      "previewPath": "/images/programming-lab-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 42786,
+      "sourceSha256": "c4813e8943fc470cdf0d517fe28ec06c554427e8e0e7bc00da22d2214bd52916",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ]
+    },
+    {
+      "id": "project-lab",
+      "source": "https://snjb.org/engineering/uploads/media/2024/03/PL%20%281%29.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/laboratories-computer",
+      "category": "facility",
+      "title": "Project Laboratory",
+      "alt": "Computer Engineering Project Laboratory at SNJB",
+      "sourceDimensions": [
+        5184,
+        3456
+      ],
+      "path": "/images/project-lab.webp",
+      "smallPath": "/images/project-lab-small.webp",
+      "previewPath": "/images/project-lab-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 89814,
+      "sourceSha256": "6af7cb50177df39c19978bf205beb35f3a0c93829bc6c7c71eb837d0315b9241",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ]
+    },
+    {
+      "id": "campus-life",
+      "source": "https://snjb.org/engineering/uploads/media/2026/10/tp1.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/photo-gallery-computer",
+      "category": "event",
+      "title": "Tree Plantation",
+      "alt": "Computer Engineering students during a tree-plantation activity at SNJB",
+      "sourceDimensions": [
+        1600,
+        1200
+      ],
+      "path": "/images/campus-life.webp",
+      "smallPath": "/images/campus-life-small.webp",
+      "previewPath": "/images/campus-life-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 266908,
+      "sourceSha256": "991c64d777a1370b3b01533c8870f8870e1ec25f1afee72bd8cfb382cde32dd3",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ]
+    },
+    {
+      "id": "orientation",
+      "source": "https://snjb.org/engineering/uploads/event/item/FY_Orientation1.jpeg",
+      "page": "https://snjb.org/engineering",
+      "category": "event",
+      "title": "FY B.Tech Orientation Programme 2026–27",
+      "alt": "Students and faculty at the SNJB first-year B.Tech orientation programme for 2026–27",
+      "sourceDimensions": [
+        1440,
+        1440
+      ],
+      "path": "/images/orientation.webp",
+      "smallPath": "/images/orientation-small.webp",
+      "previewPath": "/images/orientation-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "smallDimensions": [
+        600,
+        450
+      ],
+      "previewDimensions": [
+        40,
+        30
+      ],
+      "bytes": 127080,
+      "sourceSha256": "b629ec1b8b6553710ea356c80a9ccc04aa057bde206b67dcea2fe5f321b295b8",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ]
+    },
+    {
+      "id": "faculty-mr-sanghavi",
+      "source": "https://snjb.org/engineering/uploads/staff/1709356868_508b0fd29469d99c4c69.jpg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Dr. M. R. Sanghavi",
+      "designation": "Professor & Joint Director",
+      "qualification": "BE, ME, PhD (CSE)",
+      "expertise": [
+        "Image Processing",
+        "DBMS",
+        "Big Data & Hadoop",
+        "BI",
+        "Internet of Things"
+      ],
+      "email": "sanghavi.mrcoe@snjb.org",
+      "alt": "Dr. M. R. Sanghavi, Professor and Joint Director",
+      "sourceDimensions": [
+        300,
+        300
+      ],
+      "path": "/images/faculty-mr-sanghavi.webp",
+      "smallPath": "/images/faculty-mr-sanghavi-small.webp",
+      "previewPath": "/images/faculty-mr-sanghavi-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 11284,
+      "sourceSha256": "c8fdf89224f9cc44f250549575691f4cc03624da1d4b4c9333bacd8eae348585",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-km-sanghavi",
+      "source": "https://snjb.org/engineering/uploads/staff/1709357193_9dd9cf948684cd1d347d.jpg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Dr. K. M. Sanghavi",
+      "designation": "Professor & Head",
+      "qualification": "BE, ME (CSE), PhD (CSE)",
+      "expertise": [
+        "Image Processing",
+        "Compiler Constructions",
+        "OOP"
+      ],
+      "email": "sanghavi.kmcoe@snjb.org",
+      "alt": "Dr. K. M. Sanghavi, Professor and Head of Computer Engineering",
+      "sourceDimensions": [
+        300,
+        300
+      ],
+      "path": "/images/faculty-km-sanghavi.webp",
+      "smallPath": "/images/faculty-km-sanghavi-small.webp",
+      "previewPath": "/images/faculty-km-sanghavi-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 22504,
+      "sourceSha256": "dc6b8582da499991c2397fc9f29bad8a968deeea46bf2e129a4c49f1d999cef2",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-kr-nirmal",
+      "source": "https://snjb.org/engineering/uploads/staff/KRN.png",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Dr. K. R. Nirmal",
+      "designation": "Associate Professor",
+      "qualification": "M.Tech. (IT), PhD (CSE)",
+      "expertise": [
+        "Machine Learning",
+        "Computer Graphics",
+        "Cloud Computing"
+      ],
+      "email": "nirmal.krcoe@snjb.org",
+      "alt": "Dr. K. R. Nirmal, Associate Professor",
+      "sourceDimensions": [
+        1418,
+        1586
+      ],
+      "path": "/images/faculty-kr-nirmal.webp",
+      "smallPath": "/images/faculty-kr-nirmal-small.webp",
+      "previewPath": "/images/faculty-kr-nirmal-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 25208,
+      "sourceSha256": "75e3968955eaab0c9534a3d00009128c928a01bbe76e2546d9f8be2d164261a7",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-rr-bhandari",
+      "source": "https://snjb.org/engineering/uploads/staff/bhandari_sir.jpg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Dr. R. R. Bhandari",
+      "designation": "Associate Professor",
+      "qualification": "BE, M-Tech (IT), PhD (CSE)",
+      "expertise": [
+        "Wireless Sensor Network",
+        "Internet of Things"
+      ],
+      "email": "bhandari.rrcoe@snjb.org",
+      "alt": "Dr. R. R. Bhandari, Associate Professor",
+      "sourceDimensions": [
+        100,
+        125
+      ],
+      "path": "/images/faculty-rr-bhandari.webp",
+      "smallPath": "/images/faculty-rr-bhandari-small.webp",
+      "previewPath": "/images/faculty-rr-bhandari-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 8904,
+      "sourceSha256": "5b92114f4a17113ed8150aa121e7484b528a18ef136f26a432d33700680a63b8",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-ba-khivsara",
+      "source": "https://snjb.org/engineering/uploads/staff/bhavana_mam.jpg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Mrs. B. A. Khivsara",
+      "designation": "Assistant Professor",
+      "qualification": "BE, ME (CSE), Pursuing PhD",
+      "expertise": [
+        "Web Development",
+        "Data Mining",
+        "Data Analytics"
+      ],
+      "email": "khivsara.bacoe@snjb.org",
+      "alt": "Mrs. B. A. Khivsara, Assistant Professor",
+      "sourceDimensions": [
+        100,
+        125
+      ],
+      "path": "/images/faculty-ba-khivsara.webp",
+      "smallPath": "/images/faculty-ba-khivsara-small.webp",
+      "previewPath": "/images/faculty-ba-khivsara-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 16026,
+      "sourceSha256": "c9f228c61fbefa0e45564efb5d519a3aa5c8594a8494dc51359f73ffc5eda3b7",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-dr-agrawal",
+      "source": "https://snjb.org/engineering/uploads/staff/agrawal_sir.jpg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Mr. D. R. Agrawal",
+      "designation": "Assistant Professor",
+      "qualification": "BE, M-Tech (IT), Pursuing PhD",
+      "expertise": [
+        "Multimedia Systems",
+        "Distributed Computing"
+      ],
+      "email": "agrawal.drcoe@snjb.org",
+      "alt": "Mr. D. R. Agrawal, Assistant Professor",
+      "sourceDimensions": [
+        100,
+        125
+      ],
+      "path": "/images/faculty-dr-agrawal.webp",
+      "smallPath": "/images/faculty-dr-agrawal-small.webp",
+      "previewPath": "/images/faculty-dr-agrawal-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 9838,
+      "sourceSha256": "658369fe39dc8abfec3ac8f1a4cab878f8b507ad539300f5e82909721a6f4d36",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended",
+        "Source resolution below export dimensions; no artificial detail generated"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-ka-jain",
+      "source": "https://snjb.org/engineering/uploads/staff/KAJ%20Comp.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Mrs. K. A. Jain",
+      "designation": "Assistant Professor",
+      "qualification": "B.E. (Computer Engineering), M.E. (Computer Science and Engineering)",
+      "expertise": [
+        "Data Structures",
+        "Computer Graphics",
+        "DBMS"
+      ],
+      "email": "jain.kacoe@snjb.org",
+      "alt": "Mrs. K. A. Jain, Assistant Professor",
+      "sourceDimensions": [
+        1536,
+        1599
+      ],
+      "path": "/images/faculty-ka-jain.webp",
+      "smallPath": "/images/faculty-ka-jain-small.webp",
+      "previewPath": "/images/faculty-ka-jain-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 26334,
+      "sourceSha256": "371d3a45c7361b169bb801e759a347edf705f0099e3e5ab9e620421b9059e9fc",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-ys-patil",
+      "source": "https://snjb.org/engineering/uploads/staff/YSP.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Mr. Y. S. Patil",
+      "designation": "Assistant Professor",
+      "qualification": "BE IT, M.Tech (Engineering Design) by Research, PhD (Pursuing)",
+      "expertise": [
+        "Internet of Things",
+        "Data Science",
+        "AI/ML",
+        "Earth & Climate Sciences",
+        "Sustainable Development"
+      ],
+      "email": "patil.yscoe@snjb.org",
+      "alt": "Mr. Y. S. Patil, Assistant Professor",
+      "sourceDimensions": [
+        1080,
+        1080
+      ],
+      "path": "/images/faculty-ys-patil.webp",
+      "smallPath": "/images/faculty-ys-patil-small.webp",
+      "previewPath": "/images/faculty-ys-patil-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 16230,
+      "sourceSha256": "eb0e075e1a1e7139d28ed17cb212c25fa76ff7f51ff8ef2a2dcc329ce60f7036",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-ka-chandan",
+      "source": "https://snjb.org/engineering/uploads/staff/chandan_mam.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Ms. K. A. Chandan",
+      "designation": "Assistant Professor",
+      "qualification": "M.E. (Faculty List 2026–27)",
+      "contentNote": "Web directory qualification BE is superseded by the current faculty-list PDF reporting M.E.",
+      "expertise": [
+        "Internet of Things",
+        "Machine Learning"
+      ],
+      "email": "chandan.kacoe@snjb.org",
+      "alt": "Ms. K. A. Chandan, Assistant Professor",
+      "sourceDimensions": [
+        982,
+        1280
+      ],
+      "path": "/images/faculty-ka-chandan.webp",
+      "smallPath": "/images/faculty-ka-chandan-small.webp",
+      "previewPath": "/images/faculty-ka-chandan-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 18266,
+      "sourceSha256": "587cee1fd048d3088b01e51445248a8a7ee282d1368958fb7c1d69ca2e8de2e0",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "faculty-km-salve",
+      "source": "https://snjb.org/engineering/uploads/staff/Kalyani.jpeg",
+      "page": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "category": "faculty",
+      "name": "Dr. K. M. Salve",
+      "designation": "Assistant Professor",
+      "qualification": "BE, MTech (CSE), PhD (CSE)",
+      "expertise": [
+        "Web Development",
+        "Software Engineering",
+        "Data Mining"
+      ],
+      "email": "sugarwar.kscoe@snjb.org",
+      "alt": "Dr. K. M. Salve, Assistant Professor",
+      "sourceDimensions": [
+        1018,
+        1280
+      ],
+      "path": "/images/faculty-km-salve.webp",
+      "smallPath": "/images/faculty-km-salve-small.webp",
+      "previewPath": "/images/faculty-km-salve-preview.webp",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        480,
+        600
+      ],
+      "smallDimensions": [
+        480,
+        600
+      ],
+      "previewDimensions": [
+        40,
+        50
+      ],
+      "bytes": 39630,
+      "sourceSha256": "6807a2f97c58f87b6fc27d2d40f40d07f2a718c7fefc75d6a78a31b860bc064a",
+      "processing": [
+        "EXIF orientation normalised",
+        "restrained luminance and exposure balancing",
+        "moderate contrast and colour grade",
+        "uniform subject-aware crop",
+        "Lanczos resampling",
+        "slight sharpening",
+        "WebP export",
+        "responsive small export and photographic blurred loading preview"
+      ],
+      "faceAlteration": false,
+      "limitations": [
+        "Photograph capture date not verified",
+        "Published official-web source; current shoot recommended"
+      ],
+      "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+      "rosterVerifiedDate": "2026-10-13",
+      "rosterVerification": "Association with institution and designation visually checked against Faculty List 2026–27"
+    },
+    {
+      "id": "logo",
+      "path": "/images/logo.webp",
+      "source": "User-supplied D:/SNJB/LOGO.png",
+      "processed": true,
+      "processedDate": "2026-10-13",
+      "dimensions": [
+        243,
+        300
+      ],
+      "bytes": 37384,
+      "processing": [
+        "Blank navy margins cropped",
+        "Faithful Lanczos resampling",
+        "Lossless WebP export"
+      ],
+      "artworkAltered": false
+    }
+  ]
+}

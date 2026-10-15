@@ -1,0 +1,22 @@
+{
+  "id": "homepage-f6df5c77f2ff",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/Wipro_Primary_Logo_Color_RGB.svg.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Wipro",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Wipro_Primary_Logo_Color_RGB.svg-f6df5c77f2.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 32465,
+  "sha256": "b54242ff2581edbd28fc0f91b0e556b3eda60861ad42d8b9b27e853342b45a98",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/Wipro_Primary_Logo_Color_RGB.svg.png",
+  "dimensions": [
+    1200,
+    945
+  ]
+}

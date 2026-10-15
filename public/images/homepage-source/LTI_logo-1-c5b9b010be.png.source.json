@@ -1,0 +1,22 @@
+{
+  "id": "homepage-c5b9b010be1a",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/LTI_logo-1.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "lti",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/LTI_logo-1-c5b9b010be.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 3897,
+  "sha256": "58a30befac4eaf5859dd613c399dd48cb3704f1658d4024d80a5f5c7c33807ec",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/LTI_logo-1.png",
+  "dimensions": [
+    536,
+    289
+  ]
+}

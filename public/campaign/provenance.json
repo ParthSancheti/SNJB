@@ -1,0 +1,12 @@
+{
+  "tool": "Built-in GPT Image",
+  "classification": "AI-composed campaign banners based on original SNJB photographs; not documentary evidence of facilities or people",
+  "references": {
+    "entrance": "https://snjb.org/engineering/uploads/slider/item/08.jpg",
+    "learning": "https://snjb.org/engineering/uploads/computer-engineering/CSL_comp_110.jpeg"
+  },
+  "direction": "Professional institutional composition, welcoming photographic light, teal/violet negative space and restrained orange optical curves. Desktop subject to the right; portrait subject above. No baked headings, logos or slogans. Faculty portraits are not regenerated.",
+  "outputs": ["entrance-phone", "entrance-desktop", "learning-phone", "learning-desktop"],
+  "originals": "The selected GPT Image PNG originals are retained with -source.png suffix; WebP variants are delivery encodings.",
+  "limitations": "Generation aesthetically reinterprets framing, light and some scene details. Artwork is labelled and must not be presented as untouched institutional photography. Campus motion uses separately credited authentic archival footage."
+}

@@ -1,0 +1,39 @@
+{
+  "source": "https://snjb.org/engineering/placements/dept-placement-statistics",
+  "annualSource": "https://snjb.org/engineering/placements/placement-statistics",
+  "reviewed": "2026-10-14",
+  "scope": "Published college totals include MBA. Engineering totals are calculated by summing the five engineering departments; neither total is a placement rate.",
+  "packageUnit": "Indian rupees, as labelled by the department table. An annual salary period is not specified in that table.",
+  "annualTrend": [
+    { "year": "2022–23", "placements": 232, "sourceMarker": "" },
+    { "year": "2023–24", "placements": 236, "sourceMarker": "" },
+    { "year": "2024–25", "placements": 219, "sourceMarker": "" },
+    { "year": "2025–26", "placements": 215, "sourceMarker": "*" }
+  ],
+  "years": {
+    "2025–26": {
+      "placements": 215, "offers": 270, "sourceMarker": "*",
+      "engineering": { "placements": 134, "offers": 189 },
+      "departments": [
+        { "name": "AI & Data Science", "sourceName": "AIDS", "placements": 24, "offers": 27, "maximumPackageRupees": 900000 },
+        { "name": "Civil", "sourceName": "Civil", "placements": 16, "offers": 20, "maximumPackageRupees": 600000 },
+        { "name": "Computer", "sourceName": "Computer", "placements": 35, "offers": 54, "maximumPackageRupees": 900000 },
+        { "name": "Electronics & Telecom", "sourceName": "E&TC", "placements": 21, "offers": 21, "maximumPackageRupees": 800000 },
+        { "name": "Mechanical", "sourceName": "Mechanical", "placements": 38, "offers": 67, "maximumPackageRupees": 900000 },
+        { "name": "MBA", "sourceName": "MBA", "placements": 81, "offers": 81, "maximumPackageRupees": 500000 }
+      ]
+    },
+    "2024–25": {
+      "placements": 219, "offers": null, "sourceMarker": "",
+      "engineering": { "placements": 162, "offers": null },
+      "departments": [
+        { "name": "AI & Data Science", "sourceName": "AIDS", "placements": 21, "offers": null, "maximumPackageRupees": 600000 },
+        { "name": "Civil", "sourceName": "Civil", "placements": 19, "offers": null, "maximumPackageRupees": 460000 },
+        { "name": "Computer", "sourceName": "Computer", "placements": 66, "offers": null, "maximumPackageRupees": 1150000 },
+        { "name": "Electronics & Telecom", "sourceName": "E&TC", "placements": 16, "offers": null, "maximumPackageRupees": 500000 },
+        { "name": "Mechanical", "sourceName": "Mechanical", "placements": 40, "offers": null, "maximumPackageRupees": 800000 },
+        { "name": "MBA", "sourceName": "MBA", "placements": 57, "offers": null, "maximumPackageRupees": 600000 }
+      ]
+    }
+  }
+}

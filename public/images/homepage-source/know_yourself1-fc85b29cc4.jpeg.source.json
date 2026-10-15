@@ -1,0 +1,22 @@
+{
+  "id": "homepage-fc85b29cc4df",
+  "sourceUrl": "https://snjb.org/engineering/uploads/event/item/know_yourself1.jpeg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Faculty Development Session – “Know Yourself and Heal”",
+  "roles": [
+    "event",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/know_yourself1-fc85b29cc4.jpeg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 171376,
+  "sha256": "dc22807db28873aae8a3378107eb085aa2c2ea368cd7b5b76740e369eb10c085",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/event/item/know_yourself1.jpeg",
+  "dimensions": [
+    920,
+    980
+  ]
+}

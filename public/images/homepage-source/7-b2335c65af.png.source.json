@@ -1,0 +1,22 @@
+{
+  "id": "homepage-b2335c65af3f",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/7.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "IndiaMart",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/7-b2335c65af.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 14760,
+  "sha256": "80f2921d221f1f0ee612c3c15c0e161080add28a0cedc39dc124ddbdbb0800ee",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/7.png",
+  "dimensions": [
+    281,
+    180
+  ]
+}

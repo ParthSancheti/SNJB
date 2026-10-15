@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-14T17:32:11+00:00",
+  "sourceUrl": "https://snjb.org/engineering/",
+  "archiveSha256": "18ad6d2d404374843f533d0dcfe4f9a02417f71bae1c51b4b9d5dfb30866df54",
+  "liveHtmlSha256": "b473c79cd568773e1e841620dd2fa7654d9b3e6a0428b8c631b6956bae746b0e",
+  "archiveCounts": {
+    "achievements": 9,
+    "notices": 2,
+    "eventsOriginal": 4,
+    "eventsVisible": 3,
+    "testimonials": 10,
+    "recruiters": 34,
+    "homepageSlides": 4,
+    "links": 333,
+    "bodyImages": 63
+  },
+  "liveCounts": {
+    "achievements": 9,
+    "notices": 2,
+    "eventsOriginal": 4,
+    "eventsVisible": 3,
+    "testimonials": 10,
+    "recruiters": 34,
+    "homepageSlides": 4,
+    "links": 333,
+    "bodyImages": 63
+  },
+  "meaningfulContentComparison": {
+    "institutional": {
+      "matches": true
+    },
+    "achievements": {
+      "matches": true
+    },
+    "notices": {
+      "matches": true
+    },
+    "eventsOriginal": {
+      "matches": true
+    },
+    "testimonials": {
+      "matches": true
+    },
+    "recruiters": {
+      "matches": true
+    },
+    "homepageSlides": {
+      "matches": true
+    },
+    "campusTour": {
+      "matches": true
+    },
+    "admissionsOriginal": {
+      "matches": true
+    },
+    "placementCountersOriginal": {
+      "matches": true
+    }
+  },
+  "linksAdded": [],
+  "linksRemoved": [],
+  "scope": "Complete meaningful official Engineering homepage content, not all content of every linked subpage."
+}

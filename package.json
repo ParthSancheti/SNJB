@@ -1,0 +1,42 @@
+{
+  "name": "snjb-engineering-design",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
+    "build": "node scripts/build.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "check": "node scripts/qa-v13.mjs",
+    "check:content": "node scripts/verify-content.mjs",
+    "check:interactions": "node scripts/qa-v13-motion.mjs",
+    "check:resources": "node scripts/qa-v13.mjs",
+    "check:materials": "node scripts/qa-v13-materials.mjs",
+    "check:guide": "node scripts/qa-guide.mjs",
+    "check:build": "node scripts/verify-build.mjs",
+    "check:home": "node scripts/qa-v13.mjs",
+    "check:department": "node scripts/qa-department-v8.mjs",
+    "check:navigation": "node scripts/qa-v12-navigation.mjs",
+    "check:visitors": "node scripts/qa-v13.mjs",
+    "check:video": "node scripts/qa-video-v11.mjs",
+    "check:motion": "node scripts/qa-v13-motion.mjs",
+    "check:touch": "node scripts/qa-v13-touch.mjs",
+    "check:v13": "node scripts/qa-v13.mjs",
+    "check:content-v13": "node scripts/qa-content-v10.mjs",
+    "check:assets": "node scripts/verify-runtime-assets.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.56.0",
+    "motion": "14.2.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.4"
+  }
+}

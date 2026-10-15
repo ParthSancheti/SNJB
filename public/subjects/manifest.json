@@ -1,0 +1,58 @@
+{
+  "retrieved": "2026-10-14",
+  "category": "Representative discipline photography, outside SNJB",
+  "license": "https://www.pexels.com/license/",
+  "processing": "Pexels delivery resize/crop and WebP encoding; no generative changes",
+  "records": [
+    {
+      "id": "computer",
+      "path": "/subjects/computer.webp",
+      "alt": "Programming code on a computer display",
+      "photographer": "Godfrey Atima",
+      "page": "https://www.pexels.com/photo/programming-code-on-computer-screen-5223887/",
+      "source": "https://images.pexels.com/photos/5223887/pexels-photo-5223887.jpeg?auto=compress&cs=srgb&fit=crop&w=480&h=320&fm=webp&q=82",
+      "bytes": 14298,
+      "sha256": "b1084c1b5924cb9617d22820c7e0e43a388cade586b66e6a032086aa68de15d8"
+    },
+    {
+      "id": "data",
+      "path": "/subjects/data.webp",
+      "alt": "Data charts and analysis on a laptop",
+      "photographer": "Lukas Blazek",
+      "page": "https://www.pexels.com/photo/turned-on-laptop-computer-577195/",
+      "source": "https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=srgb&fit=crop&w=480&h=320&fm=webp&q=82",
+      "bytes": 17222,
+      "sha256": "4886fd37874e51c8c455f63eef3317fbe0811ecd2a800774d400c6f520b97cce"
+    },
+    {
+      "id": "civil",
+      "path": "/subjects/civil.webp",
+      "alt": "Concrete bridge and structural support spanning a river",
+      "photographer": "Chris F",
+      "page": "https://www.pexels.com/photo/concrete-bridge-over-river-8331319/",
+      "source": "https://images.pexels.com/photos/8331319/pexels-photo-8331319.jpeg?auto=compress&cs=srgb&fit=crop&w=480&h=320&fm=webp&q=82",
+      "bytes": 20930,
+      "sha256": "d8b30864cd5ece54d3b8c4f76e985e0fe7d0d52905f6e7844e0abb48d7f96d0c"
+    },
+    {
+      "id": "electronics",
+      "path": "/subjects/electronics.webp",
+      "alt": "Microchip and electronic circuit board",
+      "photographer": "ClickerHappy",
+      "page": "https://www.pexels.com/photo/shallow-focus-photography-of-black-circuit-board-1448561/",
+      "source": "https://images.pexels.com/photos/1448561/pexels-photo-1448561.jpeg?auto=compress&cs=srgb&fit=crop&w=480&h=320&fm=webp&q=82",
+      "bytes": 20304,
+      "sha256": "415d59efde8e100efbc841ab30aeeb2ba97f81f72780cb66c8d44e5c34e81d6a"
+    },
+    {
+      "id": "mechanical",
+      "path": "/subjects/mechanical.webp",
+      "alt": "Industrial robot arm in a manufacturing facility",
+      "photographer": "Freek Wolsink",
+      "page": "https://www.pexels.com/photo/industrial-robot-arm-in-a-manufacturing-facility-34207359/",
+      "source": "https://images.pexels.com/photos/34207359/pexels-photo-34207359.jpeg?auto=compress&cs=srgb&fit=crop&w=480&h=320&fm=webp&q=82",
+      "bytes": 33588,
+      "sha256": "0b28d00ece7eb5cca6aac756f5c29a5b1b6db65dc0afac7ec7bc57bf98dcd878"
+    }
+  ]
+}

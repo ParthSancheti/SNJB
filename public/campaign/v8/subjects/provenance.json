@@ -1,0 +1,170 @@
+{
+  "preparedDate": "2026-10-14",
+  "category": "AI-refined representative engineering-discipline imagery outside SNJB",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit; one referenced original image per built-in call",
+  "inputPolicy": "Original /subjects WebP files and manifest remain byte-identical. Generated PNG masters retained; WebP derivatives are delivery assets.",
+  "integrity": "No new college facility, document, institutional logo or student identity is asserted. Existing representative robot-factory figures remain blurred. Fine details in screen/PCB/equipment imagery are illustrative, not technical evidence.",
+  "records": [
+    {
+      "id": "computer",
+      "originalPath": "/subjects/computer.webp",
+      "originalSha256": "b1084c1b5924cb9617d22820c7e0e43a388cade586b66e6a032086aa68de15d8",
+      "originalPhotographer": "Godfrey Atima",
+      "originalSourcePage": "https://www.pexels.com/photo/programming-code-on-computer-screen-5223887/",
+      "originalLicense": "https://www.pexels.com/license/",
+      "generatedMaster": "/campaign/v8/subjects/computer-generated.png",
+      "generatedDimensions": [
+        1536,
+        1024
+      ],
+      "generatedBytes": 1822677,
+      "generatedSha256": "45d069b5deb515aa3edc8be6993d9ac3f68e0b45daafba264b4c5e8e918eae71",
+      "deliveryPath": "/campaign/v8/subjects/computer.webp",
+      "deliveryDimensions": [
+        640,
+        427
+      ],
+      "deliveryBytes": 37404,
+      "deliverySha256": "10fe94ab475048bc09d97086aaaabbf64cb42485024ad35f8b9f9412c2314567",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather.\nAsset type: representative discipline photograph for compact engineering programme thumbnails in a premium institutional website.\nInput image 1 is the edit target, not a style reference. Edit only its photography treatment: coherent natural editorial lighting, restrained warm highlights, neutral whites, clean charcoal shadows, lifted useful midtone detail and richer but credible source colours. Preserve fine existing texture; reduce the rough compressed look without inventing subject detail. Keep a landscape 3:2 composition, with the important subject safe for a rounded thumbnail crop. No typographic overlay, border, watermark addition, decorative glow, glass UI or invented branding. This is representative imagery outside SNJB, never an assertion about the college's facilities.\nSubject: the oblique close photograph of programming code on a computer display. Preserve the same angled display, dark interface, source code line placement and existing multicolour syntax pattern. Keep the original depth of field and geometry. Do not generate new software UI, statements, legible claims or extra computer equipment. Make the existing cyan/green/orange syntax colouring feel controlled and vivid, with a soft warm light balance rather than a blue cast.",
+      "deliveryEncoding": {
+        "format": "WebP",
+        "maxWidth": 640,
+        "quality": 90,
+        "method": 6,
+        "resampling": "Pillow LANCZOS"
+      },
+      "visualInspection": "Same recognisable discipline subject and major composition preserved. AI interpretation may redraw fine screen lettering, keyboard legends, PCB markings, machinery microdetail and background texture. Not a technical diagram, literal unedited photograph or proof of SNJB facilities."
+    },
+    {
+      "id": "data",
+      "originalPath": "/subjects/data.webp",
+      "originalSha256": "4886fd37874e51c8c455f63eef3317fbe0811ecd2a800774d400c6f520b97cce",
+      "originalPhotographer": "Lukas Blazek",
+      "originalSourcePage": "https://www.pexels.com/photo/turned-on-laptop-computer-577195/",
+      "originalLicense": "https://www.pexels.com/license/",
+      "generatedMaster": "/campaign/v8/subjects/data-generated.png",
+      "generatedDimensions": [
+        1536,
+        1024
+      ],
+      "generatedBytes": 2885582,
+      "generatedSha256": "8e07ddf1e92364db753df19bb0105b2414628894a74a017e1f68adea9da44ac3",
+      "deliveryPath": "/campaign/v8/subjects/data.webp",
+      "deliveryDimensions": [
+        640,
+        427
+      ],
+      "deliveryBytes": 74028,
+      "deliverySha256": "0b1eaac6944bf5b1722f1092b52ae6fc84a7578bf5c604b48c5eb21cfef45c49",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather.\nAsset type: representative discipline photograph for compact engineering programme thumbnails in a premium institutional website.\nInput image 1 is the edit target, not a style reference. Edit only its photography treatment: coherent natural editorial lighting, restrained warm highlights, neutral whites, clean charcoal shadows, lifted useful midtone detail and richer but credible source colours. Preserve fine existing texture; reduce the rough compressed look without inventing subject detail. Keep a landscape 3:2 composition, with the important subject safe for a rounded thumbnail crop. No typographic overlay, border, watermark addition, decorative glow, glass UI or invented branding. This is representative imagery outside SNJB, never an assertion about the college's facilities.\nSubject: the silver laptop photographed diagonally from overhead on a charcoal surface with a narrow strip of wooden floor. Preserve the laptop model geometry, screen tilt, keyboard layout, trackpad, orientation and existing screen chart positions. Preserve the blue donut and heatmap without adding values, labels or claims. Let the source blue charts remain crisp against balanced silver metal and slightly warm wood. No added analytics dashboard, logo, hands, people or extra objects.",
+      "deliveryEncoding": {
+        "format": "WebP",
+        "maxWidth": 640,
+        "quality": 90,
+        "method": 6,
+        "resampling": "Pillow LANCZOS"
+      },
+      "visualInspection": "Same recognisable discipline subject and major composition preserved. AI interpretation may redraw fine screen lettering, keyboard legends, PCB markings, machinery microdetail and background texture. Not a technical diagram, literal unedited photograph or proof of SNJB facilities."
+    },
+    {
+      "id": "civil",
+      "originalPath": "/subjects/civil.webp",
+      "originalSha256": "d8b30864cd5ece54d3b8c4f76e985e0fe7d0d52905f6e7844e0abb48d7f96d0c",
+      "originalPhotographer": "Chris F",
+      "originalSourcePage": "https://www.pexels.com/photo/concrete-bridge-over-river-8331319/",
+      "originalLicense": "https://www.pexels.com/license/",
+      "generatedMaster": "/campaign/v8/subjects/civil-generated.png",
+      "generatedDimensions": [
+        1536,
+        1024
+      ],
+      "generatedBytes": 3061613,
+      "generatedSha256": "209c8e6b5af9041c74491cd6effd4f9cd0948d7a7357ede8412a4f1104af971a",
+      "deliveryPath": "/campaign/v8/subjects/civil.webp",
+      "deliveryDimensions": [
+        640,
+        427
+      ],
+      "deliveryBytes": 94684,
+      "deliverySha256": "b5814de551dc737b087d97c4e04be844aaf3b196f1c8f0b34efdaa7bb5d0d2ec",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather.\nAsset type: representative discipline photograph for compact engineering programme thumbnails in a premium institutional website.\nInput image 1 is the edit target, not a style reference. Edit only its photography treatment: coherent natural editorial lighting, restrained warm highlights, neutral whites, clean charcoal shadows, lifted useful midtone detail and richer but credible source colours. Preserve fine existing texture; reduce the rough compressed look without inventing subject detail. Keep a landscape 3:2 composition, with the important subject safe for a rounded thumbnail crop. No typographic overlay, border, watermark addition, decorative glow, glass UI or invented branding. This is representative imagery outside SNJB, never an assertion about the college's facilities.\nSubject: looking from beneath the existing concrete bridge with its large structural ribs, piers, river reflection, bank stones, trees and small background buildings. Preserve exactly the bridge geometry, number and placement of ribs and piers, perspective, river level and background layout. Lift the shaded structural textures slightly so this reads immediately as civil engineering in a small thumbnail; warm natural daylight, believable greens and a balanced blue sky. Do not add new construction, workers, vehicles, campus signage or decorative engineering symbols.",
+      "deliveryEncoding": {
+        "format": "WebP",
+        "maxWidth": 640,
+        "quality": 90,
+        "method": 6,
+        "resampling": "Pillow LANCZOS"
+      },
+      "visualInspection": "Same recognisable discipline subject and major composition preserved. AI interpretation may redraw fine screen lettering, keyboard legends, PCB markings, machinery microdetail and background texture. Not a technical diagram, literal unedited photograph or proof of SNJB facilities."
+    },
+    {
+      "id": "electronics",
+      "originalPath": "/subjects/electronics.webp",
+      "originalSha256": "415d59efde8e100efbc841ab30aeeb2ba97f81f72780cb66c8d44e5c34e81d6a",
+      "originalPhotographer": "ClickerHappy",
+      "originalSourcePage": "https://www.pexels.com/photo/shallow-focus-photography-of-black-circuit-board-1448561/",
+      "originalLicense": "https://www.pexels.com/license/",
+      "generatedMaster": "/campaign/v8/subjects/electronics-generated.png",
+      "generatedDimensions": [
+        1536,
+        1024
+      ],
+      "generatedBytes": 2219243,
+      "generatedSha256": "78d3cbea8b7de8288409bf8f291c9c69333558680eb192d7abca1a277044fd59",
+      "deliveryPath": "/campaign/v8/subjects/electronics.webp",
+      "deliveryDimensions": [
+        640,
+        427
+      ],
+      "deliveryBytes": 55986,
+      "deliverySha256": "bf61793dc0497e408defdee7a32ca3f8937501c8d7862d426c0376aaefec4be3",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather.\nAsset type: representative discipline photograph for compact engineering programme thumbnails in a premium institutional website.\nInput image 1 is the edit target, not a style reference. Edit only its photography treatment: coherent natural editorial lighting, restrained warm highlights, neutral whites, clean charcoal shadows, lifted useful midtone detail and richer but credible source colours. Preserve fine existing texture; reduce the rough compressed look without inventing subject detail. Keep a landscape 3:2 composition, with the important subject safe for a rounded thumbnail crop. No typographic overlay, border, watermark addition, decorative glow, glass UI or invented branding. This is representative imagery outside SNJB, never an assertion about the college's facilities.\nSubject: the macro black electronic circuit board with the central integrated circuit, its real pins, small components and existing white PCB markings. Preserve the exact chip count, package shapes, lead geometry, component layout and visible source markings; don't invent a schematic or new legible specifications. Retain shallow depth of field, with premium controlled side light on metal contacts and a neutral dark substrate. No added components, neon energy, circuit glow, logos or labels.",
+      "deliveryEncoding": {
+        "format": "WebP",
+        "maxWidth": 640,
+        "quality": 90,
+        "method": 6,
+        "resampling": "Pillow LANCZOS"
+      },
+      "visualInspection": "Same recognisable discipline subject and major composition preserved. AI interpretation may redraw fine screen lettering, keyboard legends, PCB markings, machinery microdetail and background texture. Not a technical diagram, literal unedited photograph or proof of SNJB facilities."
+    },
+    {
+      "id": "mechanical",
+      "originalPath": "/subjects/mechanical.webp",
+      "originalSha256": "0b28d00ece7eb5cca6aac756f5c29a5b1b6db65dc0afac7ec7bc57bf98dcd878",
+      "originalPhotographer": "Freek Wolsink",
+      "originalSourcePage": "https://www.pexels.com/photo/industrial-robot-arm-in-a-manufacturing-facility-34207359/",
+      "originalLicense": "https://www.pexels.com/license/",
+      "generatedMaster": "/campaign/v8/subjects/mechanical-generated.png",
+      "generatedDimensions": [
+        1536,
+        1024
+      ],
+      "generatedBytes": 2108669,
+      "generatedSha256": "c2e64587affa6e8c7e9dc6c59685f22549dabfeebeb6447ab23c9c2e830b884f",
+      "deliveryPath": "/campaign/v8/subjects/mechanical.webp",
+      "deliveryDimensions": [
+        640,
+        427
+      ],
+      "deliveryBytes": 77976,
+      "deliverySha256": "08ee14257c8127cdaa6aeeede55a4098aff04d8ff78120779f6b71e4babba3a1",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Use case: lighting-weather.\nAsset type: representative discipline photograph for compact engineering programme thumbnails in a premium institutional website.\nInput image 1 is the edit target, not a style reference. Edit only its photography treatment: coherent natural editorial lighting, restrained warm highlights, neutral whites, clean charcoal shadows, lifted useful midtone detail and richer but credible source colours. Preserve fine existing texture; reduce the rough compressed look without inventing subject detail. Keep a landscape 3:2 composition, with the important subject safe for a rounded thumbnail crop. No typographic overlay, border, watermark addition, decorative glow, glass UI or invented branding. This is representative imagery outside SNJB, never an assertion about the college's facilities.\nSubject: the existing yellow industrial robot arm inside a manufacturing cell. Preserve its exact joint arrangement, gripper, cables, equipment geometry, enclosure rails and original factory background. Preserve existing blurred adult background figures without changing their appearance or bringing them into focus; do not add students or people. Refine the source yellow metal, red equipment accents and neutral factory whites with controlled warm lighting and clear detail. No new robot parts, sparks, welding, logos, college signage or fabricated lab equipment.",
+      "deliveryEncoding": {
+        "format": "WebP",
+        "maxWidth": 640,
+        "quality": 90,
+        "method": 6,
+        "resampling": "Pillow LANCZOS"
+      },
+      "visualInspection": "Same recognisable discipline subject and major composition preserved. AI interpretation may redraw fine screen lettering, keyboard legends, PCB markings, machinery microdetail and background texture. Not a technical diagram, literal unedited photograph or proof of SNJB facilities."
+    }
+  ]
+}

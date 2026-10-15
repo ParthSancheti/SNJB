@@ -1,0 +1,22 @@
+{
+  "id": "homepage-e06f762e63fb",
+  "sourceUrl": "https://snjb.org/engineering/uploads/slider/item/08.jpg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Test",
+  "roles": [
+    "homepage-slide",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/08-e06f762e63.jpg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 144244,
+  "sha256": "87b005c97daa0fdef91a23fb276c7237ef22bcd7488098ba9cfc6a7f65e77f73",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/slider/item/08.jpg",
+  "dimensions": [
+    1349,
+    533
+  ]
+}

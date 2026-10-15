@@ -1,0 +1,100 @@
+{
+  "preparedDate": "2026-10-14",
+  "source": {
+    "id": "xXo67UDosuc",
+    "title": "SNJB College || Campus Tour || Official Video",
+    "channel": "SNJB K B Jain College of Engineering",
+    "uploader": "SNJB K B Jain College of Engineering",
+    "upload_date": "20190128",
+    "duration": 1301,
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "format_id": "137",
+    "license": null,
+    "source_url": "https://www.youtube.com/watch?v=xXo67UDosuc",
+    "downloaded_source_interval_seconds": [
+      0,
+      70
+    ]
+  },
+  "sourceSha256": "e2634fe61bb974557e7f88a30606cf506face0b99d9d9dd8446124a08eabf7c3",
+  "parentManifest": "/media/media-v9-provenance.json",
+  "parentManifestSha256": "2450fc460797b6d1775f7ed658f79bfd3bded7e1c0a94d7be22d7f6f9face7e5",
+  "processing": {
+    "edit": "Only a fixed desktop crop/scale and selective vibrance/colour grade of the V9 450-frame eased film. Temporal order, 30fps and 15-second duration are unchanged.",
+    "desktopCrop": {
+      "filter": "crop=1696:954:160:94,scale=1920:1080:flags=lanczos",
+      "sourceRectangle": [
+        160,
+        94,
+        1696,
+        954
+      ],
+      "zoom": 1.1321
+    },
+    "originalWatermark": "Outside the fixed V10 desktop crop at every timestamp; already outside the existing V9 portrait crop. The original source and V9 film remain unchanged.",
+    "mobileFraming": "Preserved 720x1280 V9 portrait framing; no extra crop or zoom.",
+    "colorGrade": "vibrance=intensity=0.45:alternate=1:rbal=1:gbal=1:bbal=1:rlum=0.2126:glum=0.7152:blum=0.0722,eq=contrast=1.035:brightness=0.003:gamma=1.015",
+    "gradingIntent": "Selective vibrance in alternate mode strengthens previously muted vegetation and gold earth while reducing its effect as RGB colour spread increases. The inherited V9 warmth is retained; a small exposure/contrast refinement preserves cream architecture and neutral shadows. No second colorbalance pass, sky, sun or synthetic scene is introduced.",
+    "filterReference": "https://ffmpeg.org/ffmpeg-filters.html#vibrance",
+    "interpolation": "Inherited from V9; no second temporal interpolation is applied.",
+    "motionBlur": "None added. No transition blur or colour overlay is baked into the film.",
+    "sceneAlteration": false,
+    "faceAlteration": false,
+    "tools": {
+      "FFmpeg": "7.1-essentials_build-www.gyan.dev",
+      "Pillow": "12.3.0"
+    }
+  },
+  "exports": [
+    {
+      "path": "/media/campus-desktop-v10.mp4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 6963207,
+      "durationSeconds": 15.0,
+      "decodedFrames": 450,
+      "fps": 30,
+      "audio": false,
+      "codec": "H.264 High / yuv420p",
+      "crf": 20,
+      "maxrate": "3900k",
+      "sha256": "3b71b9575ee73dda9e33080afdb683c599b82a3694120e10f901c92d63e42799",
+      "input": "/media/campus-desktop-v9.mp4",
+      "inputSha256": "8e903f53e9f37cb0098a49a222c871fb30f32c459f2483c0c3a3f83f3e451118",
+      "poster": "/media/campus-poster-desktop-v10.webp",
+      "posterBytes": 342494,
+      "posterSha256": "ef57b5b07d89ac6afcd5e4cb636d92ee34045e85c770ff15ab439a4ddeb300ea"
+    },
+    {
+      "path": "/media/campus-mobile-v10.mp4",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 4019462,
+      "durationSeconds": 15.0,
+      "decodedFrames": 450,
+      "fps": 30,
+      "audio": false,
+      "codec": "H.264 High / yuv420p",
+      "crf": 20,
+      "maxrate": "2150k",
+      "sha256": "5650bab5a27eccb18ca55e1082297de9322f56c9737172cec536d5d7546e86cb",
+      "input": "/media/campus-mobile-v9.mp4",
+      "inputSha256": "6c3f99eb194943b60cba1f7a40f0d057074ead7f2107e1cdc7726b8d1e43a4af",
+      "poster": "/media/campus-poster-mobile-v10.webp",
+      "posterBytes": 163400,
+      "posterSha256": "d8c33f1e330e60402539def97aa987eb52a95da6e039c94d73e502f9e19350f9"
+    }
+  ],
+  "limitations": [
+    "Official archival source uploaded 28 January 2019; not evidence of current campus condition.",
+    "Original web compression and haze cannot be recovered into a clean camera master.",
+    "Motion interpolation may create small edge warps around moving foliage or fine architecture; it infers temporal frames rather than recovering original camera samples.",
+    "V10 re-encodes an already compressed V9 delivery film once; fixed crop enlarges existing detail rather than recovering new camera resolution."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "homepage-8d7ded450ad8",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/bosch-brand-bosch_res_1280x720.webp",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "bosch",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/bosch-brand-bosch_res_1280x720-8d7ded450a.webp",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 9128,
+  "sha256": "4e53086e9e1b6800888844d0fce2c645c35a22c68b59c8122d1dd9dbef45c352",
+  "contentType": "image/webp",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/bosch-brand-bosch_res_1280x720.webp",
+  "dimensions": [
+    1280,
+    720
+  ]
+}

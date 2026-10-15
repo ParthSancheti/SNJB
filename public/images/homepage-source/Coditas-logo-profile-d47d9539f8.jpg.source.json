@@ -1,0 +1,22 @@
+{
+  "id": "homepage-d47d9539f81b",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/Coditas-logo-profile.jpg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "coditas",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Coditas-logo-profile-d47d9539f8.jpg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 6005,
+  "sha256": "07fa90b169a0360be308fd38cf29afc60044a9d9044296502fa3bd8d28cd8cdd",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/Coditas-logo-profile.jpg",
+  "dimensions": [
+    300,
+    150
+  ]
+}

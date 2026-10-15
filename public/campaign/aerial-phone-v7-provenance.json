@@ -1,0 +1,35 @@
+{
+  "preparedDate": "2026-10-14",
+  "classification": "AI-edited campaign candidate based on an authentic archival frame; not an untouched photograph or exact documentary record",
+  "tool": "Built-in image_gen.imagegen",
+  "sourceURL": "https://www.youtube.com/watch?v=xXo67UDosuc",
+  "originalUploadDate": "2019-01-28",
+  "sourceTimeSeconds": 56.4,
+  "editTarget": "/media/campus-poster-mobile-source-v7.png",
+  "prompt": "Use case: lighting-weather.\nAsset type: optional mobile website campaign poster, portrait 9:16.\nInput image 1 is the EDIT TARGET, an archival aerial photograph of a real SNJB campus. Restore this exact photograph with a restrained, polished editorial photographic finish.\nChange only photographic treatment: carefully reduce web compression haze and blotchy texture, improve natural microcontrast and clean photographic clarity, give the existing trees a subtly richer green-teal tone, and introduce restrained warm sunlight into the existing light neutral building surfaces. Keep believable daylight and honest photographic texture. The result must still look like a photograph, not a render, painting or an idealized new campus.\nCRITICAL INVARIANTS: preserve the EXACT camera position, portrait crop, perspective, campus buildings' silhouettes and geometry, every curved roof outline and aperture, central tower shape and location, rooftop frames and equipment, facade column/opening rhythm, paths, terrain, foreground partial circular building, distant town arrangement and horizon. Preserve all visible structures and objects in the same place. No architectural redesign, new facilities, people, landscaping, synthetic clouds, logo, lettering or other added objects. Do not rebuild or simplify roof layouts. No orange glow, dramatic sky or cinematic fantasy effect. Make a subtle high quality restoration with stronger clarity and balanced vibrant color while keeping the image content unchanged.",
+  "generatedOriginal": "/campaign/aerial-phone-v7-source.png",
+  "delivery": "/campaign/aerial-phone-v7.webp",
+  "review": {
+    "recommendedAsDocumentaryPoster": false,
+    "status": "Candidate retained for review; real matching poster and video remain unchanged",
+    "observations": "Main circular campus-building composition is similar. Fine rooftop equipment, vegetation and distant-town detail have been synthesized by the model. Exact geometry preservation cannot be guaranteed."
+  },
+  "restrictions": "Do not present as evidence of current campus architecture or condition, and do not use to alter faculty identity.",
+  "files": [
+    {
+      "path": "/media/campus-poster-mobile-source-v7.png",
+      "bytes": 1289862,
+      "sha256": "0f22dc84ff1871690315a30ac59e573e063f08bea9e1e2e776783eebb76637be"
+    },
+    {
+      "path": "/campaign/aerial-phone-v7-source.png",
+      "bytes": 3236719,
+      "sha256": "809347eadfcbfc068f2edf0fe0e1974d4b89e2d798c74bbf4a71e6cfaf5f15e1"
+    },
+    {
+      "path": "/campaign/aerial-phone-v7.webp",
+      "bytes": 431326,
+      "sha256": "c3177351b915e80fa9a46b639ca00528611158d63c9447921c4a156db03a2440"
+    }
+  ]
+}

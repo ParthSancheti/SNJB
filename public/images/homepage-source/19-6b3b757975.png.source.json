@@ -1,0 +1,22 @@
+{
+  "id": "homepage-6b3b75797594",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/19.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "BH",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/19-6b3b757975.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 8000,
+  "sha256": "018bc8274e2f05a47078cc5ca55cc7cc27d5243bea5c16974e8277763a423b63",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/19.png",
+  "dimensions": [
+    299,
+    168
+  ]
+}

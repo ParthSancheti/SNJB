@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+scripts/raw-assets/
+scripts/__pycache__/
+qa/
+*.tar.gz
+.openai/*.local.*
+output/video-change-1/*.zip

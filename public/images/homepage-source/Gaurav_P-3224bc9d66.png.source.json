@@ -1,0 +1,22 @@
+{
+  "id": "homepage-3224bc9d6654",
+  "sourceUrl": "https://snjb.org/engineering/uploads/testimonial/Gaurav_P.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Mr. Gaurav Polekar",
+  "roles": [
+    "testimonial",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Gaurav_P-3224bc9d66.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 275291,
+  "sha256": "53cc63e3f18e0063679248d990871b17c226db0895cc23e97633521bd2c6f57c",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/testimonial/Gaurav_P.png",
+  "dimensions": [
+    471,
+    473
+  ]
+}

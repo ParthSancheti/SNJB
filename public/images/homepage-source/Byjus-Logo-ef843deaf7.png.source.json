@@ -1,0 +1,22 @@
+{
+  "id": "homepage-ef843deaf727",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/Byjus-Logo.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "byjus",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Byjus-Logo-ef843deaf7.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 35460,
+  "sha256": "9ca7924b6eed74ed504ed3a05cabb2af111242622176ea1248f3c3ea3191dee7",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/Byjus-Logo.png",
+  "dimensions": [
+    3840,
+    2160
+  ]
+}

@@ -1,0 +1,76 @@
+.home-source-archive{min-width:0;max-width:100%;margin-top:48px;color:var(--ink,#153843);font-size:13px;line-height:1.8;overflow-wrap:anywhere}
+.home-source-archive *{box-sizing:border-box;min-width:0}
+.home-source-archive .hsa-heading{margin-bottom:18px}
+.home-source-archive h3{margin:0 0 8px;font-size:22px;font-weight:500;line-height:1.25;letter-spacing:-.035em}
+.home-source-archive h4{margin:0 0 12px;font-size:16px;font-weight:500;line-height:1.45;letter-spacing:-.02em}
+.home-source-archive p{margin:0 0 16px}
+.home-source-archive .hsa-heading>p{color:var(--muted,#49616d);font-size:12px;margin-bottom:8px}
+.home-source-archive .hsa-provenance{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.home-source-archive .hsa-provenance>span{display:inline-block}
+.home-source-archive a{color:inherit}
+.home-source-archive :is(.hsa-text-link,.hsa-provenance a,.hsa-archival-links a,.hsa-load-state>a){text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.home-source-archive .hsa-disclosures{border-top:1px solid var(--line,#ffffff80)}
+.home-source-archive .hsa-disclosure{border-bottom:1px solid var(--line,#ffffff80)}
+.home-source-archive .hsa-disclosure>summary{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:58px;padding:16px 2px;cursor:pointer;list-style:none;font-size:14px;font-weight:500;line-height:1.5}
+.home-source-archive .hsa-disclosure>summary::-webkit-details-marker{display:none}
+.home-source-archive .hsa-plus{flex:0 0 22px;text-align:center;font-size:23px;font-weight:300;line-height:1;transition:transform .2s}
+.home-source-archive .hsa-disclosure[open]>summary .hsa-plus{transform:rotate(45deg)}
+.home-source-archive :is(a,button,summary,.hsa-table-scroll):focus-visible{outline:2px solid currentColor;outline-offset:5px;border-radius:4px}
+.home-source-archive .hsa-disclosure-body{padding:12px 2px 26px;max-width:100%}
+.home-source-archive .hsa-institutional{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.home-source-archive .hsa-institutional h4:not(:first-child){margin-top:24px}
+.home-source-archive .hsa-institutional ul{list-style:disc;margin:0;padding-left:20px}
+.home-source-archive .hsa-institutional li{padding-left:4px;margin-bottom:10px}
+.home-source-archive .hsa-image{display:block;max-width:100%;border-radius:8px;overflow:hidden}
+.home-source-archive .hsa-image img{display:block;width:100%;max-width:100%;height:auto}
+.home-source-archive .hsa-achievements{display:grid;grid-template-columns:1fr 1fr;gap:22px 28px;list-style:none;padding:0;margin:0}
+.home-source-archive .hsa-achievements>li{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:16px}
+.home-source-archive .hsa-achievement-image{width:64px;height:64px;background:#fff}
+.home-source-archive .hsa-achievement-image img{height:100%;object-fit:contain}
+.home-source-archive .hsa-achievements h4{font-size:14px;margin-bottom:4px}
+.home-source-archive .hsa-achievements .hsa-text-link{font-size:11px}
+.home-source-archive .hsa-note{color:var(--muted,#49616d);font-size:11px;line-height:1.7}
+.home-source-archive .hsa-notices{list-style:none;padding:0;margin:0 0 12px}
+.home-source-archive .hsa-notices>li{display:grid;grid-template-columns:124px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--line,#ffffff80)}
+.home-source-archive .hsa-notices span{font-size:11px;color:var(--muted,#49616d)}
+.home-source-archive .hsa-notices strong{font-weight:500}
+.home-source-archive .hsa-events{display:grid;gap:26px}
+.home-source-archive .hsa-events>article{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:24px;align-items:start}
+.home-source-archive .hsa-event-images .hsa-image img{max-height:190px;object-fit:contain;object-position:top;background:var(--surface,#ffffff66)}
+.home-source-archive .hsa-image-pair{display:grid;gap:10px}
+.home-source-archive .hsa-image-pair .hsa-image img{max-height:140px}
+.home-source-archive .hsa-date{font-size:11px;color:var(--muted,#49616d);margin-bottom:6px}
+.home-source-archive .hsa-testimonials{display:grid;grid-template-columns:1fr 1fr;gap:26px 36px}
+.home-source-archive .hsa-testimonials>figure{padding:0 0 22px;margin:0;border-bottom:1px solid var(--line,#ffffff80)}
+.home-source-archive .hsa-testimonials figcaption{display:flex;gap:16px;align-items:center;margin-bottom:14px}
+.home-source-archive .hsa-person-image{flex:0 0 52px;width:52px;height:60px;border-radius:8px}
+.home-source-archive .hsa-person-image img{height:100%;object-fit:contain;object-position:center}
+.home-source-archive .hsa-testimonials h4{font-size:14px;margin:0 0 4px}
+.home-source-archive .hsa-testimonials figcaption p{font-size:11px;color:var(--muted,#49616d);line-height:1.6;margin:0}
+.home-source-archive .hsa-testimonials blockquote{border:0;padding:0;margin:0;font-size:12px;line-height:1.9}
+.home-source-archive .hsa-testimonials blockquote p{margin:0}
+.home-source-archive .hsa-recruiters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px 16px;list-style:none;padding:0;margin:0}
+.home-source-archive .hsa-recruiters>li{text-align:center}
+.home-source-archive .hsa-recruiter-image{height:72px;padding:8px;background:white;border-radius:8px}
+.home-source-archive .hsa-recruiter-image img{height:100%;object-fit:contain}
+.home-source-archive .hsa-recruiters>li>span{display:block;font-size:10px;line-height:1.5;margin-top:7px}
+.home-source-archive .hsa-campus{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;margin-bottom:20px}
+.home-source-archive .hsa-campus figure{margin:0}
+.home-source-archive .hsa-campus .hsa-image img{max-height:220px;object-fit:contain;background:var(--surface,#ffffff66)}
+.home-source-archive .hsa-campus figcaption{font-size:10px;color:var(--muted,#49616d);margin-top:7px}
+.home-source-archive .hsa-correction{margin:26px 0}
+.home-source-archive .hsa-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain}
+.home-source-archive table{border-collapse:collapse;width:100%;table-layout:fixed;font-size:11px;line-height:1.6}
+.home-source-archive table caption{text-align:left;font-size:10px;color:var(--muted,#49616d);padding-bottom:8px}
+.home-source-archive th,.home-source-archive td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line,#ffffff80);padding:10px 12px 10px 0;overflow-wrap:anywhere}
+.home-source-archive thead th{font-weight:500}
+.home-source-archive th:first-child{width:50%}
+.home-source-archive tbody th{font-weight:400}
+.home-source-archive .hsa-archival-links{list-style:none;padding:0;margin:0}
+.home-source-archive .hsa-archival-links>li{margin-bottom:12px}
+.home-source-archive .hsa-archival-links>li>span{display:block;font-size:10px;color:var(--muted,#49616d);margin-top:4px}
+.home-source-archive .hsa-load-state{font-size:12px;color:var(--muted,#49616d)}
+.home-source-archive .hsa-load-state button{color:inherit;font:inherit;cursor:pointer;background:var(--surface,#ffffff66);border:1px solid var(--line,#ffffff80);border-radius:8px;min-height:44px;padding:10px 16px;margin-right:18px}
+@media(max-width:760px){.home-source-archive .hsa-institutional,.home-source-archive .hsa-testimonials{grid-template-columns:1fr;gap:26px}.home-source-archive .hsa-recruiters{grid-template-columns:repeat(4,minmax(0,1fr))}.home-source-archive .hsa-achievements{grid-template-columns:1fr}.home-source-archive .hsa-events>article{grid-template-columns:minmax(0,160px) minmax(0,1fr);gap:18px}}
+@media(max-width:480px){.home-source-archive{margin-top:32px;font-size:12px}.home-source-archive h3{font-size:20px}.home-source-archive .hsa-disclosure>summary{font-size:13px;min-height:56px}.home-source-archive .hsa-disclosure-body{padding-top:8px}.home-source-archive .hsa-events>article{grid-template-columns:1fr;gap:14px}.home-source-archive .hsa-event-images .hsa-image img{max-height:200px}.home-source-archive .hsa-image-pair{grid-template-columns:1fr 1fr}.home-source-archive .hsa-image-pair .hsa-image img{max-height:140px}.home-source-archive .hsa-notices>li{grid-template-columns:1fr;gap:4px}.home-source-archive .hsa-recruiters{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 12px}.home-source-archive .hsa-recruiter-image{height:65px}.home-source-archive .hsa-campus{grid-template-columns:1fr;gap:18px}.home-source-archive .hsa-achievements>li{grid-template-columns:52px minmax(0,1fr);gap:14px}.home-source-archive .hsa-achievement-image{width:52px;height:52px}.home-source-archive th,.home-source-archive td{padding-right:8px}.home-source-archive .hsa-load-state button{margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.home-source-archive .hsa-plus{transition:none}}

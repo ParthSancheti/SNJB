@@ -1,0 +1,22 @@
+{
+  "id": "homepage-dac5b0ee59af",
+  "sourceUrl": "https://snjb.org/engineering/uploads/testimonial/Nishant_Lokhande.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Mr. Nishant Lokhande ",
+  "roles": [
+    "testimonial",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/Nishant_Lokhande-dac5b0ee59.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 327573,
+  "sha256": "838c37a64875d6f6b020b8689e60ff6c23a95183e7827e2eaae83879b7cb01df",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/testimonial/Nishant_Lokhande.png",
+  "dimensions": [
+    358,
+    358
+  ]
+}

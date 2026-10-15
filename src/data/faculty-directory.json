@@ -1,0 +1,1219 @@
+{
+  "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+  "reviewed": "2026-10-13",
+  "counts": {
+    "total": 37,
+    "faculty": 27,
+    "staff": 10
+  },
+  "rosterSource": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf",
+  "rosters": [
+    {
+      "academicYear": "2026-27",
+      "href": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2026-27_facultylist.pdf"
+    },
+    {
+      "academicYear": "2025-26",
+      "href": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2025-26_facultylist.pdf"
+    },
+    {
+      "academicYear": "2024-25",
+      "href": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2024-25_facultylist.pdf"
+    },
+    {
+      "academicYear": "2023-24",
+      "href": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2023-24_facultylist.pdf"
+    },
+    {
+      "academicYear": "2022-23",
+      "href": "https://snjb.org/engineering/uploads/computer-engineering/Comp_2022-23_facultylist.pdf"
+    },
+    {
+      "academicYear": "2021-22",
+      "href": "http://www.snjb.org/engineering/images/dynamic_page/Comp_Staff_21-22.pdf"
+    },
+    {
+      "academicYear": "2020-21",
+      "href": "https://www.snjb.org/engineering/images/dynamic_page/Comp_staff_20-21.pdf"
+    },
+    {
+      "academicYear": "2019-20",
+      "href": "https://www.snjb.org/engineering/images/dynamic_page/Comp_staff_2019-20.pdf"
+    }
+  ],
+  "note": "Complete currently published web directory. Roles, qualifications and interests preserve the directory as published; the linked annual roster may supersede older web fields.",
+  "people": [
+    {
+      "id": "01-dr-m-r-sanghavi",
+      "name": "Dr. M. R. Sanghavi",
+      "publishedName": "DR. M. R. SANGHAVI",
+      "role": "Professor & Joint Director",
+      "degree": "BE, ME, PhD (CSE)",
+      "qualification": "BE, ME, PhD (CSE)",
+      "interestsText": "Image Processing, DBMS, Big Data & Hadoop, BI & Internet of Things",
+      "interests": [
+        "Image Processing",
+        "DBMS",
+        "Big Data & Hadoop",
+        "BI & Internet of Things"
+      ],
+      "email": "sanghavi.mrcoe@snjb.org",
+      "image": "/images/directory/01-dr-m-r-sanghavi.webp",
+      "group": "faculty",
+      "blog": "https://maheshsanghavi.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering/images/department/MRSupFile_05989819d8b901.pdf",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/1709356868_508b0fd29469d99c4c69.jpg",
+      "fields": {
+        "Name": "DR. M. R. SANGHAVI",
+        "Designation": "Professor & Joint Director",
+        "Qualification": "BE, ME, PhD (CSE)",
+        "Area of Interest(s)": "Image Processing, DBMS, Big Data & Hadoop, BI & Internet of Things",
+        "Email ID": "sanghavi.mrcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:sanghavi.mrcoe@snjb.org",
+        "Website": "https://maheshsanghavi.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering/images/department/MRSupFile_05989819d8b901.pdf"
+      }
+    },
+    {
+      "id": "02-dr-k-m-sanghavi",
+      "name": "Dr. K. M. Sanghavi",
+      "publishedName": "Dr. K. M. SANGHAVI",
+      "role": "Professor & Head",
+      "degree": "BE, ME (CSE), PhD (CSE)",
+      "qualification": "BE, ME (CSE), PhD (CSE)",
+      "interestsText": "Image Processing, Compiler Constructions, OOP",
+      "interests": [
+        "Image Processing",
+        "Compiler Constructions",
+        "OOP"
+      ],
+      "email": "sanghavi.kmcoe@snjb.org",
+      "image": "/images/directory/02-dr-k-m-sanghavi.webp",
+      "group": "faculty",
+      "blog": "https://kainjan1.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering/images/department/KMS.pdf",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/1709357193_9dd9cf948684cd1d347d.jpg",
+      "fields": {
+        "Name": "Dr. K. M. SANGHAVI",
+        "Designation": "Professor & Head",
+        "Qualification": "BE, ME (CSE), PhD (CSE)",
+        "Area of Interest(s)": "Image Processing, Compiler Constructions, OOP",
+        "Email ID": "sanghavi.kmcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:sanghavi.kmcoe@snjb.org",
+        "Website": "https://kainjan1.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering/images/department/KMS.pdf"
+      }
+    },
+    {
+      "id": "03-dr-k-r-nirmal",
+      "name": "Dr. K. R. Nirmal",
+      "publishedName": "Dr. K. R. NIRMAL",
+      "role": "Associate Professor",
+      "degree": "M.Tech. (IT), PhD (CSE)",
+      "qualification": "M.Tech. (IT), PhD (CSE)",
+      "interestsText": "Machine Learning, Computer Graphics, Cloud Computing",
+      "interests": [
+        "Machine Learning",
+        "Computer Graphics",
+        "Cloud Computing"
+      ],
+      "email": "nirmal.krcoe@snjb.org",
+      "image": "/images/directory/03-dr-k-r-nirmal.webp",
+      "group": "faculty",
+      "blog": "https://khyatirnirmal.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1FeAKuN2UekykVPuiwzDbN0g9zOr2ELroi4We0C_aZyo/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/KRN.png",
+      "fields": {
+        "Name": "Dr. K. R. NIRMAL",
+        "Designation": "Associate Professor",
+        "Qualification": "M.Tech. (IT), PhD (CSE)",
+        "Area of Interest(s)": "Machine Learning, Computer Graphics, Cloud Computing",
+        "Email ID": "nirmal.krcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:nirmal.krcoe@snjb.org",
+        "Website": "https://khyatirnirmal.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1FeAKuN2UekykVPuiwzDbN0g9zOr2ELroi4We0C_aZyo/edit"
+      }
+    },
+    {
+      "id": "04-dr-r-r-bhandari",
+      "name": "Dr. R. R. Bhandari",
+      "publishedName": "Dr. R. R. BHANDARI",
+      "role": "Associate Professor",
+      "degree": "BE, M-Tech (IT), PhD (CSE)",
+      "qualification": "BE, M-Tech (IT), PhD (CSE)",
+      "interestsText": "Wireless Sensor Network & Internet of Things",
+      "interests": [
+        "Wireless Sensor Network & Internet of Things"
+      ],
+      "email": "bhandari.rrcoe@snjb.org",
+      "image": "/images/directory/04-dr-r-r-bhandari.webp",
+      "group": "faculty",
+      "blog": "https://rajivbhandari.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1b4sfgkjbyNRvrAw2BIyRgMJM15iXPSwF/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/bhandari_sir.jpg",
+      "fields": {
+        "Name": "Dr. R. R. BHANDARI",
+        "Designation": "Associate Professor",
+        "Qualification": "BE, M-Tech (IT), PhD (CSE)",
+        "Area of Interest(s)": "Wireless Sensor Network & Internet of Things",
+        "Email ID": "bhandari.rrcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:bhandari.rrcoe@snjb.org",
+        "Website": "https://rajivbhandari.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1b4sfgkjbyNRvrAw2BIyRgMJM15iXPSwF/edit"
+      }
+    },
+    {
+      "id": "05-mrs-b-a-khivsara",
+      "name": "Mrs. B. A. Khivsara",
+      "publishedName": "MRS. B. A. KHIVSARA",
+      "role": "Assistant Professor",
+      "degree": "BE, ME (CSE),Pursuing PhD",
+      "qualification": "BE, ME (CSE),Pursuing PhD",
+      "interestsText": "Web Development, Data mining, Data Analytics",
+      "interests": [
+        "Web Development",
+        "Data mining",
+        "Data Analytics"
+      ],
+      "email": "khivsara.bacoe@snjb.org",
+      "image": "/images/directory/05-mrs-b-a-khivsara.webp",
+      "group": "faculty",
+      "blog": "https://bhavanakhivsara.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1YPhUlY8iC6DFDwa30mBVUyE4kqJ3UN40/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/bhavana_mam.jpg",
+      "fields": {
+        "Name": "MRS. B. A. KHIVSARA",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, ME (CSE),Pursuing PhD",
+        "Area of Interest(s)": "Web Development, Data mining, Data Analytics",
+        "Email ID": "khivsara.bacoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:khivsara.bacoe@snjb.org",
+        "Website": "https://bhavanakhivsara.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1YPhUlY8iC6DFDwa30mBVUyE4kqJ3UN40/edit"
+      }
+    },
+    {
+      "id": "06-mr-d-r-agrawal",
+      "name": "Mr. D. R. Agrawal",
+      "publishedName": "MR. D. R. AGRAWAL",
+      "role": "Assistant Professor",
+      "degree": "BE, M-Tech(IT) Pursuing PhD",
+      "qualification": "BE, M-Tech(IT) Pursuing PhD",
+      "interestsText": "Multimedia Systems, Distributed Computing",
+      "interests": [
+        "Multimedia Systems",
+        "Distributed Computing"
+      ],
+      "email": "agrawal.drcoe@snjb.org",
+      "image": "/images/directory/06-mr-d-r-agrawal.webp",
+      "group": "faculty",
+      "blog": "https://dipeshagrawal.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/17Cv4K7paJ9aQ8a9O6uAW2zG4738Z_ju2/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/agrawal_sir.jpg",
+      "fields": {
+        "Name": "MR. D. R. AGRAWAL",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M-Tech(IT) Pursuing PhD",
+        "Area of Interest(s)": "Multimedia Systems, Distributed Computing",
+        "Email ID": "agrawal.drcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:agrawal.drcoe@snjb.org",
+        "Website": "https://dipeshagrawal.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/17Cv4K7paJ9aQ8a9O6uAW2zG4738Z_ju2/edit"
+      }
+    },
+    {
+      "id": "07-mrs-d-p-pawar",
+      "name": "Mrs. D. P. Pawar",
+      "publishedName": "MRS. D. P. PAWAR",
+      "role": "Assistant Professor",
+      "degree": "BE, ME (CSE), Pursuing PhD",
+      "qualification": "BE, ME (CSE), Pursuing PhD",
+      "interestsText": "Data Mining",
+      "interests": [
+        "Data Mining"
+      ],
+      "email": "pawar.dpcoe@snjb.org",
+      "image": "/images/directory/07-mrs-d-p-pawar.webp",
+      "group": "faculty",
+      "blog": "https://deepalipawar.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering-old/images/department/deepali_mam.pdf",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/deepali_mam.jpg",
+      "fields": {
+        "Name": "MRS. D. P. PAWAR",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, ME (CSE), Pursuing PhD",
+        "Area of Interest(s)": "Data Mining",
+        "Email ID": "pawar.dpcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:pawar.dpcoe@snjb.org",
+        "Website": "https://deepalipawar.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering-old/images/department/deepali_mam.pdf"
+      }
+    },
+    {
+      "id": "08-mr-d-s-rajnor",
+      "name": "Mr. D. S. Rajnor",
+      "publishedName": "MR. D. S. RAJNOR",
+      "role": "Assistant Professor",
+      "degree": "BE, M-Tech (CSE), Pursuing PhD",
+      "qualification": "BE, M-Tech (CSE), Pursuing PhD",
+      "interestsText": "Cyber Security, Data Mining",
+      "interests": [
+        "Cyber Security",
+        "Data Mining"
+      ],
+      "email": "rajnor.dscoe@snjb.org",
+      "image": "/images/directory/08-mr-d-s-rajnor.webp",
+      "group": "faculty",
+      "blog": "https://dsrajnor.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1g5fFYs_tZK81oOfmYBwZMNPUiyV6xm3Wy8tc242qNf8/edit?tab=t.0",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/rajnor_sir.jpg",
+      "fields": {
+        "Name": "MR. D. S. RAJNOR",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M-Tech (CSE), Pursuing PhD",
+        "Area of Interest(s)": "Cyber Security, Data Mining",
+        "Email ID": "rajnor.dscoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:rajnor.dscoe@snjb.org",
+        "Website": "https://dsrajnor.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1g5fFYs_tZK81oOfmYBwZMNPUiyV6xm3Wy8tc242qNf8/edit?tab=t.0"
+      }
+    },
+    {
+      "id": "09-mr-p-s-desai-teaching-to-fe",
+      "name": "Mr. P. S. Desai (Teaching To Fe)",
+      "publishedName": "MR. P. S. DESAI (Teaching to FE)",
+      "role": "Assistant Professor",
+      "degree": "BE, M.E. (CSE)",
+      "qualification": "BE, M.E. (CSE)",
+      "interestsText": "Image Processing",
+      "interests": [
+        "Image Processing"
+      ],
+      "email": "desai.pscoe@snjb.org",
+      "image": "/images/directory/09-mr-p-s-desai-teaching-to-fe.webp",
+      "group": "faculty",
+      "blog": "https://pankaj21desai.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering-old/images/department/PSD_BioData_docx.pdf",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/desai_sir.jpeg",
+      "fields": {
+        "Name": "MR. P. S. DESAI (Teaching to FE)",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M.E. (CSE)",
+        "Area of Interest(s)": "Image Processing",
+        "Email ID": "desai.pscoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:desai.pscoe@snjb.org",
+        "Website": "https://pankaj21desai.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering-old/images/department/PSD_BioData_docx.pdf"
+      }
+    },
+    {
+      "id": "10-mr-g-p-dhomse",
+      "name": "Mr. G. P. Dhomse",
+      "publishedName": "MR. G. P. DHOMSE",
+      "role": "Assistant Professor",
+      "degree": "BE, ME (CSE), PhD (Pursuing)",
+      "qualification": "BE, ME (CSE), PhD (Pursuing)",
+      "interestsText": "Data mining",
+      "interests": [
+        "Data mining"
+      ],
+      "email": "dhomse.gpcoe@snjb.org",
+      "image": "/images/directory/10-mr-g-p-dhomse.webp",
+      "group": "faculty",
+      "blog": "https://dhomaseghanshyam.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1VWl2lLdvG1BNuzi63bLFSc4WgftADjOG/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/dhomse_sir.jpg",
+      "fields": {
+        "Name": "MR. G. P. DHOMSE",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, ME (CSE), PhD (Pursuing)",
+        "Area of Interest(s)": "Data mining",
+        "Email ID": "dhomse.gpcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:dhomse.gpcoe@snjb.org",
+        "Website": "https://dhomaseghanshyam.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1VWl2lLdvG1BNuzi63bLFSc4WgftADjOG/edit"
+      }
+    },
+    {
+      "id": "11-dr-s-b-jadhav",
+      "name": "Dr. S. B. Jadhav",
+      "publishedName": "Dr. S. B. Jadhav",
+      "role": "Assistant Professor",
+      "degree": "M.E. (CSE), PhD (Computer)",
+      "qualification": "M.E. (CSE), PhD (Computer)",
+      "interestsText": "Deep Learning, Drone Technology",
+      "interests": [
+        "Deep Learning",
+        "Drone Technology"
+      ],
+      "email": "chavan.sacoe@snjb.org",
+      "image": "/images/directory/11-dr-s-b-jadhav.webp",
+      "group": "faculty",
+      "blog": "https://suchitaachavan.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1pLMoFCaPj0QNwtGJ0Gidg0O8x7Gjd7wz/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/chavan_mam.jpeg",
+      "fields": {
+        "Name": "Dr. S. B. Jadhav",
+        "Designation": "Assistant Professor",
+        "Qualification": "M.E. (CSE), PhD (Computer)",
+        "Area of Interest(s)": "Deep Learning, Drone Technology",
+        "Email ID": "chavan.sacoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:chavan.sacoe@snjb.org",
+        "Website": "https://suchitaachavan.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1pLMoFCaPj0QNwtGJ0Gidg0O8x7Gjd7wz/edit"
+      }
+    },
+    {
+      "id": "12-dr-n-p-bora",
+      "name": "Dr. N. P. Bora",
+      "publishedName": "Dr. N. P. BORA",
+      "role": "Assistant Professor",
+      "degree": "BE, M-Tech (IT), PhD (CSE)",
+      "qualification": "BE, M-Tech (IT), PhD (CSE)",
+      "interestsText": "Theory of Computation, CG,DM, DAA,AI, Cyber Security, Image Processing.",
+      "interests": [
+        "Theory of Computation",
+        "CG",
+        "DM",
+        "DAA",
+        "AI",
+        "Cyber Security",
+        "Image Processing."
+      ],
+      "email": "mutha.nccoe@snjb.org",
+      "image": "/images/directory/12-dr-n-p-bora.webp",
+      "group": "faculty",
+      "blog": "https://muthaneha88.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1z7aiQGyaQ9tWoy__otDQDNwBZq1VFpIHGwL2bZsPMS4/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/bora_mam.jpg",
+      "fields": {
+        "Name": "Dr. N. P. BORA",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M-Tech (IT), PhD (CSE)",
+        "Area of Interest(s)": "Theory of Computation, CG,DM, DAA,AI, Cyber Security, Image Processing.",
+        "Email ID": "mutha.nccoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:mutha.nccoe@snjb.org",
+        "Website": "https://muthaneha88.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1z7aiQGyaQ9tWoy__otDQDNwBZq1VFpIHGwL2bZsPMS4/edit"
+      }
+    },
+    {
+      "id": "13-mr-p-n-achaliya",
+      "name": "Mr. P. N. Achaliya",
+      "publishedName": "MR. P. N. ACHALIYA",
+      "role": "Assistant Professor",
+      "degree": "BE, ME (CSE) , PhD (Pursuing)",
+      "qualification": "BE, ME (CSE) , PhD (Pursuing)",
+      "interestsText": "Image Processing, Web Engineering & Technology",
+      "interests": [
+        "Image Processing",
+        "Web Engineering & Technology"
+      ],
+      "email": "achaliya.pncoe@snjb.org",
+      "image": "/images/directory/13-mr-p-n-achaliya.webp",
+      "group": "faculty",
+      "blog": "https://paragnachaliya.in/",
+      "profile": "https://docs.google.com/document/d/101k0I7Ingm8C3_VGonOFb_2GxDV4CPHQxXByRWT8gTs/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/achaliya_sir.jpeg",
+      "fields": {
+        "Name": "MR. P. N. ACHALIYA",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, ME (CSE) , PhD (Pursuing)",
+        "Area of Interest(s)": "Image Processing, Web Engineering & Technology",
+        "Email ID": "achaliya.pncoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:achaliya.pncoe@snjb.org",
+        "Website": "https://paragnachaliya.in/",
+        "Profile": "https://docs.google.com/document/d/101k0I7Ingm8C3_VGonOFb_2GxDV4CPHQxXByRWT8gTs/edit"
+      }
+    },
+    {
+      "id": "14-dr-a-j-shakadwipi",
+      "name": "Dr. A. J. Shakadwipi",
+      "publishedName": "Dr. A. J. SHAKADWIPI",
+      "role": "Assistant Professor",
+      "degree": "BE, M.E., (CSE), PhD (CSE)",
+      "qualification": "BE, M.E., (CSE), PhD (CSE)",
+      "interestsText": "Data mining",
+      "interests": [
+        "Data mining"
+      ],
+      "email": "shakadwipi.ajcoe@snjb.org",
+      "image": "/images/directory/14-dr-a-j-shakadwipi.webp",
+      "group": "faculty",
+      "blog": "https://amolshakadwipi.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1WmO_nROZxXsZwMWCVUOekH1VX7x9UtT6/edit?usp=sharing&ouid=118293894331354634768&rtpof=true&sd=true",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/shakadwipi_sir.jpg",
+      "fields": {
+        "Name": "Dr. A. J. SHAKADWIPI",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M.E., (CSE), PhD (CSE)",
+        "Area of Interest(s)": "Data mining",
+        "Email ID": "shakadwipi.ajcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:shakadwipi.ajcoe@snjb.org",
+        "Website": "https://amolshakadwipi.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1WmO_nROZxXsZwMWCVUOekH1VX7x9UtT6/edit?usp=sharing&ouid=118293894331354634768&rtpof=true&sd=true"
+      }
+    },
+    {
+      "id": "15-mrs-s-v-sinha",
+      "name": "Mrs. S. V. Sinha",
+      "publishedName": "MRS. S. V. SINHA",
+      "role": "Assistant Professor",
+      "degree": "M.Tech.(IT) Pursuing PhD",
+      "qualification": "M.Tech.(IT) Pursuing PhD",
+      "interestsText": "Image Processing, Computer Networking",
+      "interests": [
+        "Image Processing",
+        "Computer Networking"
+      ],
+      "email": "sinha.svcoe@snjb.org",
+      "image": "/images/directory/15-mrs-s-v-sinha.webp",
+      "group": "faculty",
+      "blog": "https://swatisinhamyblog.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1j-7GD6dOLAgy7zf5pNBB_eBjzfSnvsN5/edit",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/sinha_mam.jpeg",
+      "fields": {
+        "Name": "MRS. S. V. SINHA",
+        "Designation": "Assistant Professor",
+        "Qualification": "M.Tech.(IT) Pursuing PhD",
+        "Area of Interest(s)": "Image Processing, Computer Networking",
+        "Email ID": "sinha.svcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:sinha.svcoe@snjb.org",
+        "Website": "https://swatisinhamyblog.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1j-7GD6dOLAgy7zf5pNBB_eBjzfSnvsN5/edit"
+      }
+    },
+    {
+      "id": "16-mrs-n-s-khairnar",
+      "name": "Mrs. N. S. Khairnar",
+      "publishedName": "MRS. N. S. KHAIRNAR",
+      "role": "Assistant Professor",
+      "degree": "M.E. (COMP), Pursuing PhD",
+      "qualification": "M.E. (COMP), Pursuing PhD",
+      "interestsText": "Data Mining",
+      "interests": [
+        "Data Mining"
+      ],
+      "email": "khairnar.nscoe@snjb.org",
+      "image": "/images/directory/16-mrs-n-s-khairnar.webp",
+      "group": "faculty",
+      "blog": "https://nilamkhairnarblog.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1MNUOnAKdCSOnYxOHaJpViYyFOewttPrf4tv-WIXcPuw/edit?usp=sharing",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/khairnar_mam.jpeg",
+      "fields": {
+        "Name": "MRS. N. S. KHAIRNAR",
+        "Designation": "Assistant Professor",
+        "Qualification": "M.E. (COMP), Pursuing PhD",
+        "Area of Interest(s)": "Data Mining",
+        "Email ID": "khairnar.nscoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:khairnar.nscoe@snjb.org",
+        "Website": "https://nilamkhairnarblog.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1MNUOnAKdCSOnYxOHaJpViYyFOewttPrf4tv-WIXcPuw/edit?usp=sharing"
+      }
+    },
+    {
+      "id": "17-mrs-y-k-desai",
+      "name": "Mrs. Y. K. Desai",
+      "publishedName": "MRS. Y. K. DESAI",
+      "role": "Assistant Professor",
+      "degree": "BE, M.E. (CSE), Pursuing PhD",
+      "qualification": "BE, M.E. (CSE), Pursuing PhD",
+      "interestsText": "Data Mining,Computer Graphics & Animation",
+      "interests": [
+        "Data Mining",
+        "Computer Graphics & Animation"
+      ],
+      "email": "desai.ykcoe@snjb.org",
+      "image": "/images/directory/17-mrs-y-k-desai.webp",
+      "group": "faculty",
+      "blog": "https://yogitakdesai.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1rjzxLZCHPwKEyexFyqy38TC_Mn-3cDR9w7YBEp0D-yk/edit?usp=sharing",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/desai_maam.jpg",
+      "fields": {
+        "Name": "MRS. Y. K. DESAI",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M.E. (CSE), Pursuing PhD",
+        "Area of Interest(s)": "Data Mining,Computer Graphics & Animation",
+        "Email ID": "desai.ykcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:desai.ykcoe@snjb.org",
+        "Website": "https://yogitakdesai.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1rjzxLZCHPwKEyexFyqy38TC_Mn-3cDR9w7YBEp0D-yk/edit?usp=sharing"
+      }
+    },
+    {
+      "id": "18-mr-s-s-wadnere",
+      "name": "Mr. S. S. Wadnere",
+      "publishedName": "MR. S. S. WADNERE",
+      "role": "Assistant Professor (Teaching to FE)",
+      "degree": "BE, ME (CSE)",
+      "qualification": "BE, ME (CSE)",
+      "interestsText": "Networking, Server Administration",
+      "interests": [
+        "Networking",
+        "Server Administration"
+      ],
+      "email": "wadnere.sscoe@snjb.org",
+      "image": "/images/directory/18-mr-s-s-wadnere.webp",
+      "group": "faculty",
+      "blog": "https://sandeepwadnere.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering-old/images/department/wadnere_sir.pdf",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/wadnere_sir.jpg",
+      "fields": {
+        "Name": "MR. S. S. WADNERE",
+        "Designation": "Assistant Professor (Teaching to FE)",
+        "Qualification": "BE, ME (CSE)",
+        "Area of Interest(s)": "Networking, Server Administration",
+        "Email ID": "wadnere.sscoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:wadnere.sscoe@snjb.org",
+        "Website": "https://sandeepwadnere.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering-old/images/department/wadnere_sir.pdf"
+      }
+    },
+    {
+      "id": "19-ms-g-h-deshmukh",
+      "name": "Ms. G.H.Deshmukh",
+      "publishedName": "Ms. G.H.DESHMUKH",
+      "role": "Assistant Professor",
+      "degree": "BE, M.E. (CSE) ,Pursuing PhD",
+      "qualification": "BE, M.E. (CSE) ,Pursuing PhD",
+      "interestsText": "Blockchain,Information Security & Data Analytics",
+      "interests": [
+        "Blockchain",
+        "Information Security & Data Analytics"
+      ],
+      "email": "deshmukh.ghcoe@snjb.org",
+      "image": "/images/directory/19-ms-g-h-deshmukh.webp",
+      "group": "faculty",
+      "blog": "https://gunjandeshmukh1011.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering-old/",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/deshmukh_mam.png",
+      "fields": {
+        "Name": "Ms. G.H.DESHMUKH",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, M.E. (CSE) ,Pursuing PhD",
+        "Area of Interest(s)": "Blockchain,Information Security & Data Analytics",
+        "Email ID": "deshmukh.ghcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:deshmukh.ghcoe@snjb.org",
+        "Website": "https://gunjandeshmukh1011.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering-old/"
+      }
+    },
+    {
+      "id": "20-ms-m-p-surse",
+      "name": "Ms. M.P. Surse",
+      "publishedName": "Ms. M.P. SURSE",
+      "role": "Assistant Professor",
+      "degree": "ME(CSE), Pursuing PhD",
+      "qualification": "ME(CSE), Pursuing PhD",
+      "interestsText": "Data Science",
+      "interests": [
+        "Data Science"
+      ],
+      "email": "surse.mpcoe@snjb.org",
+      "image": "/images/directory/20-ms-m-p-surse.webp",
+      "group": "faculty",
+      "blog": "https://monikasurse.wordpress.com/",
+      "profile": "https://www.snjb.org/engineering-old/images/department/Monika_Surse.pdf",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/surse_mam.jpeg",
+      "fields": {
+        "Name": "Ms. M.P. SURSE",
+        "Designation": "Assistant Professor",
+        "Qualification": "ME(CSE), Pursuing PhD",
+        "Area of Interest(s)": "Data Science",
+        "Email ID": "surse.mpcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:surse.mpcoe@snjb.org",
+        "Website": "https://monikasurse.wordpress.com/",
+        "Profile": "https://www.snjb.org/engineering-old/images/department/Monika_Surse.pdf"
+      }
+    },
+    {
+      "id": "21-mrs-k-a-jain",
+      "name": "Mrs. K. A.Jain",
+      "publishedName": "MRS. K. A.JAIN",
+      "role": "Assistant professor",
+      "degree": "B.E.(Computer Engineering)M.E. (Computer Science and Engineering)",
+      "qualification": "B.E.(Computer Engineering)M.E. (Computer Science and Engineering)",
+      "interestsText": "Data Structures, CG, DBMS",
+      "interests": [
+        "Data Structures",
+        "CG",
+        "DBMS"
+      ],
+      "email": "jain.kacoe@snjb.org",
+      "image": "/images/directory/21-mrs-k-a-jain.webp",
+      "group": "faculty",
+      "blog": "https://khushbujain4.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1pp69RouayltbHHMBnrUg7_zX0-P1LgRs/edit?usp=drivesdk&ouid=101194637046872775191&rtpof=true&sd=true",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/KAJ%20Comp.jpeg",
+      "fields": {
+        "Name": "MRS. K. A.JAIN",
+        "Designation": "Assistant professor",
+        "Qualification": "B.E.(Computer Engineering)M.E. (Computer Science and Engineering)",
+        "Area of Interest(s)": "Data Structures, CG, DBMS",
+        "Email ID": "jain.kacoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:jain.kacoe@snjb.org",
+        "Website": "https://khushbujain4.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1pp69RouayltbHHMBnrUg7_zX0-P1LgRs/edit?usp=drivesdk&ouid=101194637046872775191&rtpof=true&sd=true"
+      }
+    },
+    {
+      "id": "22-mr-y-s-patil",
+      "name": "Mr. Y. S. Patil",
+      "publishedName": "MR. Y. S. PATIL",
+      "role": "Assistant Professor",
+      "degree": "BE IT, M.Tech (Engineering Design) by Research, PhD (Pursuing)",
+      "qualification": "BE IT, M.Tech (Engineering Design) by Research, PhD (Pursuing)",
+      "interestsText": "IoT, Data Science, AI/ML, Earth & Climate Sciences, Science Diplomacy, Sustainable Development",
+      "interests": [
+        "IoT",
+        "Data Science",
+        "AI/ML",
+        "Earth & Climate Sciences",
+        "Science Diplomacy",
+        "Sustainable Development"
+      ],
+      "email": "patil.yscoe@snjb.org",
+      "image": "/images/directory/22-mr-y-s-patil.webp",
+      "group": "faculty",
+      "blog": "https://yashrajpatil97.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/1z9_I60gtxfFeFJOCeuKwUWh1SOop-IVSg112B9UlNqY/edit?usp=sharing",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/YSP.jpeg",
+      "fields": {
+        "Name": "MR. Y. S. PATIL",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE IT, M.Tech (Engineering Design) by Research, PhD (Pursuing)",
+        "Area of Interest(s)": "IoT, Data Science, AI/ML, Earth & Climate Sciences, Science Diplomacy, Sustainable Development",
+        "Email ID": "patil.yscoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:patil.yscoe@snjb.org",
+        "Website": "https://yashrajpatil97.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/1z9_I60gtxfFeFJOCeuKwUWh1SOop-IVSg112B9UlNqY/edit?usp=sharing"
+      }
+    },
+    {
+      "id": "23-mr-ramesh-pandharinath-daund",
+      "name": "Mr. Ramesh Pandharinath Daund",
+      "publishedName": "Mr. Ramesh Pandharinath Daund",
+      "role": "Assistant Professor",
+      "degree": "BE,ME(CN), PhD (Pursuing)",
+      "qualification": "BE,ME(CN), PhD (Pursuing)",
+      "interestsText": "Computer Networks, Networks security , Cloud Computing",
+      "interests": [
+        "Computer Networks",
+        "Networks security",
+        "Cloud Computing"
+      ],
+      "email": "daund.rpcoe@snjb.org",
+      "image": "/images/directory/23-mr-ramesh-pandharinath-daund.webp",
+      "group": "faculty",
+      "blog": "https://rameshdaund.in",
+      "profile": "https://docs.google.com/document/d/1ua5ff-zcPs6B-pPXPDmehuv3pw1Gqdyt/edit?usp=sharing&ouid=112016992149982491715&rtpof=true&sd=true",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/RPD.jpeg",
+      "fields": {
+        "Name": "Mr. Ramesh Pandharinath Daund",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE,ME(CN), PhD (Pursuing)",
+        "Area of Interest(s)": "Computer Networks, Networks security , Cloud Computing",
+        "Email ID": "daund.rpcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:daund.rpcoe@snjb.org",
+        "Website": "https://rameshdaund.in",
+        "Profile": "https://docs.google.com/document/d/1ua5ff-zcPs6B-pPXPDmehuv3pw1Gqdyt/edit?usp=sharing&ouid=112016992149982491715&rtpof=true&sd=true"
+      }
+    },
+    {
+      "id": "24-ms-k-a-chandan",
+      "name": "Ms. K. A. Chandan",
+      "publishedName": "MS. K. A. CHANDAN",
+      "role": "Assistant Professor",
+      "degree": "BE(Computer)",
+      "qualification": "BE(Computer)",
+      "interestsText": "IoT, Machine Learning",
+      "interests": [
+        "IoT",
+        "Machine Learning"
+      ],
+      "email": "chandan.kacoe@snjb.org",
+      "image": "/images/directory/24-ms-k-a-chandan.webp",
+      "group": "faculty",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/chandan_mam.jpeg",
+      "fields": {
+        "Name": "MS. K. A. CHANDAN",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE(Computer)",
+        "Area of Interest(s)": "IoT, Machine Learning",
+        "Email ID": "chandan.kacoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:chandan.kacoe@snjb.org"
+      }
+    },
+    {
+      "id": "25-dr-k-m-salve",
+      "name": "Dr. K. M. Salve",
+      "publishedName": "Dr. K. M. Salve",
+      "role": "Assistant Professor",
+      "degree": "BE, MTech (CSE), PhD (CSE)",
+      "qualification": "BE, MTech (CSE), PhD (CSE)",
+      "interestsText": "Web Development, Software Engineering, Data Mining",
+      "interests": [
+        "Web Development",
+        "Software Engineering",
+        "Data Mining"
+      ],
+      "email": "sugarwar.kscoe@snjb.org",
+      "image": "/images/directory/25-dr-k-m-salve.webp",
+      "group": "faculty",
+      "blog": "https://kalyanisugarwar.wordpress.com/",
+      "profile": "https://docs.google.com/document/d/11sbMj29bfSIN8zC3afGNuzXA6gDYS7ZGgsT-ewpSaKY/edit?usp=sharing",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/Kalyani.jpeg",
+      "fields": {
+        "Name": "Dr. K. M. Salve",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE, MTech (CSE), PhD (CSE)",
+        "Area of Interest(s)": "Web Development, Software Engineering, Data Mining",
+        "Email ID": "sugarwar.kscoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:sugarwar.kscoe@snjb.org",
+        "Website": "https://kalyanisugarwar.wordpress.com/",
+        "Profile": "https://docs.google.com/document/d/11sbMj29bfSIN8zC3afGNuzXA6gDYS7ZGgsT-ewpSaKY/edit?usp=sharing"
+      }
+    },
+    {
+      "id": "26-ms-s-r-jondhale",
+      "name": "Ms. S. R. Jondhale",
+      "publishedName": "MS. S. R. JONDHALE",
+      "role": "Assistant Professor",
+      "degree": "BE(IT), M. Tech (Comp)",
+      "qualification": "BE(IT), M. Tech (Comp)",
+      "interestsText": "",
+      "interests": [],
+      "email": "jondhale.srcoe@snjb.org",
+      "image": "/images/directory/26-ms-s-r-jondhale.webp",
+      "group": "faculty",
+      "blog": "https://swatigunjal.wordpress.com",
+      "profile": "https://docs.google.com/document/d/1ggn8HzrAF8Rv2XYeTHgASlVj0uc1UIPxnR--19YM4lY/edit?usp=sharing",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/jondhle_mam.png",
+      "fields": {
+        "Name": "MS. S. R. JONDHALE",
+        "Designation": "Assistant Professor",
+        "Qualification": "BE(IT), M. Tech (Comp)",
+        "Email ID": "jondhale.srcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:jondhale.srcoe@snjb.org",
+        "Website": "https://swatigunjal.wordpress.com",
+        "Profile": "https://docs.google.com/document/d/1ggn8HzrAF8Rv2XYeTHgASlVj0uc1UIPxnR--19YM4lY/edit?usp=sharing"
+      }
+    },
+    {
+      "id": "27-mrs-r-p-dungarwal",
+      "name": "Mrs. R.P.Dungarwal",
+      "publishedName": "Mrs. R.P.DUNGARWAL",
+      "role": "Assistant Professor",
+      "degree": "B.E.(Comp), M.Tech (Comp)",
+      "qualification": "B.E.(Comp), M.Tech (Comp)",
+      "interestsText": "Machine Learning.",
+      "interests": [
+        "Machine Learning."
+      ],
+      "email": "dungarwal.rpcoe@snjb.org",
+      "image": "/images/directory/27-mrs-r-p-dungarwal.webp",
+      "group": "faculty",
+      "blog": "https://rupalidungarwal1.wordpress.com/about/",
+      "profile": "https://docs.google.com/document/d/1EKDsxzFQ1FJUnnyggxJJybUAqjJZYtpqcjkp6zIQeD0/edit?tab=t.0",
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/dungarwal_mam.jpeg",
+      "fields": {
+        "Name": "Mrs. R.P.DUNGARWAL",
+        "Designation": "Assistant Professor",
+        "Qualification": "B.E.(Comp), M.Tech (Comp)",
+        "Area of Interest(s)": "Machine Learning.",
+        "Email ID": "dungarwal.rpcoe@snjb.org",
+        "Website": "View Blog",
+        "Profile": "View Profile"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:dungarwal.rpcoe@snjb.org",
+        "Website": "https://rupalidungarwal1.wordpress.com/about/",
+        "Profile": "https://docs.google.com/document/d/1EKDsxzFQ1FJUnnyggxJJybUAqjJZYtpqcjkp6zIQeD0/edit?tab=t.0"
+      }
+    },
+    {
+      "id": "28-mr-p-r-jadhav",
+      "name": "Mr. P. R. Jadhav",
+      "publishedName": "MR. P. R. JADHAV",
+      "role": "Technical Assistant",
+      "degree": "BE IT",
+      "qualification": "BE IT",
+      "interestsText": "Networking",
+      "interests": [
+        "Networking"
+      ],
+      "email": "jadhav.prcoe@snjb.org",
+      "image": "/images/directory/28-mr-p-r-jadhav.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/jadhav_sir.png",
+      "fields": {
+        "Name": "MR. P. R. JADHAV",
+        "Designation": "Technical Assistant",
+        "Qualification": "BE IT",
+        "Area of Interest(s)": "Networking",
+        "Email ID": "jadhav.prcoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:jadhav.prcoe@snjb.org"
+      }
+    },
+    {
+      "id": "29-mr-s-s-patil",
+      "name": "Mr. S.S. Patil",
+      "publishedName": "MR. S.S. PATIL",
+      "role": "System Analyst",
+      "degree": "M.C.A",
+      "qualification": "M.C.A",
+      "interestsText": "",
+      "interests": [],
+      "email": "patil.sscoe@snjb.org",
+      "image": "/images/directory/29-mr-s-s-patil.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/patil_sir.png",
+      "fields": {
+        "Name": "MR. S.S. PATIL",
+        "Designation": "System Analyst",
+        "Qualification": "M.C.A",
+        "Email ID": "patil.sscoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:patil.sscoe@snjb.org"
+      }
+    },
+    {
+      "id": "30-mr-s-r-botwe",
+      "name": "Mr. S.R. Botwe",
+      "publishedName": "MR. S.R. BOTWE",
+      "role": "Technical Assistant",
+      "degree": "DCT",
+      "qualification": "DCT",
+      "interestsText": "",
+      "interests": [],
+      "email": "botwe.srcoe@snjb.org",
+      "image": "/images/directory/30-mr-s-r-botwe.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/botwe_sir.jpeg",
+      "fields": {
+        "Name": "MR. S.R. BOTWE",
+        "Designation": "Technical Assistant",
+        "Qualification": "DCT",
+        "Email ID": "botwe.srcoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:botwe.srcoe@snjb.org"
+      }
+    },
+    {
+      "id": "31-mr-n-v-shinde",
+      "name": "Mr. N. V. Shinde",
+      "publishedName": "MR. N. V. SHINDE",
+      "role": "Jr. Asst Clerk",
+      "degree": "B.com",
+      "qualification": "B.com",
+      "interestsText": "",
+      "interests": [],
+      "email": "shinde.nvcoe@snjb.org",
+      "image": "/images/directory/31-mr-n-v-shinde.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/shinde_sir.jpeg",
+      "fields": {
+        "Name": "MR. N. V. SHINDE",
+        "Designation": "Jr. Asst Clerk",
+        "Qualification": "B.com",
+        "Email ID": "shinde.nvcoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:shinde.nvcoe@snjb.org"
+      }
+    },
+    {
+      "id": "32-mr-m-n-wagh",
+      "name": "Mr. M. N. Wagh",
+      "publishedName": "Mr. M. N. WAGH",
+      "role": "Technical Assistant",
+      "degree": "B.C.S.",
+      "qualification": "B.C.S.",
+      "interestsText": "",
+      "interests": [],
+      "email": "wagh.mncoe@snjb.org",
+      "image": "/images/directory/32-mr-m-n-wagh.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/mn_wagh_sir.jpeg",
+      "fields": {
+        "Name": "Mr. M. N. WAGH",
+        "Designation": "Technical Assistant",
+        "Qualification": "B.C.S.",
+        "Email ID": "wagh.mncoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:wagh.mncoe@snjb.org"
+      }
+    },
+    {
+      "id": "33-mr-m-s-gangurde",
+      "name": "Mr. M. S. Gangurde",
+      "publishedName": "Mr. M. S. Gangurde",
+      "role": "Technical Assistant",
+      "degree": "BE Computer",
+      "qualification": "BE Computer",
+      "interestsText": "",
+      "interests": [],
+      "email": "gangurde.mscoe@snjb.org",
+      "image": "/images/directory/33-mr-m-s-gangurde.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/MMGangurde.jpeg",
+      "fields": {
+        "Name": "Mr. M. S. Gangurde",
+        "Designation": "Technical Assistant",
+        "Qualification": "BE Computer",
+        "Email ID": "gangurde.mscoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:gangurde.mscoe@snjb.org"
+      }
+    },
+    {
+      "id": "34-mr-t-g-gaikwad",
+      "name": "Mr. T. G. Gaikwad",
+      "publishedName": "Mr. T. G. Gaikwad",
+      "role": "Technical Assistant",
+      "degree": "BE Computer",
+      "qualification": "BE Computer",
+      "interestsText": "",
+      "interests": [],
+      "email": "gaikwad.tgcoe@snjb.org",
+      "image": "/images/directory/34-mr-t-g-gaikwad.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/Tejas_Gaikwad.jpeg",
+      "fields": {
+        "Name": "Mr. T. G. Gaikwad",
+        "Designation": "Technical Assistant",
+        "Qualification": "BE Computer",
+        "Email ID": "gaikwad.tgcoe@snjb.org"
+      },
+      "sourceLinks": {
+        "Email ID": "mailto:gaikwad.tgcoe@snjb.org"
+      }
+    },
+    {
+      "id": "35-mr-pradip-bagul",
+      "name": "Mr. Pradip Bagul",
+      "publishedName": "Mr. Pradip Bagul",
+      "role": "Peon",
+      "degree": "HSC",
+      "qualification": "HSC",
+      "interestsText": "",
+      "interests": [],
+      "email": "",
+      "image": "/images/directory/35-mr-pradip-bagul.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/bagul_dada.png",
+      "fields": {
+        "Name": "Mr. Pradip Bagul",
+        "Designation": "Peon",
+        "Qualification": "HSC"
+      },
+      "sourceLinks": {}
+    },
+    {
+      "id": "36-mr-nilesh-pawar",
+      "name": "Mr. Nilesh Pawar",
+      "publishedName": "Mr. Nilesh Pawar",
+      "role": "Peon",
+      "degree": "",
+      "qualification": "",
+      "interestsText": "",
+      "interests": [],
+      "email": "",
+      "image": "/images/directory/36-mr-nilesh-pawar.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/Comp%20NVP.jpeg",
+      "fields": {
+        "Name": "Mr. Nilesh Pawar",
+        "Designation": "Peon"
+      },
+      "sourceLinks": {}
+    },
+    {
+      "id": "37-mr-rakesh-sale",
+      "name": "Mr. Rakesh Sale",
+      "publishedName": "Mr. Rakesh Sale",
+      "role": "Peon",
+      "degree": "HSC",
+      "qualification": "HSC",
+      "interestsText": "",
+      "interests": [],
+      "email": "",
+      "image": "/images/directory/37-mr-rakesh-sale.webp",
+      "group": "staff",
+      "blog": null,
+      "profile": null,
+      "source": "https://snjb.org/engineering/computer-engineering/people-computer",
+      "imageSource": "https://snjb.org/engineering/uploads/staff/Rakesh_Sale.png",
+      "fields": {
+        "Name": "Mr. Rakesh Sale",
+        "Designation": "Peon",
+        "Qualification": "HSC"
+      },
+      "sourceLinks": {}
+    }
+  ]
+}

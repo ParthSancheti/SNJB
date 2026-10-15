@@ -1,0 +1,22 @@
+{
+  "id": "homepage-73666d5a62a6",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/tcs_logo_1200_020621101143.avif",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "tcs",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/tcs_logo_1200_020621101143-73666d5a62.avif",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 12441,
+  "sha256": "49b36868e42b58f36b63c9150cdf2b7e984b56a88f0846297ed40abfd4315c9e",
+  "contentType": "image/avif",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/tcs_logo_1200_020621101143.avif",
+  "dimensions": [
+    1200,
+    675
+  ]
+}

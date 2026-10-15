@@ -1,0 +1,39 @@
+{
+  "cssSource": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&family=Manrope:wght@400..700&family=Noto+Sans+Devanagari:wght@400..700&display=swap",
+  "retrievedOn": "2026-10-14",
+  "license": "SIL Open Font License 1.1; family license files included",
+  "exports": [
+    {
+      "family": "DM Sans",
+      "subset": "latin",
+      "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2",
+      "path": "/fonts/dm-sans-latin.woff2",
+      "bytes": 36932,
+      "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+    },
+    {
+      "family": "Manrope",
+      "subset": "latin",
+      "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "path": "/fonts/manrope-latin.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "family": "Noto Sans Devanagari",
+      "subset": "devanagari",
+      "source": "https://fonts.gstatic.com/s/notosansdevanagari/v30/TuG7UUFzXI5FBtUq5a8bjKYTZjtRU6Sgv3NaV_SNmI0b8QQCQmHN5TV_9qo.woff2",
+      "path": "/fonts/noto-sans-devanagari-devanagari.woff2",
+      "bytes": 121192,
+      "sha256": "3b3cae4d2600cb502286577fcfbc7f0caa05d9bb3c28d6699aeb56302d35e730"
+    },
+    {
+      "family": "Noto Sans Devanagari",
+      "subset": "latin",
+      "source": "https://fonts.gstatic.com/s/notosansdevanagari/v30/TuG7UUFzXI5FBtUq5a8bjKYTZjtRU6Sgv3NaV_SNmI0b8QQCQmHN5DV_.woff2",
+      "path": "/fonts/noto-sans-devanagari-latin.woff2",
+      "bytes": 25384,
+      "sha256": "531d2365a3dbd2daccb336430f40be4af31203a7d3f20c12513dca3012ad572b"
+    }
+  ]
+}

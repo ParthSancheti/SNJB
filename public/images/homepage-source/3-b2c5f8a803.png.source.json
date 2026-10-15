@@ -1,0 +1,22 @@
+{
+  "id": "homepage-b2c5f8a803f4",
+  "sourceUrl": "https://snjb.org/engineering/uploads/recruiter/3.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Hive Minds",
+  "roles": [
+    "recruiter",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/3-b2c5f8a803.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 11051,
+  "sha256": "b70fef6720a15c36f7c73e17d966877b01d2612f3059faca39aef579a1b1793c",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/recruiter/3.png",
+  "dimensions": [
+    412,
+    122
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "homepage-712b2d179a03",
+  "sourceUrl": "https://snjb.org/engineering/uploads/slider/item/02.jpg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "Campus",
+  "roles": [
+    "homepage-slide",
+    "body-image"
+  ],
+  "localPath": "/images/homepage-source/02-712b2d179a.jpg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 506335,
+  "sha256": "8c01db6e143e537c5e7d7444efd3b4d892de480f587f8b81dac1776d095f4963",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/uploads/slider/item/02.jpg",
+  "dimensions": [
+    1349,
+    533
+  ]
+}

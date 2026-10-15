@@ -1,0 +1,75 @@
+{
+  "id": "snjb-emblem-only",
+  "source": "User-supplied D:/SNJB/LOGO.png",
+  "sourceSha256": "78b4b384443b9160e54eb79b21a7f81a81cceb2c14fe72bfddde8df812f884a1",
+  "sourceDimensions": [
+    575,
+    482
+  ],
+  "processedAt": "2026-10-13T17:54:32.454352+00:00",
+  "processed": true,
+  "crop": {
+    "boundsLeftTopRightBottom": [
+      200,
+      88,
+      385,
+      300
+    ],
+    "reason": "Keep the original book/flame emblem and omit the printed SNJB wordmark below it."
+  },
+  "holder": {
+    "shape": "circle",
+    "navyRgbFromSource": [
+      33,
+      45,
+      90
+    ],
+    "minimumContentPaddingFractionPerSide": 0.12,
+    "transparentCorners": true
+  },
+  "processing": [
+    "Wordmark-free emblem crop from the supplied original",
+    "Original artwork and colours preserved",
+    "12% minimum padding inside a source-navy circular holder",
+    "4x supersampling and Lanczos resampling for smooth edges",
+    "Lossless WebP and optimized PNG exports"
+  ],
+  "generativeEditing": false,
+  "emblemRedrawn": false,
+  "sourceFileModified": false,
+  "outputs": [
+    {
+      "path": "/images/emblem.webp",
+      "dimensions": [
+        256,
+        256
+      ],
+      "bytes": 31448,
+      "sha256": "2843ca7d25e32c4c060f5bcce6f4be3e475086d88d871dabb78861c1dfcc86d1",
+      "format": "WEBP",
+      "transparentCorners": true
+    },
+    {
+      "path": "/favicon.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "bytes": 6498,
+      "sha256": "0d50aed30eb110199bace83ab83f5c7aa0a587dc283fded5fd72398556241eb1",
+      "format": "PNG",
+      "transparentCorners": true
+    },
+    {
+      "path": "/apple-touch-icon.png",
+      "dimensions": [
+        180,
+        180
+      ],
+      "bytes": 28966,
+      "sha256": "e6a8f8437bb78c434910cbbe259afabc535c278dc807add718d319fd1b5c5b3f",
+      "format": "PNG",
+      "transparentCorners": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "homepage-89ff5d881f88",
+  "sourceUrl": "https://snjb.org/engineering/assets/web/images/bg/world-map.png",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "",
+  "roles": [
+    "decorative-background"
+  ],
+  "localPath": "/images/homepage-source/world-map-89ff5d881f.png",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 11333,
+  "sha256": "7d40608d491e1a4f4791ce2db0532aa512b15cc2641bbd98e22d8805ca322a53",
+  "contentType": "image/png",
+  "resolvedSourceUrl": "https://snjb.org/engineering/assets/web/images/bg/world-map.png",
+  "dimensions": [
+    831,
+    469
+  ]
+}

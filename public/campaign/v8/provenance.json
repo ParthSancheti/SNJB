@@ -1,0 +1,44 @@
+{
+  "tool": "Built-in GPT Image",
+  "classification": "AI-treated campaign photography; originals remain the documentary source",
+  "reviewedOn": "2026-10-14",
+  "limitations": "Generative finishing can reinterpret fine scene details. Source text, people identities, approvals and equipment records remain authoritative in the preserved originals.",
+  "assets": [
+    {
+      "source": "/images/orientation.webp",
+      "originalSourceSha256": "6daf4650d87ce96dd9155bd7cba51df5839b6f239179b7648c55f9fb3ce527c7",
+      "generatedOriginal": "/campaign/v8/orientation-source.png",
+      "delivery": "/campaign/v8/orientation.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 265296,
+      "sha256": "c1e4ff09408a1278f210221e08329189226bb331a87a3ddab3763518f6582705"
+    },
+    {
+      "source": "/images/campus-life.webp",
+      "originalSourceSha256": "8531065c457ce8572c18bf504bda11c243e9dc8127941a536339bb4c59a2a55a",
+      "generatedOriginal": "/campaign/v8/campus-life-source.png",
+      "delivery": "/campaign/v8/campus-life.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 534906,
+      "sha256": "739d3206c685e6fe33aa6dadc7ca893456866e05e5337463001e2ffd60e2f52c"
+    },
+    {
+      "source": "/images/computer-lab.webp",
+      "originalSourceSha256": "dd82432d2eefefae8fb27da90353d6e4b558267e73bbf55e4129da3ac357401c",
+      "generatedOriginal": "/campaign/v8/computer-lab-source.png",
+      "delivery": "/campaign/v8/computer-lab.webp",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 227116,
+      "sha256": "53fabcc01c8e978f3797d67d35a97e521a6a64dceea74f59c97c5890983c527d"
+    }
+  ]
+}

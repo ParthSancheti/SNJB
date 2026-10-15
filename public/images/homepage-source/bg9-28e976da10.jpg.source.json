@@ -1,0 +1,21 @@
+{
+  "id": "homepage-28e976da108a",
+  "sourceUrl": "https://snjb.org/engineering/assets/web/images/bg/bg9.jpg",
+  "sourcePage": "https://snjb.org/engineering/",
+  "originalAlt": "",
+  "roles": [
+    "decorative-background"
+  ],
+  "localPath": "/images/homepage-source/bg9-28e976da10.jpg",
+  "capturedAt": "2026-10-14T02:53:31+00:00",
+  "transformations": "none; original downloaded bytes",
+  "downloadStatus": "saved",
+  "byteLength": 250399,
+  "sha256": "3565b2639019b5e27da59a667b98ce84fda5bbe24ff8858ca25595be3592da3e",
+  "contentType": "image/jpeg",
+  "resolvedSourceUrl": "https://snjb.org/engineering/assets/web/images/bg/bg9.jpg",
+  "dimensions": [
+    1920,
+    1280
+  ]
+}
