@@ -114,7 +114,7 @@ export default function ComputerEngineering({ onAsk, navigate }) {
   }
 
   return <div className="department-page department-v8">
-    <CinematicHero navigate={navigate} title="Computer Engineering" eyebrow="SNJB / B.Tech · NBA Accredited" description="Study software, systems and connected technology through practical laboratory work and a batch-specific autonomous curriculum." poster="/campaign/learning-desktop.webp" posterMobile="/campaign/learning-phone.webp" posterAlt="SNJB Computer Science Laboratory" actions={[{ label: 'Curriculum', href: '#dept-curriculum' }, { label: 'Laboratories', href: '#dept-labs' }]} id="dept-overview" video={false} mediaCaption="SNJB Computer Engineering · Neminagar, Chandwad" />
+    <CinematicHero navigate={navigate} title="Computer Engineering" eyebrow="SNJB / B.Tech · NBA Accredited" description="Study software, systems and connected technology through practical laboratory work and a batch-specific autonomous curriculum." poster="/campaign/learning-desktop.webp" posterMobile="/campaign/learning-phone.webp" posterAlt="AI-composed illustration based on an SNJB Computer Science laboratory photograph" actions={[{ label: 'Curriculum', href: '#dept-curriculum' }, { label: 'Laboratories', href: '#dept-labs' }]} id="dept-overview" video={false} mediaCaption="AI-composed illustration · based on an SNJB laboratory photograph" />
     <section className="dept-facts-section" aria-label="Computer Engineering programme overview"><div className="container">
         <nav className="dept-breadcrumb" aria-label="Breadcrumb"><a href="/" onClick={goHome}>Engineering</a><span aria-hidden="true">/</span><span>Computer Engineering</span></nav>
         <div className="dept-programme-facts" aria-label="Programme facts">

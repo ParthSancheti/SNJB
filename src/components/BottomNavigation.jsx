@@ -48,7 +48,7 @@ export default function BottomNavigation({ pageKey, navigate, hidden }) {
 
   return (
     <AnimatePresence>
-      {!hidden && !covered && (
+      {mapPageToTab(pageKey) && !hidden && !covered && (
         <motion.nav
           className="bottom-navigation"
           aria-label="Primary pages"

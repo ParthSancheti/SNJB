@@ -52,7 +52,7 @@ const branches = [
   ['Artificial Intelligence & Data Science', 'Machine learning, analytics and intelligent systems.', '/ai-data-science', 'data', '158 seats · Autonomous B.Tech'],
   ['Civil Engineering', 'Structures, infrastructure and built environment · NBA Accredited.', '/civil-engineering', 'civil', '63 seats · UG & M.Tech'],
   ['Electronics & Telecommunication', 'Embedded hardware, VLSI and communication · NBA Accredited.', '/electronics-telecommunication', 'electronics', '63 seats · UG & M.Tech'],
-  ['Mechanical Engineering', 'Design, thermal systems, robotics and CAD/CAM · NBA Accredited.', '/mechanical-engineering', 'mechanical', '95 seats · 3D Kinematics'],
+  ['Mechanical Engineering', 'Design, thermal systems, robotics and CAD/CAM · NBA Accredited.', '/mechanical-engineering', 'mechanical', '95 seats · B.Tech'],
   ['First-Year Engineering', 'Applied sciences, engineering mathematics and induction foundation.', '/first-year-engineering', 'science', 'Common Year 1 · All branches'],
 ];
 
@@ -131,7 +131,7 @@ const campusServices = [
 const routes = {
   first: {
     title: 'First-year B.Tech',
-    text: 'Check current eligibility, DTE Code 05173 seat distribution, required documents and CAP admission schedule.',
+    text: 'Check current eligibility, DTE institute code 05173 seat distribution, required documents and CAP admission schedule.',
     href: `${official}/admissions/fy-btech`,
   },
   direct: {
@@ -149,11 +149,11 @@ const routes = {
 const faqs = [
   [
     'Which engineering and management programmes can I explore right here?',
-    'All five undergraduate B.Tech branches (Computer, AI & Data Science, Civil, E&TC, Mechanical), First-Year Engineering and the NBA-accredited MBA programme open directly inside this site with verified intake, placement stats and subpage directories.',
+    'All five undergraduate B.Tech branches (Computer, AI & Data Science, Civil, E&TC, Mechanical), First-Year Engineering and the NBA-accredited MBA programme have dedicated pages linking their official department resources. Computer Engineering includes the detailed faculty, curriculum and laboratory experience.',
   ],
   [
     'Where do I check eligibility, DTE code and the admission process?',
-    'SNJB’s DTE Choice Code is 05173. Open the Admissions page (/apply) to submit an enquiry or inspect the official FY B.Tech, Direct Second Year, M.Tech, MBA and Ph.D. circulars.',
+    'SNJB’s DTE institute code is 05173. Open the Admissions page (/apply) to submit an enquiry or inspect the official FY B.Tech, Direct Second Year, M.Tech, MBA and Ph.D. circulars.',
   ],
   [
     'Where can I find FRA-approved fees and scholarships?',
@@ -473,11 +473,15 @@ export function UndergraduateIntake() {
         ))}
       </ul>
       <p className="h8-note">
-        Sanctioned intake (DTE Choice Code 05173), not current seat vacancies. Open any department above for the CAP, Minority and Institute-Level seat split.
+        AY 2026–27 capacity: 540 approved base seats + 28 TFWS seats = 568. DTE institute code 05173. Check the official admission record for category splits and current seat availability.
       </p>
       <ArrowLink href={publishedIntake.source} external>
         Official FY B.Tech intake &amp; admission details
       </ArrowLink>
+      <p className="h8-note intake-authorities">
+        Cross-check: <a href={publishedIntake.authorities.aicte} {...externalProps}>AICTE approval</a>
+        {' · '}<a href={publishedIntake.authorities.cet} {...externalProps}>Maharashtra CET seat matrix</a>
+      </p>
     </details>
   );
 }
@@ -759,7 +763,7 @@ export default function Home({ navigate, onAsk, motionEnabled = true }) {
           <div className="h8-campus-layout">
             <Reveal className="h8-campus-copy">
               <div id="about">
-                <p className="h8-place">Chandwad, Nashik · Maharashtra · DTE Code 05173</p>
+                <p className="h8-place">Chandwad, Nashik · Maharashtra · DTE institute code 05173</p>
                 <h3>
                   SNJB’s Late Sau. K. B. Jain
                   <br />
@@ -808,7 +812,7 @@ export default function Home({ navigate, onAsk, motionEnabled = true }) {
               </div>
             </Heading>
             <p className="h8-section-intro">
-              Every discipline below opens a dedicated department view with verified intake, placement records, laboratories and official subpages.
+              Choose a field to explore its official department resources. Go deeper into faculty, laboratories and curriculum in our Computer Engineering showcase.
             </p>
           </Reveal>
           {level === 'ug' ? (

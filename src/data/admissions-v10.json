@@ -1,13 +1,57 @@
 {
   "source": "https://snjb.org/engineering/admissions/fy-btech",
-  "reviewed": "2026-10-14",
+  "reviewed": "2026-10-16",
   "academicYear": "2026–27",
   "label": "Total Including TFWS",
   "rows": [
-    { "name": "AI & Data Science", "capExcludingMinority": 43, "capMinority": 77, "instituteLevel": 30, "tfws": 8, "totalIncludingTFWS": 158 },
-    { "name": "Civil Engineering", "capExcludingMinority": 23, "capMinority": 31, "instituteLevel": 6, "tfws": 3, "totalIncludingTFWS": 63 },
-    { "name": "Computer Engineering", "capExcludingMinority": 52, "capMinority": 92, "instituteLevel": 36, "tfws": 9, "totalIncludingTFWS": 189 },
-    { "name": "Electronics & Telecom", "capExcludingMinority": 17, "capMinority": 31, "instituteLevel": 12, "tfws": 3, "totalIncludingTFWS": 63 },
-    { "name": "Mechanical Engineering", "capExcludingMinority": 32, "capMinority": 46, "instituteLevel": 12, "tfws": 5, "totalIncludingTFWS": 95 }
-  ]
+    {
+      "name": "AI & Data Science",
+      "capExcludingMinority": 43,
+      "capMinority": 77,
+      "instituteLevel": 30,
+      "tfws": 8,
+      "totalIncludingTFWS": 158
+    },
+    {
+      "name": "Civil Engineering",
+      "capExcludingMinority": 23,
+      "capMinority": 31,
+      "instituteLevel": 6,
+      "tfws": 3,
+      "totalIncludingTFWS": 63
+    },
+    {
+      "name": "Computer Engineering",
+      "capExcludingMinority": 52,
+      "capMinority": 92,
+      "instituteLevel": 36,
+      "tfws": 9,
+      "totalIncludingTFWS": 189
+    },
+    {
+      "name": "Electronics & Telecom",
+      "capExcludingMinority": 17,
+      "capMinority": 31,
+      "instituteLevel": 12,
+      "tfws": 3,
+      "totalIncludingTFWS": 63
+    },
+    {
+      "name": "Mechanical Engineering",
+      "capExcludingMinority": 32,
+      "capMinority": 46,
+      "instituteLevel": 12,
+      "tfws": 5,
+      "totalIncludingTFWS": 95
+    }
+  ],
+  "instituteCode": "05173",
+  "approvedBaseTotal": 540,
+  "tfwsTotal": 28,
+  "totalIncludingTFWS": 568,
+  "authorities": {
+    "aicte": "https://snjb.org/engineering/uploads/media/2026/05/EOA_Report_2026-2027.PDF",
+    "cet": "https://fe2026.mahacet.org/StaticPages/frmInstituteSummary?InstituteCode=05173"
+  },
+  "context": "AY 2026–27 capacity, not student admissions or current vacancies. 540 AICTE base seats plus 28 CET-listed TFWS seats. Programme choice codes are distinct from institute code 05173."
 }

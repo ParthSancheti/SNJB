@@ -29,7 +29,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const routes = [
   [
     'First-year B.Tech',
-    'Start after Class 12 (MHT-CET / JEE Main). Check DTE Choice Code 05173 eligibility, documents and CAP admission schedule.',
+    'Start after Class 12 (MHT-CET / JEE Main). Check DTE institute code 05173 eligibility, documents and CAP admission schedule.',
     `${source}/admissions/fy-btech`,
     GraduationCap,
   ],
@@ -307,7 +307,7 @@ export default function VisitorPage({ kind, navigate }) {
             <span className="visitor-page-symbol">
               {campus ? <School size={16} aria-hidden="true" /> : <GraduationCap size={16} aria-hidden="true" />}
             </span>
-            {campus ? 'LIFE AT SNJB' : 'ADMISSIONS · AY 2026–27 · DTE CODE 05173'}
+            {campus ? 'LIFE AT SNJB' : 'ADMISSIONS · AY 2026–27 · DTE INSTITUTE CODE 05173'}
           </p>
           <h1>
             {campus ? (
@@ -327,7 +327,7 @@ export default function VisitorPage({ kind, navigate }) {
           <p>
             {campus
               ? 'Find your community, your everyday essentials and the stories that bring college life together.'
-              : 'Choose your study route, check verified AY 2026–27 seat intake, or connect with the SNJB Admission Cell.'}
+              : 'Choose your study route, check published AY 2026–27 seat intake, or connect with the SNJB Admission Cell.'}
           </p>
         </header>
         {campus ? (
@@ -416,7 +416,7 @@ export default function VisitorPage({ kind, navigate }) {
               <div className="visitor-section-heading">
                 <p className="h8-eyebrow">KNOW YOUR OPTIONS</p>
                 <h2 id="visitor-intake-title">Five B.Tech fields. 568 total seats.</h2>
-                <p>Published programme intake, including TFWS. Click any branch to inspect its department page.</p>
+                <p>AY 2026–27 capacity: 540 approved base seats + 28 TFWS seats. Branch links open official department resources. These are intake capacities, not live vacancies.</p>
               </div>
               <div className="visitor-published-intake">
                 <p className="visitor-intake-year">
@@ -453,6 +453,10 @@ export default function VisitorPage({ kind, navigate }) {
                   Official intake &amp; CAP admission details
                   <ArrowUpRight size={17} aria-hidden="true" />
                 </a>
+                <p className="intake-authorities">
+                  Cross-check: <a href={publishedIntake.authorities.aicte} {...external}>AICTE approval</a>
+                  {' · '}<a href={publishedIntake.authorities.cet} {...external}>Maharashtra CET seat matrix</a>
+                </p>
               </div>
             </section>
             <ResourceLinks campus={false} />

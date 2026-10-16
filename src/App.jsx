@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState, lazy, Suspense } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, lazy, Suspense } from 'react';
 import { createPortal, flushSync } from 'react-dom';
 import { MotionConfig, AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Search, ArrowUpRight, MapPin, Sparkles, ExternalLink, ChevronDown } from 'lucide-react';
@@ -8,6 +8,9 @@ import SearchDialog from './components/SearchDialog.jsx';
 import NavigationHub from './components/NavigationHub.jsx';
 import BottomNavigation from './components/BottomNavigation.jsx';
 import DesktopNavigation from './components/DesktopNavigation.jsx';
+import { ROUTE_META, ROUTE_PATHS, deploymentBase, deploymentURL } from './data/route-metadata.js';
+
+const siteURL = deploymentBase(import.meta.env.VITE_SITE_URL);
 
 const official = 'https://snjb.org/engineering';
 const ComputerEngineering = lazy(() => import('./pages/ComputerEngineering.jsx'));
@@ -25,68 +28,7 @@ const OTHER_DEPTS = new Set([
   'mba',
 ]);
 
-const ROUTE_META = {
-  home: {
-    title: 'SNJB College of Engineering, Chandwad — Autonomous Institute (SPPU)',
-    description:
-      'Explore B.Tech, M.Tech, MBA and Ph.D. programmes at SNJB’s Late Sau. Kantabai Bhavarlalji Jain College of Engineering, Chandwad (Nashik). NAAC A+ & NBA Accredited.',
-  },
-  department: {
-    title: 'Computer Engineering — SNJB College of Engineering',
-    description:
-      'Discover the NBA-accredited Computer Engineering programme at SNJB, Chandwad: autonomous curriculum by batch, 37 faculty & staff, laboratories and placement records.',
-  },
-  'ai-data-science': {
-    title: 'Artificial Intelligence & Data Science — SNJB College of Engineering',
-    description:
-      'Explore B.Tech in Artificial Intelligence & Data Science at SNJB College of Engineering, Chandwad: 158 seat intake, laboratories, placement outcomes and curriculum.',
-  },
-  'civil-engineering': {
-    title: 'Civil Engineering — SNJB College of Engineering',
-    description:
-      'Explore the NBA-accredited B.Tech & M.Tech Civil Engineering department at SNJB College of Engineering, Chandwad.',
-  },
-  'electronics-telecommunication': {
-    title: 'Electronics & Telecommunication — SNJB College of Engineering',
-    description:
-      'Explore the NBA-accredited Electronics & Telecommunication Engineering department at SNJB College of Engineering, Chandwad.',
-  },
-  'mechanical-engineering': {
-    title: 'Mechanical Engineering — SNJB College of Engineering',
-    description:
-      'Explore the NBA-accredited Mechanical Engineering department at SNJB College of Engineering, Chandwad: labs, placements and interactive 3D kinematics.',
-  },
-  'first-year-engineering': {
-    title: 'First-Year Engineering & Applied Sciences — SNJB College of Engineering',
-    description:
-      'Explore First-Year B.Tech Engineering & Applied Sciences at SNJB College of Engineering, Chandwad.',
-  },
-  mba: {
-    title: 'MBA (Master of Business Administration) — SNJB College of Engineering',
-    description:
-      'Explore the NBA-accredited autonomous MBA programme at SNJB College of Engineering, Chandwad: 81 placements in AY 2025–26, faculty and admissions.',
-  },
-  directory: {
-    title: 'Explore SNJB — Complete 333-Link Institutional Directory',
-    description:
-      'Search and browse all 333 published academic, examination, governance, NAAC/NBA/NIRF and student-service destinations at SNJB College of Engineering.',
-  },
-  campus: {
-    title: 'Campus Life & Student Services — SNJB College of Engineering',
-    description:
-      'Explore student clubs, hostels, library, sports, NSS, cultural events and 360° virtual tour at SNJB’s Jain Gurukul campus in Chandwad.',
-  },
-  apply: {
-    title: 'Admissions AY 2026–27 & Enquiry — SNJB College of Engineering',
-    description:
-      'Check FY B.Tech (DTE Code 05173), Direct Second Year, M.Tech, MBA and Ph.D. admission processes, FRA fees, scholarships and submit an admission enquiry.',
-  },
-  audit: {
-    title: 'Project ASTRA — Source & Provenance Registry · SNJB Engineering',
-    description:
-      'Verified content snapshots, SHA-256 asset hashes, placement arithmetic verification and media provenance records.',
-  },
-};
+
 
 const routeKey = (value) => {
   const clean = value.replace(/\/$/, '').toLowerCase();
@@ -145,7 +87,7 @@ function App() {
       setIsDark(dark);
       document
         .querySelector('meta[name="theme-color"]')
-        ?.setAttribute('content', dark ? '#050508' : '#f0f4f8');
+        ?.setAttribute('content', dark ? '#091b1d' : '#e9f3f2');
     };
     update();
     query.addEventListener('change', update);
@@ -199,6 +141,8 @@ function App() {
 
   const navigationTimer = useRef(null);
   const pendingNavigation = useRef(null);
+  const queuedNavigation = useRef(null);
+  const navigationSequence = useRef(0);
   const closeMenu = useCallback(() => setMenuOpen(false), []);
   const anchorCleanup = useRef(null);
 
@@ -262,7 +206,10 @@ function App() {
 
   const navigate = useCallback(
     (target, event) => {
-      if (pendingNavigation.current) return;
+      if (pendingNavigation.current) {
+        queuedNavigation.current = target;
+        return;
+      }
       anchorCleanup.current?.();
       const url = new URL(target, window.location.origin);
       if (url.origin !== window.location.origin) {
@@ -293,9 +240,10 @@ function App() {
       const x = event?.detail ? event.clientX : bounds ? bounds.x + bounds.width / 2 : innerWidth / 2;
       const y = event?.detail ? event.clientY : bounds ? bounds.y + bounds.height / 2 : innerHeight / 2;
       const scale = Math.max(400, Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) / 5 + 2);
-      commitNavigation.current = perform;
+      const id = ++navigationSequence.current;
+      commitNavigation.current = { id, perform };
       setExplosion({
-        id: performance.now(),
+        id,
         x,
         y,
         scale,
@@ -305,12 +253,20 @@ function App() {
           width: bounds?.width ?? 48,
           height: bounds?.height ?? 48,
         },
-        color: url.pathname.includes('computer') ? '#1e4a4d' : '#202d55',
+        color: url.pathname.includes('computer') ? '#1e4a4d' : '#23737a',
         phase: 'cover',
       });
     },
     [pageKey, finishNavigation, reduced]
   );
+
+  useEffect(() => {
+    if (!routeChanging && queuedNavigation.current) {
+      const target = queuedNavigation.current;
+      queuedNavigation.current = null;
+      navigate(target);
+    }
+  }, [routeChanging, navigate]);
 
   useEffect(() => {
     const press = (event) => {
@@ -326,6 +282,7 @@ function App() {
     const pop = () => {
       commitNavigation.current = null;
       pendingNavigation.current = null;
+      queuedNavigation.current = null;
       setExplosion(null);
       setRouteChanging(false);
       setPath(window.location.pathname);
@@ -358,6 +315,20 @@ function App() {
     document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description);
     document.querySelector('meta[property="og:title"]')?.setAttribute('content', meta.title);
     document.querySelector('meta[property="og:description"]')?.setAttribute('content', meta.description);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', meta.title);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', meta.description);
+    const canonical = deploymentURL(siteURL, ROUTE_PATHS[pageKey] || '/');
+    for (const [selector, tag, attr] of [['link[rel="canonical"]', 'link', 'href'], ['meta[property="og:url"]', 'meta', 'content']]) {
+      let element = document.querySelector(selector);
+      if (!canonical) { element?.remove(); continue; }
+      if (!element) {
+        element = document.createElement(tag);
+        element.setAttribute(tag === 'link' ? 'rel' : 'property', tag === 'link' ? 'canonical' : 'og:url');
+        document.head.appendChild(element);
+      }
+      element.setAttribute(attr, canonical);
+    }
+    document.querySelector('meta[name="robots"]')?.setAttribute('content', siteURL ? 'index, follow' : 'noindex, nofollow');
     const hash = window.location.hash;
     const timer =
       hash &&
@@ -449,7 +420,7 @@ function App() {
           </div>
         </header>
 
-        <main id="main-content" tabIndex={-1}>
+        <main id="main-content" tabIndex={-1} aria-busy={routeChanging}>
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               className="route-surface"
@@ -561,9 +532,11 @@ function App() {
                 onAnimationComplete={() => {
                   if (explosion.phase === 'cover') {
                     const commit = commitNavigation.current;
-                    commitNavigation.current = null;
-                    commit?.();
-                  } else setExplosion(null);
+                    if (commit?.id === explosion.id) {
+                      commitNavigation.current = null;
+                      commit.perform();
+                    }
+                  } else setExplosion((current) => current?.id === explosion.id ? null : current);
                 }}
               />
             )}
@@ -576,7 +549,7 @@ function App() {
 }
 
 function PageReady({ onReady }) {
-  useEffect(() => {
+  useLayoutEffect(() => {
     onReady();
   }, [onReady]);
   return null;
