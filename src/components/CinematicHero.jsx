@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react';
-import { ArrowUpRight, Pause, Play } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function CinematicHero({
   title,
@@ -27,7 +27,6 @@ export default function CinematicHero({
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [slow, setSlow] = useState(false);
-  const [pausedByUser, setPausedByUser] = useState(false);
   const source = mobile ? '/media/campus-mobile-v10.mp4' : '/media/campus-desktop-v10.mp4';
 
   const { scrollYProgress } = useScroll({ target: section, offset: ['start start', 'end start'] });
@@ -68,7 +67,7 @@ export default function CinematicHero({
       inView.current = Boolean(
         box && Math.min(box.bottom, innerHeight) - Math.max(box.top, 0) >= Math.min(box.height, innerHeight) * 0.18
       );
-      if (inView.current && !document.hidden && !reduced && !pausedByUser) {
+      if (inView.current && !document.hidden && !reduced) {
         element.play().catch(() => {});
       } else {
         element.pause();
@@ -91,7 +90,7 @@ export default function CinematicHero({
       element.removeEventListener('canplay', sync);
       element.pause();
     };
-  }, [enabled, failed, source, reduced, pausedByUser]);
+  }, [enabled, failed, source, reduced]);
 
   const link = (href) => (event) => {
     if (navigate && event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
@@ -185,18 +184,6 @@ export default function CinematicHero({
         </div>
       </motion.div>
       {mediaCaption && <span className="hero-v7-caption">{mediaCaption}</span>}
-      {video && enabled && ready && !failed && (
-        <button
-          type="button"
-          className="hero-video-toggle"
-          onClick={() => setPausedByUser((value) => !value)}
-          aria-pressed={pausedByUser}
-          aria-label={pausedByUser ? 'Play background campus video' : 'Pause background campus video'}
-        >
-          {pausedByUser ? <Play size={13} aria-hidden="true" /> : <Pause size={13} aria-hidden="true" />}
-          <span>{pausedByUser ? 'Play film' : 'Pause film'}</span>
-        </button>
-      )}
       {slow && !ready && !failed && (
         <span className="hero-v7-slow" role="status">
           Campus film is loading slowly

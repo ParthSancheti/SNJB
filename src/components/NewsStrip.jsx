@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
+import { ArrowUpRight, CalendarDays } from 'lucide-react';
 import { loadHomepageSummary } from '../data/homepage-source.js';
 import useAmbientAutoplay from '../hooks/useAmbientAutoplay.js';
+import EdgeCarouselControls from './EdgeCarouselControls.jsx';
 
 export default function NewsStrip({ navigate }) {
   const [data, setData] = useState(null);
   const [index, setIndex] = useState(0);
-  const [userPaused, setUserPaused] = useState(false);
   const reduced = useReducedMotion();
   const swipe = useRef(null);
 
@@ -59,7 +59,7 @@ export default function NewsStrip({ navigate }) {
   const autoplay = useAmbientAutoplay({
     onAdvance: () => setIndex((value) => (value + 1) % stories.length),
     interval: 5000,
-    enabled: stories.length > 1 && !userPaused,
+    enabled: stories.length > 1,
   });
   const move = (direction) => {
     if (!stories.length) return;
@@ -84,6 +84,7 @@ export default function NewsStrip({ navigate }) {
       data-autoplay={autoplay.playing ? 'playing' : 'paused'}
       data-slide-index={index}
       data-slide-count={stories.length}
+      data-autoplay-interval="5000"
       tabIndex={0}
       onKeyDown={(event) => {
         if (event.target === event.currentTarget && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
@@ -111,30 +112,9 @@ export default function NewsStrip({ navigate }) {
           <p className="h8-eyebrow">THE COLLEGE, IN MOTION</p>
           <h2 id="campus-news-title">Happening at SNJB.</h2>
         </div>
-        {stories.length > 1 && (
-          <div className="rail-user-controls" role="group" aria-label="Campus highlights controls">
-            <span className="rail-counter" aria-live="polite">
-              0{index + 1} / 0{stories.length}
-            </span>
-            <button type="button" onClick={() => move(-1)} aria-label="Previous campus story">
-              <ChevronLeft size={17} aria-hidden="true" />
-            </button>
-            <button
-              type="button"
-              onClick={() => setUserPaused((value) => !value)}
-              aria-pressed={userPaused}
-              aria-label={userPaused ? 'Resume story rotation' : 'Pause story rotation'}
-            >
-              {userPaused ? <Play size={14} aria-hidden="true" /> : <Pause size={14} aria-hidden="true" />}
-            </button>
-            <button type="button" onClick={() => move(1)} aria-label="Next campus story">
-              <ChevronRight size={17} aria-hidden="true" />
-            </button>
-          </div>
-        )}
       </div>
       {current ? (
-        <div className="news-v12-stage">
+        <EdgeCarouselControls className="news-v12-stage" label="campus story" onPrevious={() => move(-1)} onNext={() => move(1)} enabled={stories.length > 1}>
           <AnimatePresence mode="wait" initial={false}>
             <motion.article
               key={index}
@@ -168,7 +148,7 @@ export default function NewsStrip({ navigate }) {
               </span>
             </motion.article>
           </AnimatePresence>
-        </div>
+        </EdgeCarouselControls>
       ) : (
         <div className="news-v12-fallback">
           <a href="https://snjb.org/engineering/" target="_blank" rel="noreferrer">
@@ -177,7 +157,6 @@ export default function NewsStrip({ navigate }) {
           </a>
         </div>
       )}
-      {stories.length > 1 && <span className="ambient-slide-progress" key={index} aria-hidden="true" />}
     </section>
   );
 }

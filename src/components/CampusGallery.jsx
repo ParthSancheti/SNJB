@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import { AnimatePresence, motion, useIsPresent, useReducedMotion } from 'motion/react';
-import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import { Photo } from './ui.jsx';
 import useAmbientAutoplay from '../hooks/useAmbientAutoplay.js';
+import EdgeCarouselControls from './EdgeCarouselControls.jsx';
 
 const items = [
   ['/images/orientation.webp', 'SNJB auditorium orientation and felicitation ceremony'],
@@ -29,11 +29,10 @@ function CampusPhotograph({ src, alt, direction, reduced, onInspect }) {
 
 export default function CampusGallery({ onInspect }) {
   const [index, setIndex] = useState(0);
-  const [userPaused, setUserPaused] = useState(false);
   const swipe = useRef(null);
   const reduced = useReducedMotion();
   const move = (direction) => setIndex((value) => (value + direction + items.length) % items.length);
-  const autoplay = useAmbientAutoplay({ onAdvance: () => move(1), interval: 5000, enabled: !userPaused });
+  const autoplay = useAmbientAutoplay({ onAdvance: () => move(1), interval: 3000 });
   const manualMove = (direction) => {
     autoplay.restart();
     move(direction);
@@ -49,6 +48,7 @@ export default function CampusGallery({ onInspect }) {
       data-autoplay={autoplay.playing ? 'playing' : 'paused'}
       data-slide-index={index}
       data-slide-count={items.length}
+      data-autoplay-interval="3000"
       tabIndex={0}
       onKeyDown={(event) => {
         if (event.target === event.currentTarget && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
@@ -57,65 +57,45 @@ export default function CampusGallery({ onInspect }) {
         }
       }}
     >
-      <div
-        className="campus-v12-columns"
-        onTouchStart={(event) => {
-          swipe.current = [event.touches[0].clientX, event.touches[0].clientY];
-        }}
-        onTouchEnd={(event) => {
-          if (!swipe.current) return;
-          const [x, y] = swipe.current;
-          const deltaX = event.changedTouches[0].clientX - x;
-          const deltaY = event.changedTouches[0].clientY - y;
-          if (Math.abs(deltaX) > 65 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
-            manualMove(deltaX < 0 ? 1 : -1);
-          }
-          swipe.current = null;
-        }}
-        onTouchCancel={() => {
-          swipe.current = null;
-        }}
-      >
-        {[1, -1].map((direction, column) => {
-          const [src, alt] = items[(index + column) % items.length];
-          return (
-            <div className="campus-v12-window" key={column}>
-              <AnimatePresence initial={false}>
-                <CampusPhotograph
-                  key={src}
-                  src={src}
-                  alt={alt}
-                  direction={direction}
-                  reduced={reduced}
-                  onInspect={onInspect}
-                />
-              </AnimatePresence>
-            </div>
-          );
-        })}
-      </div>
-      <div className="campus-gallery-footer">
-        <div className="rail-user-controls" role="group" aria-label="Campus gallery controls">
-          <span className="rail-counter" aria-live="polite">
-            {index + 1} / {items.length}
-          </span>
-          <button type="button" onClick={() => manualMove(-1)} aria-label="Previous campus photographs">
-            <ChevronLeft size={16} aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            onClick={() => setUserPaused((value) => !value)}
-            aria-pressed={userPaused}
-            aria-label={userPaused ? 'Resume gallery rotation' : 'Pause gallery rotation'}
-          >
-            {userPaused ? <Play size={13} aria-hidden="true" /> : <Pause size={13} aria-hidden="true" />}
-          </button>
-          <button type="button" onClick={() => manualMove(1)} aria-label="Next campus photographs">
-            <ChevronRight size={16} aria-hidden="true" />
-          </button>
+      <EdgeCarouselControls onPrevious={() => manualMove(-1)} onNext={() => manualMove(1)} label="campus photographs">
+        <div
+          className="campus-v12-columns"
+          onTouchStart={(event) => {
+            swipe.current = [event.touches[0].clientX, event.touches[0].clientY];
+          }}
+          onTouchEnd={(event) => {
+            if (!swipe.current) return;
+            const [x, y] = swipe.current;
+            const deltaX = event.changedTouches[0].clientX - x;
+            const deltaY = event.changedTouches[0].clientY - y;
+            if (Math.abs(deltaX) > 65 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
+              manualMove(deltaX < 0 ? 1 : -1);
+            }
+            swipe.current = null;
+          }}
+          onTouchCancel={() => {
+            swipe.current = null;
+          }}
+        >
+          {[1, -1].map((direction, column) => {
+            const [src, alt] = items[(index + column) % items.length];
+            return (
+              <div className="campus-v12-window" key={column}>
+                <AnimatePresence initial={false}>
+                  <CampusPhotograph
+                    key={src}
+                    src={src}
+                    alt={alt}
+                    direction={direction}
+                    reduced={reduced}
+                    onInspect={onInspect}
+                  />
+                </AnimatePresence>
+              </div>
+            );
+          })}
         </div>
-        <span className="ambient-slide-progress" key={index} aria-hidden="true" />
-      </div>
+      </EdgeCarouselControls>
     </section>
   );
 }

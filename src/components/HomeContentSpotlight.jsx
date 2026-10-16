@@ -1,7 +1,8 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play, Plus } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import ContentRail from './ContentRail.jsx';
+import EdgeCarouselControls from './EdgeCarouselControls.jsx';
 import { Reveal } from './ui.jsx';
 import { loadHomepageSummary } from '../data/homepage-source.js';
 import useAmbientAutoplay from '../hooks/useAmbientAutoplay.js';
@@ -88,7 +89,6 @@ function Testimonial({ testimonial, onRead }) {
 
 function CommunityVoices({ testimonials }) {
   const [index, setIndex] = useState(0);
-  const [userPaused, setUserPaused] = useState(false);
   const [readingIds, setReadingIds] = useState(() => new Set());
   const swipe = useRef(null);
   const [wide, setWide] = useState(() => window.matchMedia('(min-width: 768px)').matches);
@@ -114,7 +114,7 @@ function CommunityVoices({ testimonials }) {
   const autoplay = useAmbientAutoplay({
     onAdvance: () => move(1),
     interval: 5000,
-    enabled: testimonials.length > 1 && !userPaused,
+    enabled: testimonials.length > 1,
     reading: readingIds.size > 0,
   });
   const manualMove = (direction) => {
@@ -141,6 +141,7 @@ function CommunityVoices({ testimonials }) {
       data-autoplay={autoplay.playing ? 'playing' : 'paused'}
       data-slide-index={index}
       data-slide-count={testimonials.length}
+      data-autoplay-interval="5000"
       tabIndex={0}
       onKeyDown={(event) => {
         if (event.target === event.currentTarget && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
@@ -154,53 +155,35 @@ function CommunityVoices({ testimonials }) {
           <p className="section-label">Community voices</p>
           <h3 id="homepage-voices-title">In their own words.</h3>
         </div>
-        <div className="rail-user-controls" role="group" aria-label="Community voices controls">
-          <span className="rail-counter" aria-live="polite">
-            {index + 1} / {testimonials.length}
-          </span>
-          <button type="button" onClick={() => manualMove(-1)} aria-label="Previous alumni voice">
-            <ChevronLeft size={17} aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            onClick={() => setUserPaused((value) => !value)}
-            aria-pressed={userPaused}
-            aria-label={userPaused ? 'Resume community voices rotation' : 'Pause community voices rotation'}
-          >
-            {userPaused ? <Play size={14} aria-hidden="true" /> : <Pause size={14} aria-hidden="true" />}
-          </button>
-          <button type="button" onClick={() => manualMove(1)} aria-label="Next alumni voice">
-            <ChevronRight size={17} aria-hidden="true" />
-          </button>
-        </div>
       </div>
-      <motion.div
-        onTouchStart={(event) => {
-          swipe.current = [event.touches[0].clientX, event.touches[0].clientY];
-        }}
-        onTouchEnd={(event) => {
-          if (swipe.current !== null) {
-            const [x, y] = swipe.current;
-            const dx = event.changedTouches[0].clientX - x;
-            const dy = event.changedTouches[0].clientY - y;
-            if (Math.abs(dx) > 65 && Math.abs(dx) > Math.abs(dy) * 1.5) manualMove(dx < 0 ? 1 : -1);
+      <EdgeCarouselControls onPrevious={() => manualMove(-1)} onNext={() => manualMove(1)} label="alumni voice" enabled={testimonials.length > 1}>
+        <motion.div
+          onTouchStart={(event) => {
+            swipe.current = [event.touches[0].clientX, event.touches[0].clientY];
+          }}
+          onTouchEnd={(event) => {
+            if (swipe.current !== null) {
+              const [x, y] = swipe.current;
+              const dx = event.changedTouches[0].clientX - x;
+              const dy = event.changedTouches[0].clientY - y;
+              if (Math.abs(dx) > 65 && Math.abs(dx) > Math.abs(dy) * 1.5) manualMove(dx < 0 ? 1 : -1);
+              swipe.current = null;
+            }
+          }}
+          onTouchCancel={() => {
             swipe.current = null;
-          }
-        }}
-        onTouchCancel={() => {
-          swipe.current = null;
-        }}
-        className="hcs-quote-grid"
-        key={`${index}-${wide}`}
-        initial={reduced ? false : { opacity: 0.2, y: 12, filter: 'blur(5px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        transition={{ duration: reduced ? 0 : 0.55, ease: [0.22, 1, 0.36, 1] }}
-      >
-        {visible.map((testimonial) => (
-          <Testimonial key={testimonial.id} testimonial={testimonial} onRead={read} />
-        ))}
-      </motion.div>
-      <span className="ambient-slide-progress" key={index} aria-hidden="true" />
+          }}
+          className="hcs-quote-grid"
+          key={`${index}-${wide}`}
+          initial={reduced ? false : { opacity: 0.2, y: 12, filter: 'blur(5px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: reduced ? 0 : 0.55, ease: [0.22, 1, 0.36, 1] }}
+        >
+          {visible.map((testimonial) => (
+            <Testimonial key={testimonial.id} testimonial={testimonial} onRead={read} />
+          ))}
+        </motion.div>
+      </EdgeCarouselControls>
     </section>
   );
 }

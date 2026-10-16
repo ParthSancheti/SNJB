@@ -3,10 +3,6 @@
 .content-rail.rail-autoplay .rail-track::-webkit-scrollbar{display:none;width:0;height:0}
 .content-rail.rail-autoplay .rail-heading{gap:20px;margin-bottom:20px}
 .content-rail.rail-autoplay .rail-track:focus-visible,.campus-gallery.campus-v12:focus-visible,.campus-news-v12:focus-visible,.hcs-voices.voices-v12:focus-visible{outline:2px solid var(--teal);outline-offset:5px;border-radius:18px}
-.ambient-slide-progress{position:relative;display:block;width:64px;height:2px;overflow:hidden;border-radius:9px;margin:18px 0 0 auto;background:var(--line);pointer-events:none}
-.ambient-slide-progress:after{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(90deg,var(--teal),var(--accent));transform-origin:left;animation:ambient-slide-duration 5s linear both}
-[data-autoplay=paused]>.ambient-slide-progress:after{animation:none;transform:scaleX(0)}
-@keyframes ambient-slide-duration{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .hcs-event-photos>figure{margin:0;border-radius:15px;overflow:hidden;background:var(--glass-inner);border:1px solid var(--glass-border)}
 .hcs-event-photos>figure img{transition:transform .55s cubic-bezier(.22,1,.36,1),filter .55s;will-change:auto}
 @media(hover:hover) and (pointer:fine){.hcs-event-photos>figure:hover img{transform:scale(1.035);filter:saturate(1.08)}}
@@ -74,7 +70,6 @@
   .recruiter-rail.rail-autoplay .rail-track>div{flex-basis:calc((100% - 10px)/2)}
 }
 @media(prefers-reduced-motion:reduce){
-  .ambient-slide-progress:after{animation:none;transform:scaleX(0)}
   .hcs-event-photos>figure img{transition:none}
   .hcs-event-photos>figure:hover img{transform:none;filter:none}
 }

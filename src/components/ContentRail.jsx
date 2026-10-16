@@ -1,13 +1,12 @@
 import { useRef, useState } from 'react';
 import { useReducedMotion } from 'motion/react';
-import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import useAmbientAutoplay from '../hooks/useAmbientAutoplay.js';
+import EdgeCarouselControls from './EdgeCarouselControls.jsx';
 import './media-motion-v12.css';
 
 export default function ContentRail({ title, label, children, count, className = '', id }) {
   const track = useRef(null);
   const [position, setPosition] = useState(1);
-  const [userPaused, setUserPaused] = useState(false);
   const reduced = useReducedMotion();
 
   const stride = () => {
@@ -41,8 +40,8 @@ export default function ContentRail({ title, label, children, count, className =
   };
   const autoplay = useAmbientAutoplay({
     onAdvance: () => move(1),
-    interval: 5000,
-    enabled: count > 1 && !userPaused,
+    interval: 1000,
+    enabled: count > 1,
   });
   const manualMove = (direction) => {
     autoplay.restart();
@@ -60,53 +59,39 @@ export default function ContentRail({ title, label, children, count, className =
       data-autoplay={autoplay.playing ? 'playing' : 'paused'}
       data-slide-index={position - 1}
       data-slide-count={count}
+      data-autoplay-interval="1000"
     >
       <div className="rail-heading">
         <div>
           {label && <p className="h8-eyebrow">{label}</p>}
           <h3>{title}</h3>
         </div>
-        {count > 1 && (
-          <div className="rail-user-controls" role="group" aria-label={`${title} controls`}>
-            <span className="rail-counter" aria-live="polite">
-              {position} / {count}
-            </span>
-            <button type="button" onClick={() => manualMove(-1)} aria-label={`Previous ${title} slide`}>
-              <ChevronLeft size={17} aria-hidden="true" />
-            </button>
-            <button
-              type="button"
-              onClick={() => setUserPaused((value) => !value)}
-              aria-pressed={userPaused}
-              aria-label={userPaused ? `Resume ${title} rotation` : `Pause ${title} rotation`}
-            >
-              {userPaused ? <Play size={14} aria-hidden="true" /> : <Pause size={14} aria-hidden="true" />}
-            </button>
-            <button type="button" onClick={() => manualMove(1)} aria-label={`Next ${title} slide`}>
-              <ChevronRight size={17} aria-hidden="true" />
-            </button>
-          </div>
-        )}
       </div>
-      <div
-        className="rail-track"
-        ref={track}
-        onScroll={update}
-        onWheel={(event) => {
-          if (Math.abs(event.deltaX) > 1 || event.shiftKey) autoplay.restart();
-        }}
-        onKeyDown={(event) => {
-          if (event.target === event.currentTarget && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
-            event.preventDefault();
-            manualMove(event.key === 'ArrowRight' ? 1 : -1);
-          }
-        }}
-        tabIndex={0}
-        aria-label={`${title} slides. Swipe or use left and right arrow keys.`}
+      <EdgeCarouselControls
+        onPrevious={() => manualMove(-1)}
+        onNext={() => manualMove(1)}
+        label={`${title} slide`}
+        enabled={count > 1}
       >
-        {children}
-      </div>
-      <span className="ambient-slide-progress" key={position} aria-hidden="true" />
+        <div
+          className="rail-track"
+          ref={track}
+          onScroll={update}
+          onWheel={(event) => {
+            if (Math.abs(event.deltaX) > 1 || event.shiftKey) autoplay.restart();
+          }}
+          onKeyDown={(event) => {
+            if (event.target === event.currentTarget && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+              event.preventDefault();
+              manualMove(event.key === 'ArrowRight' ? 1 : -1);
+            }
+          }}
+          tabIndex={0}
+          aria-label={`${title} slides. Swipe or use left and right arrow keys.`}
+        >
+          {children}
+        </div>
+      </EdgeCarouselControls>
     </section>
   );
 }

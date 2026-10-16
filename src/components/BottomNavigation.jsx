@@ -68,17 +68,27 @@ export default function BottomNavigation({ pageKey, navigate, hidden }) {
               onClick={(event) => follow(event, item)}
               layout={reduced ? false : 'position'}
               whileTap={reduced ? undefined : { scale: 0.94 }}
-              transition={{ type: 'spring', stiffness: 420, damping: 29, mass: 0.75 }}
+              transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 440, damping: 25, mass: 0.7 }}
             >
               {active === item.id && (
                 <motion.span
                   className="bottom-navigation-pill"
                   layoutId="primary-navigation-pill"
-                  transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 420, damping: 27, mass: 0.75 }}
+                  transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 440, damping: 23, mass: 0.7 }}
                 />
               )}
               <item.Icon size={19} strokeWidth={1.75} aria-hidden="true" />
-              <span className="bottom-navigation-label">{item.label}</span>
+              <AnimatePresence initial={false}>
+                {active === item.id && (
+                  <motion.span
+                    className="bottom-navigation-label"
+                    initial={reduced ? false : { width: 0, opacity: 0 }}
+                    animate={{ width: 'auto', opacity: 1 }}
+                    exit={{ width: 0, opacity: 0 }}
+                    transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 440, damping: 27 }}
+                  >{item.label}</motion.span>
+                )}
+              </AnimatePresence>
             </motion.a>
           ))}
         </motion.nav>
