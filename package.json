@@ -26,7 +26,8 @@
     "check:content-v13": "node scripts/qa-content-v10.mjs",
     "check:assets": "node scripts/qa-elevate.mjs media",
     "check:elevate": "node scripts/qa-elevate.mjs",
-    "check:metadata": "node scripts/verify-metadata.mjs"
+    "check:metadata": "node scripts/verify-metadata.mjs",
+    "check:images": "node scripts/verify-image-library.mjs"
   },
   "dependencies": {
     "lucide-react": "1.56.0",

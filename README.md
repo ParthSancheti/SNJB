@@ -19,12 +19,15 @@ pnpm build
 pnpm exec vite preview --host 127.0.0.1 --port 4178 --strictPort
 # Another terminal:
 pnpm check
+pnpm check:images
 pnpm check:interactions
 pnpm check:video
 pnpm check:metadata
 ```
 
 Browser suites use installed Edge. SNJB_QA_CHANNEL=chrome selects installed Chrome; SNJB_QA_URL changes the preview address. Viewport emulation is not physical-device certification.
+
+The image-library check loads and decodes every image under public, including responsive variants not currently displayed on a page. It checks HTTP status, image MIME and nonzero decoded dimensions.
 
 ## Actual route coverage
 
@@ -54,6 +57,7 @@ This does not configure hosting, subdirectory asset routing, institutional appro
 
 ## Current documentation
 
+- [Fresh full-project and image check](docs/FINAL_PROJECT_CHECK.md)
 - [Baseline comparison](BASELINE_AND_VERSION_COMPARISON.md)
 - [Design rules](docs/DESIGN.md)
 - [Admissions reconciliation](docs/ADMISSIONS_DATA_RECONCILIATION.md)

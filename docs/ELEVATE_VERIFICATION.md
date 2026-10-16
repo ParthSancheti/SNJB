@@ -1,5 +1,7 @@
 # Operation Elevate — current verification
 
+> A newer uninterrupted full run on final build Wjb7KuR7 passed all 38 browser checks and all 327 image-file decodes. See [fresh full-project verification](FINAL_PROJECT_CHECK.md). The first-cycle scoped-run history is retained below.
+
 16 October 2026. This is the first evidence-based recovery/improvement cycle, not a claim that all future production work is finished.
 
 ## Outcome and versions
@@ -25,7 +27,7 @@ Final default demo assets: index-Wjb7KuR7.js and index-E5G_fTlu.css. The last ch
 | Static route metadata | Actual generated HTML for all twelve routes passed in default demo/noindex mode and a configured reserved .example-domain build. Default demo build restored afterwards. Route title, description, OG and Twitter fields agree; canonical/OG URL policy checked. No real hosting deployment was performed. |
 | Final caption-only smoke | All twelve direct route reloads passed on Wjb7KuR7 with no page errors, ready state complete, explicit CS illustration caption/alt, hidden detail dock and visible AICTE/CET links on Apply. |
 
-These are separate scoped runs. The default all-scope alias was not run as one uninterrupted final build certification. Reproducible commands now point to current Elevate suites; historical V13 scripts remain labelled historical.
+These first-cycle records are separate scoped runs. During that cycle the default all-scope alias was not run uninterrupted; the later full run linked above closes that gap. Reproducible commands point to current Elevate suites; historical V13 scripts remain labelled historical.
 
 ## Defects found and corrected during testing
 
