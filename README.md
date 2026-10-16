@@ -1,40 +1,10 @@
-# SNJB College of Engineering — Next-Generation Institutional Website (Project ASTRA)
+# Project ASTRA — SNJB Engineering
 
-Complete React 19 + Vite 8 + Three.js + Motion institutional website for **SNJB’s Late Sau. Kantabai Bhavarlalji Jain College of Engineering, Chandwad (Nashik, Maharashtra)**.
+React 19 / Vite 8 demonstration. The complete supplied public.zip was compared with GitHub and preserved before changes. Current branch: recovery/elevate-20261016. The remote default branch was not overwritten.
 
-## Key Highlights of This Build
+## Run
 
-1. **12 Internal Institutional Routes:**
-   - `/` — **Flagship Homepage** (15s campus film hero with Play/Pause control, 4-card wayfinding bar, live *Happening at SNJB* event carousel, *Our College* + *Leadership & Autonomous Governance* strip, *Vision & Mission*, 9 inspectable recognition certificates with Lightbox, UG/PG Programme Finder, AICTE IDEA Lab & Learning grid, 12 Student Services, interactive *Career Outcomes & Department Placement Chart*, *Campus Journal & Community Voices*, and *Admissions Pathway*).
-   - `/computer-engineering` — **Computer Engineering Flagship** (Batch-specific Curriculum Finder, Laboratories Bento, searchable 37-person Faculty & Staff directory, documented Student Projects, interactive 3D Processor model, Placements, SPACE & CSI communities, and collapsible 16-section Archival Web Records drawer).
-   - `/ai-data-science` — **Artificial Intelligence & Data Science** (158 seat intake matrix, placement outcomes, highlights & 11 official subpages).
-   - `/civil-engineering` — **Civil Engineering** (NBA Accredited 2025, 63 seat intake, placement outcomes & 11 official subpages).
-   - `/electronics-telecommunication` — **Electronics & Telecommunication** (NBA Accredited 2025, 63 seat intake, placement outcomes & 11 official subpages).
-   - `/mechanical-engineering` — **Mechanical Engineering** (NBA Accredited 2022, 95 seat intake, 38 placements / 67 offers, interactive **3D Slider-Crank Kinematics Model** & 10 official subpages).
-   - `/first-year-engineering` — **Engineering Science & First-Year Engineering** (568 total B.Tech seat matrix, foundational labs & 10 official subpages).
-   - `/mba` — **MBA (Master of Business Administration)** (NBA Accredited 2025, 81 placements in AY 2025–26, BoS & 10 official subpages).
-   - `/apply` — **Admissions & Interactive Enquiry Hub** (Route selector, validated **Admissions & Campus Visit Enquiry Form** with 1-click WhatsApp/Email handoff, clickable 5-branch seat matrix, FRA fees, scholarships & hostels).
-   - `/student-life` — **Campus Life & Student Services** (12 student-service pathways, 360° virtual tour, events, notices & community voices).
-   - `/explore` — **Complete 333-Link Resource Directory** (9 institutional categories, folder breadcrumbs & instant search).
-   - `/audit` — **Project ASTRA Source & Provenance Registry** (SHA-256 snapshot verification, placement arithmetic logs & media provenance).
-
-2. **Project ASTRA Documentation Suite (`docs/`):**
-   - [`docs/PROJECT_BRIEF.md`](docs/PROJECT_BRIEF.md)
-   - [`docs/RESEARCH_AND_BENCHMARKS.md`](docs/RESEARCH_AND_BENCHMARKS.md)
-   - [`docs/EXISTING_SITE_AUDIT.md`](docs/EXISTING_SITE_AUDIT.md)
-   - [`docs/SITEMAP_AND_USER_JOURNEYS.md`](docs/SITEMAP_AND_USER_JOURNEYS.md)
-   - [`docs/CONTENT_MIGRATION_MATRIX.md`](docs/CONTENT_MIGRATION_MATRIX.md)
-   - [`docs/SOURCE_OF_TRUTH.md`](docs/SOURCE_OF_TRUTH.md)
-   - [`docs/DESIGN_SYSTEM.md`](docs/DESIGN_SYSTEM.md)
-   - [`docs/MEDIA_ASSET_REGISTER.md`](docs/MEDIA_ASSET_REGISTER.md)
-   - [`docs/DEVELOPMENT_PROGRESS.md`](docs/DEVELOPMENT_PROGRESS.md)
-   - [`docs/QA_REPORT.md`](docs/QA_REPORT.md)
-   - [`docs/DECISIONS_AND_ASSUMPTIONS.md`](docs/DECISIONS_AND_ASSUMPTIONS.md)
-   - [`docs/LAUNCH_CHECKLIST.md`](docs/LAUNCH_CHECKLIST.md)
-
-## Quick Start
-
-Use Node.js 22.12+ (or Node 18+) and `pnpm`:
+Node.js 22.12+ and pnpm; current verification uses Node 24.21.0 on Windows.
 
 ```sh
 pnpm install --frozen-lockfile
@@ -42,9 +12,60 @@ pnpm check:content
 pnpm dev
 ```
 
-Open `http://127.0.0.1:4173/`. For a production build:
+Open http://127.0.0.1:4173/. Production: stop dev, then run pnpm build and pnpm preview. For automated checks alongside dev:
 
 ```sh
 pnpm build
-pnpm preview
+pnpm exec vite preview --host 127.0.0.1 --port 4178 --strictPort
+# Another terminal:
+pnpm check
+pnpm check:interactions
+pnpm check:video
+pnpm check:metadata
 ```
+
+Browser suites use installed Edge. SNJB_QA_CHANNEL=chrome selects installed Chrome; SNJB_QA_URL changes the preview address. Viewport emulation is not physical-device certification.
+
+## Actual route coverage
+
+- Home: campus film, sourced news, gallery, vision/mission, nine recognitions, programme finder, learning resources, twelve services, placement charts, recruiters, testimonials and source archives.
+- /computer-engineering: curriculum, laboratories, 37 faculty/staff, projects, processor visualisation, placements, communities and sixteen original archival sections.
+- /apply: study routes, intake capacity, fees/source links and an enquiry form preparing WhatsApp/email handoffs. It does not submit an application or store data on a server.
+- /student-life: campus services, events and resources.
+- /explore: 333-destination directory across nine categories.
+- /audit: source/provenance registry.
+- /ai-data-science, /civil-engineering, /electronics-telecommunication, /mechanical-engineering, /first-year-engineering, /mba: working official-resource directories. They do not yet have the complete CS showcase or a mechanical 3D experience.
+
+Home and CS remain the main demonstration scope. External links intentionally open official resources.
+
+## Design
+
+The attached Mist / Teal / Deep Teal / Orange palette is sampled in src/elevate.css. Manrope supplies body/wordmark typography; Noto Sans Devanagari supplies Sanskrit. Glass uses native backdrop blur.
+
+News advances every 5s, campus every 3s, recognitions/recruiters every 1s, voices every 5s. Persistent transport/progress rows are removed. Edge arrows reveal near the pointer or keyboard focus; swipe/arrow keys remain. Hover, focus, reading, hidden tabs and offscreen states pause movement. Quick access / desktop navigation provides Background motion; reduced motion is respected.
+
+The mobile dock has one spring pill and only the selected tab's label. It is hidden on desktop and department detail routes.
+
+## Deployment metadata
+
+No deployment domain was supplied. Demo builds use noindex, nofollow and omit guessed canonical/OG URLs. All twelve static entries have route-specific title/description/OG/Twitter metadata. Set VITE_SITE_URL to the approved deployment URL before building to emit canonical and OG URLs and allow indexing. Verify with pnpm check:metadata.
+
+This does not configure hosting, subdirectory asset routing, institutional approval or server rewrites. Verify direct route reloads on the target host before publication.
+
+## Current documentation
+
+- [Baseline comparison](BASELINE_AND_VERSION_COMPARISON.md)
+- [Design rules](docs/DESIGN.md)
+- [Admissions reconciliation](docs/ADMISSIONS_DATA_RECONCILIATION.md)
+- [Official benchmarks](docs/BENCHMARK_RESEARCH.md)
+- [Media recovery audit](docs/MEDIA_RECOVERY_AUDIT.md)
+- [Prioritised findings](docs/ELEVATE_ISSUES.md)
+- [Current verification](docs/ELEVATE_VERIFICATION.md)
+- [Before and after](docs/BEFORE_AFTER.md)
+- [Workflow checks](docs/ELEVATE_WORKFLOW_VERIFICATION.md)
+- [Video audit](docs/CAMPUS_VIDEO_AUDIT.md)
+- [Client walkthrough](docs/CLIENT_WALKTHROUGH.md)
+
+docs/VERIFICATION.md, CHANGELOG_V13.md and qa-v*.mjs are historical, not current proof. Fresh evidence goes into ignored qa/elevate/. Missing historical reports are not fabricated.
+
+Raw captures, duplicate masters, public.zip, Git metadata, dependencies and generated dist are excluded from source delivery. Recovery material remains outside the app at D:/SNJB/.research/elevate-20261016/.

@@ -1,5 +1,7 @@
 # Verification — V13 / campus film V10
 
+> Historical report for 15 October 2026. These results do not certify the upgraded ZIP or Elevate changes. See [current verification](ELEVATE_VERIFICATION.md).
+
 15 October 2026. Production preview in installed Google Chrome on Windows. Final build: `index-hiaBr4s9.js`, `index-CXZd7jl7.css`. Device profiles and phone sizes below are browser emulation, not physical iPhone/Safari certification.
 
 | Check | Result |
