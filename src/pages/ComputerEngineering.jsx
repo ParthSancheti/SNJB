@@ -82,10 +82,19 @@ export default function ComputerEngineering({ onAsk, navigate }) {
   const [expandedFaculty, setExpandedFaculty] = useState(false);
   const [projectCategory, setProjectCategory] = useState('All work');
   const [resourceQuery, setResourceQuery] = useState('');
+  const [archiveOpen, setArchiveOpen] = useState(() => window.location.hash.startsWith('#source-'));
   const document = curriculum[batch][year];
   const shownFaculty = useMemo(() => faculty.filter(person => `${person.name} ${person.role} ${person.interests.join(' ')}`.toLowerCase().includes(facultyQuery.toLowerCase()) && (facultyArea === 'Everyone' || person.area === facultyArea)), [facultyQuery, facultyArea]);
   const shownResources = resources.filter(item => `${item.title} ${item.meta}`.toLowerCase().includes(resourceQuery.toLowerCase()));
   const hover = reduced ? {} : { scale: 1.02 };
+
+  useEffect(() => {
+    const onHash = () => {
+      if (window.location.hash.startsWith('#source-')) setArchiveOpen(true);
+    };
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -105,14 +114,14 @@ export default function ComputerEngineering({ onAsk, navigate }) {
   }
 
   return <div className="department-page department-v8">
-    <CinematicHero navigate={navigate} title="Computer Engineering" eyebrow="SNJB / B.Tech" description="Study software, systems and connected technology through practical laboratory work and a batch-specific curriculum." poster="/campaign/learning-desktop.webp" posterMobile="/campaign/learning-phone.webp" posterAlt="Campaign artwork inspired by the SNJB Computer Science Laboratory" actions={[{ label: 'Curriculum', href: '#dept-curriculum' }, { label: 'Laboratories', href: '#dept-labs' }]} id="dept-overview" video={false} mediaCaption="AI campaign artwork · Based on SNJB laboratory photograph" />
+    <CinematicHero navigate={navigate} title="Computer Engineering" eyebrow="SNJB / B.Tech · NBA Accredited" description="Study software, systems and connected technology through practical laboratory work and a batch-specific autonomous curriculum." poster="/campaign/learning-desktop.webp" posterMobile="/campaign/learning-phone.webp" posterAlt="SNJB Computer Science Laboratory" actions={[{ label: 'Curriculum', href: '#dept-curriculum' }, { label: 'Laboratories', href: '#dept-labs' }]} id="dept-overview" video={false} mediaCaption="SNJB Computer Engineering · Neminagar, Chandwad" />
     <section className="dept-facts-section" aria-label="Computer Engineering programme overview"><div className="container">
         <nav className="dept-breadcrumb" aria-label="Breadcrumb"><a href="/" onClick={goHome}>Engineering</a><span aria-hidden="true">/</span><span>Computer Engineering</span></nav>
         <div className="dept-programme-facts" aria-label="Programme facts">
           <div><small>Undergraduate programme</small><strong>B.Tech</strong><span>Computer Engineering</span></div>
           <div><small>Programme duration</small><strong>4 <span>years</span></strong><span>Full-time undergraduate study</span></div>
           <div><small>Intake · AY 2026–27</small><strong>180 <span>base seats</span></strong><DepartmentLink href={SOURCE.cap}>9 TFWS seats listed separately</DepartmentLink></div>
-          <div><small>Academic environment</small><strong>Autonomous</strong><span>Affiliated to SPPU, Pune</span></div>
+          <div><small>Academic environment</small><strong>Autonomous</strong><span>NBA Accredited · SPPU Affiliated</span></div>
         </div>
       </div></section>
 
@@ -165,9 +174,20 @@ export default function ComputerEngineering({ onAsk, navigate }) {
     </div></section>
 
     <section className="dept-section dept-resources-section" id="dept-resources"><div className="container">
-      <DepartmentReveal><DepartmentHeading label="ACADEMIC ESSENTIALS" title="Resources" text="Direct access to academic documents, calendars and department information." /></DepartmentReveal>
-      <label className="dept-search-field dept-resource-search"><Search size={18} aria-hidden="true" /><span className="dept-sr-only">Search academic resources</span><input type="search" value={resourceQuery} onChange={event => setResourceQuery(event.target.value)} placeholder="Find a resource" />{resourceQuery && <button type="button" onClick={() => setResourceQuery('')} aria-label="Clear resource search"><X size={16} /></button>}</label>
-      <div className="dept-preserved-resources">{preservedContent.sections.filter(section=>`${section.title} ${section.text}`.toLowerCase().includes(resourceQuery.toLowerCase())).map(section=><details id={`source-${section.id}`} className="dept-source-panel" key={section.id}><summary><span>{section.title}</span><Plus size={18} aria-hidden="true" /></summary><div className="imported-dept-body" tabIndex={0} role="region" aria-label={`${section.title} published content`} dangerouslySetInnerHTML={{__html:section.html}} /><a className="dept-source-link" href={section.sourceURL} target="_blank" rel="noreferrer">Original published section ↗</a></details>)}</div><div className="dept-resource-grid">{shownResources.map(item => <a key={item.title} className="dept-resource-card" href={item.href} target="_blank" rel="noopener noreferrer"><span className="dept-resource-icon"><item.icon size={23} strokeWidth={1.5} aria-hidden="true" /></span><span><strong>{item.title}</strong><small>{item.meta}</small></span><ArrowUpRight size={20} aria-hidden="true" /><span className="dept-sr-only"> (opens in a new tab)</span></a>)}</div>{!shownResources.length && !preservedContent.sections.some(section => `${section.title} ${section.text}`.toLowerCase().includes(resourceQuery.toLowerCase())) && <p className="dept-empty-resource" role="status">No resource matches “{resourceQuery}”. Try “syllabus”, “faculty” or “calendar”.</p>}
+      <DepartmentReveal><DepartmentHeading label="ACADEMIC ESSENTIALS" title="Resources & Archival Records" text="Direct access to essential documents, academic calendars and all 16 preserved departmental web sections." /></DepartmentReveal>
+      <label className="dept-search-field dept-resource-search"><Search size={18} aria-hidden="true" /><span className="dept-sr-only">Search academic resources</span><input type="search" value={resourceQuery} onChange={event => setResourceQuery(event.target.value)} placeholder="Find a resource, table or archival record…" />{resourceQuery && <button type="button" onClick={() => setResourceQuery('')} aria-label="Clear resource search"><X size={16} /></button>}</label>
+      <div className="dept-resource-grid">{shownResources.map(item => <a key={item.title} className="dept-resource-card" href={item.href} target="_blank" rel="noopener noreferrer"><span className="dept-resource-icon"><item.icon size={23} strokeWidth={1.5} aria-hidden="true" /></span><span><strong>{item.title}</strong><small>{item.meta}</small></span><ArrowUpRight size={20} aria-hidden="true" /><span className="dept-sr-only"> (opens in a new tab)</span></a>)}</div>
+      <details className="dept-archival-drawer" open={archiveOpen || Boolean(resourceQuery.trim())} onToggle={event => setArchiveOpen(event.currentTarget.open)}>
+        <summary className="dept-archival-summary">
+          <span>
+            <strong>Complete preserved web records (16 sections · 55 tables · 146 images)</strong>
+            <small>Expand to inspect the verbatim HTML tables, BoS records, toppers lists and historical department pages</small>
+          </span>
+          <ChevronDown size={18} aria-hidden="true" />
+        </summary>
+        <div className="dept-preserved-resources">{preservedContent.sections.filter(section=>`${section.title} ${section.text}`.toLowerCase().includes(resourceQuery.toLowerCase())).map(section=><details id={`source-${section.id}`} className="dept-source-panel" key={section.id}><summary><span>{section.title}</span><Plus size={18} aria-hidden="true" /></summary><div className="imported-dept-body" tabIndex={0} role="region" aria-label={`${section.title} published content`} dangerouslySetInnerHTML={{__html:section.html}} /><a className="dept-source-link" href={section.sourceURL} target="_blank" rel="noreferrer">Original published section ↗</a></details>)}</div>
+      </details>
+      {!shownResources.length && !preservedContent.sections.some(section => `${section.title} ${section.text}`.toLowerCase().includes(resourceQuery.toLowerCase())) && <p className="dept-empty-resource" role="status">No resource matches “{resourceQuery}”. Try “syllabus”, “faculty” or “calendar”.</p>}
       <div className="dept-faq-grid"><div><p className="dept-eyebrow">QUESTIONS</p><h2>Useful to know.</h2><p>Get to know the programme, the documents and the people who can help.</p></div><div className="dept-faq-list">
         <details><summary>Is this Computer Science or Computer Engineering?<ChevronDown size={18} aria-hidden="true" /></summary><p>The official programme is Computer Engineering. Use that name when checking the syllabus and admission choice code. Artificial Intelligence & Data Science is a separate SNJB programme.</p></details>
         <details><summary>Which syllabus should I use?<ChevronDown size={18} aria-hidden="true" /></summary><p>Select your admission batch first, then your study year. A curriculum for another batch may follow a different course or assessment structure. <a href={SOURCE.curriculum} target="_blank" rel="noopener noreferrer">Check the official syllabus registry <span className="dept-sr-only">(opens in a new tab)</span></a>.</p></details>
@@ -176,6 +196,6 @@ export default function ComputerEngineering({ onAsk, navigate }) {
       </div></div>
     </div></section>
 
-    <section className="dept-admissions-cta"><div className="container"><div><p className="dept-eyebrow">AY 2026–27</p><h2>Study Computer<br />Engineering at SNJB.</h2></div><div><a className="dept-button dept-button-primary" href={SOURCE.admissions} target="_blank" rel="noopener noreferrer">Admissions & eligibility<ArrowUpRight size={18} aria-hidden="true" /><span className="dept-sr-only"> (opens in a new tab)</span></a>{onAsk && <button type="button" className="dept-assistant-action" onClick={() => onAsk('Tell me about Computer Engineering at SNJB')}><Sparkles size={16} aria-hidden="true" />Explore Ask SNJB preview</button>}<span className="dept-cta-note">Official admission information · AY 2026–27</span></div></div></section>
+    <section className="dept-admissions-cta"><div className="container"><div><p className="dept-eyebrow">AY 2026–27</p><h2>Study Computer<br />Engineering at SNJB.</h2></div><div><a className="dept-button dept-button-primary" href="/apply" onClick={event => { if (navigate && !event.metaKey && !event.ctrlKey && event.button === 0) { event.preventDefault(); navigate('/apply', event); } }}>Admissions & enquiry form<ArrowRight size={18} aria-hidden="true" /></a>{onAsk && <button type="button" className="dept-assistant-action" onClick={() => onAsk('Tell me about Computer Engineering at SNJB')}><Sparkles size={16} aria-hidden="true" />Explore Ask SNJB</button>}<span className="dept-cta-note">Official admission information · AY 2026–27</span></div></div></section>
   </div>;
 }

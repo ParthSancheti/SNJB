@@ -1,15 +1,20 @@
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, Compass, FileText, GraduationCap, Laptop, Search, Sparkles, Users, Wallet, X } from 'lucide-react';
+import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, BrainCircuit, BriefcaseBusiness, Cog, Compass, Construction, FileText, GraduationCap, Laptop, Radio, Search, Sparkles, Users, Wallet, X } from 'lucide-react';
 import './search.css';
 import './desktop-search-v12.css';
 import './v13-overlay.css';
 import { loadNavigationSource } from '../data/navigation-source.js';
 
 const searchEntries = [
-  { id: 'computer', title: 'Computer Engineering', category: 'Programme', description: 'Curriculum, laboratories, faculty and student community.', href: '/computer-engineering', aliases: ['cs', 'cse', 'computer science', 'computing', 'software', 'department', 'branch'], icon: Laptop, local: true },
-  { id: 'admissions', title: 'First-year admissions', category: 'Admissions', description: 'Official admission information and enquiry contacts.', href: 'https://snjb.org/engineering/admissions/fy-btech', aliases: ['apply', 'application', 'btech', 'b tech', 'b.tech', 'fy', 'fy btech', 'first year btech', 'eligibility', 'cap', 'cet', 'admission'], icon: GraduationCap },
+  { id: 'computer', title: 'Computer Engineering', category: 'Programme', description: 'NBA Accredited · Curriculum, laboratories, 37 faculty & staff.', href: '/computer-engineering', aliases: ['cs', 'cse', 'computer science', 'computing', 'software', 'department', 'branch'], icon: Laptop, local: true },
+  { id: 'aids', title: 'Artificial Intelligence & Data Science', category: 'Programme', description: '158 B.Tech seats · Machine learning, analytics and laboratories.', href: '/ai-data-science', aliases: ['ai', 'aids', 'ai ds', 'data science', 'artificial intelligence', 'ml', 'department', 'branch'], icon: BrainCircuit, local: true },
+  { id: 'mechanical', title: 'Mechanical Engineering', category: 'Programme', description: 'NBA Accredited · Design, thermal labs, placements and 3D kinematics.', href: '/mechanical-engineering', aliases: ['mech', 'mechanical', 'robotics', 'cad', 'cam', 'kinematics', 'department', 'branch'], icon: Cog, local: true },
+  { id: 'entc', title: 'Electronics & Telecommunication', category: 'Programme', description: 'NBA Accredited · Embedded systems, VLSI, IoT and communication labs.', href: '/electronics-telecommunication', aliases: ['entc', 'etc', 'e tc', 'electronics', 'telecommunication', 'vlsi', 'iot', 'department', 'branch'], icon: Radio, local: true },
+  { id: 'civil', title: 'Civil Engineering', category: 'Programme', description: 'NBA Accredited · Structural, geotechnical, surveying and M.Tech.', href: '/civil-engineering', aliases: ['civil', 'structures', 'construction', 'surveying', 'department', 'branch'], icon: Construction, local: true },
+  { id: 'mba', title: 'MBA (Master of Business Administration)', category: 'Postgraduate', description: 'NBA Accredited · 81 placements in AY 2025–26, faculty and admissions.', href: '/mba', aliases: ['mba', 'management', 'business', 'pg', 'postgraduate'], icon: BriefcaseBusiness, local: true },
+  { id: 'admissions', title: 'Admissions AY 2026–27 & Enquiry Form', category: 'Admissions', description: 'Interactive admission enquiry, DTE Code 05173 intake and routes.', href: '/apply', aliases: ['apply', 'application', 'btech', 'b tech', 'b.tech', 'fy', 'fy btech', 'first year btech', 'eligibility', 'cap', 'cet', 'admission', 'enquiry'], icon: GraduationCap, local: true },
   { id: 'direct-admission', title: 'Direct second-year admissions', category: 'Admissions', description: 'Published eligibility and admission process for the direct second-year route.', href: 'https://snjb.org/engineering/admissions/direct-second-year-engineering', aliases: ['dse', 'dse admissions', 'direct second year', 'second year admissions', 'lateral entry'], icon: GraduationCap },
   { id: 'curriculum', title: 'Find your syllabus', category: 'Academics', description: 'Autonomous UG curriculum, organised by admission batch.', href: 'https://snjb.org/engineering/syllabi-autonomy', aliases: ['curriculum', 'course', 'syllabus', 'syllabi', 'semester', 'batch', 'academics', 'subjects'], icon: BookOpen },
   { id: 'fees', title: 'Fees · Academic year 2026–27', category: 'Admissions', description: 'Official FRA fee information. Confirm the applicable year.', href: 'https://snjb.org/engineering/fra-fees-structure-ay2026-27', aliases: ['tuition', 'fee', 'fees', 'admission fees', 'admissions fees', 'college fees', 'fra', 'cost', 'financial'], icon: Wallet },
@@ -95,7 +100,6 @@ export default function SearchDialog({ open, onClose, navigate, onAsk }) {
     if (!open) return;
     if (reducedMotion) { setUnfolded(true); return; }
     let nextFrame;
-    // Paint the source-sized glass first, so rasterising page blur cannot skip the opening.
     const firstFrame = requestAnimationFrame(() => { nextFrame = requestAnimationFrame(() => setUnfolded(true)); });
     return () => { cancelAnimationFrame(firstFrame); cancelAnimationFrame(nextFrame); };
   }, [open, reducedMotion]);
@@ -177,7 +181,7 @@ export default function SearchDialog({ open, onClose, navigate, onAsk }) {
       const mediaPenalty = /\.(?:jpe?g|png|webp|gif)(?:$|[?#])/i.test(entry.href) && !/\b(?:photo|image|gallery|event|orientation)\b/.test(normalizedQuery) ? 18 : 0;
       const feeIntent = words.some(word => /^(?:fee|fees|tuition)$/.test(word)) && /\b(?:fee|fees|tuition)\b/.test(title) ? 8 : 0;
       const score = (title === normalizedQuery ? 40 : aliases.includes(normalizedQuery) ? 32 : title.includes(normalizedQuery) ? 24 : 6)
-        + words.filter(word => title.includes(word)).length * 2 + feeIntent + (entry.local ? 1 : 0) - mediaPenalty;
+        + words.filter(word => title.includes(word)).length * 2 + feeIntent + (entry.local ? 2 : 0) - mediaPenalty;
       return { ...entry, score, order };
     }).filter(entry => entry.score > 0).sort((a, b) => b.score - a.score || a.order - b.order);
   }, [normalizedQuery, entries]);

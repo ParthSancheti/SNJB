@@ -9,35 +9,80 @@ const items = [
   { id: 'apply', label: 'Apply', href: '/apply', Icon: Send },
 ];
 
-export default function BottomNavigation({ pageKey, navigate, hidden, transitioning }) {
+const mapPageToTab = (pageKey) => {
+  if (pageKey === 'directory' || pageKey === 'audit') return 'resources';
+  if (pageKey === 'campus') return 'campus';
+  if (pageKey === 'apply') return 'apply';
+  if (pageKey === 'home') return 'home';
+  return null;
+};
+
+export default function BottomNavigation({ pageKey, navigate, hidden }) {
   const reduced = useReducedMotion();
-  const [active, setActive] = useState(pageKey === 'directory' ? 'resources' : pageKey === 'department' ? null : pageKey === 'campus' ? 'campus' : pageKey === 'apply' ? 'apply' : 'home');
+  const [active, setActive] = useState(() => mapPageToTab(pageKey));
   const [covered, setCovered] = useState(false);
+
   useEffect(() => {
     const inspect = () => setCovered(Boolean(document.querySelector('[aria-modal="true"],dialog[open]')));
     const observer = new MutationObserver(inspect);
-    observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['open', 'aria-modal'] });
-    inspect(); return () => observer.disconnect();
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['open', 'aria-modal'],
+    });
+    inspect();
+    return () => observer.disconnect();
   }, []);
-  useEffect(() => { setActive(pageKey === 'directory' ? 'resources' : pageKey === 'campus' ? 'campus' : pageKey === 'apply' ? 'apply' : pageKey === 'department' ? null : 'home'); }, [pageKey]);
+
+  useEffect(() => {
+    setActive(mapPageToTab(pageKey));
+  }, [pageKey]);
+
   const follow = (event, item) => {
     if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     setActive(item.id);
     navigate(item.href, event);
   };
-  return <AnimatePresence>{!hidden && !covered && <motion.nav className="bottom-navigation" aria-label="Primary pages"
-    initial={reduced ? false : { opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}
-    transition={{ duration: reduced ? 0 : .18 }}>
-    {items.map(item => <motion.a key={item.id} href={item.href} aria-label={item.label} title={item.label}
-      data-active={active === item.id} aria-current={active === item.id ? 'page' : undefined}
-      onClick={event => follow(event, item)} layout={reduced ? false : 'position'} whileTap={reduced ? undefined : { scale: .94 }}
-      transition={{ type: 'spring', stiffness: 420, damping: 29, mass: .75 }}>
-      {active === item.id && <motion.span className="bottom-navigation-pill" layoutId="primary-navigation-pill"
-        transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 420, damping: 27, mass: .75 }} />}
-      <item.Icon size={21} strokeWidth={1.7} aria-hidden="true" />
-      {active === item.id && <motion.span className="bottom-navigation-label" initial={reduced ? false : { opacity: 0, x: -5 }}
-        animate={{ opacity: 1, x: 0 }} transition={{ duration: reduced ? 0 : .16 }}>{item.label}</motion.span>}
-    </motion.a>)}
-  </motion.nav>}</AnimatePresence>;
+
+  return (
+    <AnimatePresence>
+      {!hidden && !covered && (
+        <motion.nav
+          className="bottom-navigation"
+          aria-label="Primary pages"
+          initial={reduced ? false : { opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 10 }}
+          transition={{ duration: reduced ? 0 : 0.18 }}
+        >
+          {items.map((item) => (
+            <motion.a
+              key={item.id}
+              href={item.href}
+              aria-label={item.label}
+              title={item.label}
+              data-active={active === item.id}
+              aria-current={active === item.id ? 'page' : undefined}
+              onClick={(event) => follow(event, item)}
+              layout={reduced ? false : 'position'}
+              whileTap={reduced ? undefined : { scale: 0.94 }}
+              transition={{ type: 'spring', stiffness: 420, damping: 29, mass: 0.75 }}
+            >
+              {active === item.id && (
+                <motion.span
+                  className="bottom-navigation-pill"
+                  layoutId="primary-navigation-pill"
+                  transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 420, damping: 27, mass: 0.75 }}
+                />
+              )}
+              <item.Icon size={19} strokeWidth={1.75} aria-hidden="true" />
+              <span className="bottom-navigation-label">{item.label}</span>
+            </motion.a>
+          ))}
+        </motion.nav>
+      )}
+    </AnimatePresence>
+  );
 }

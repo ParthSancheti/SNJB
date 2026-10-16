@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { ArrowUpRight, ArrowRight } from 'lucide-react';
+import { ArrowUpRight, Maximize2 } from 'lucide-react';
 import { resolveDeliveryImage, isCampaignImage } from '../data/visual-assets.js';
 
 export const standardSpring = { type: 'spring', stiffness: 100, damping: 15, mass: 1 };
@@ -25,17 +25,27 @@ export function BentoCard({ children, className = '', ...rest }) {
   const reduced = useReducedMotion();
   return <motion.article className={`bento-card ${className}`} whileHover={reduced ? undefined : { scale: 1.02, y: -2 }} transition={standardSpring} {...rest}>{children}</motion.article>;
 }
-export function Photo({ src, alt, className = '', eager = false, ...rest }) {
+export function Photo({ src, alt, className = '', eager = false, onInspect, ...rest }) {
   const source = src;
   src = resolveDeliveryImage(src);
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
   const preview = src.startsWith('/images/') ? src.replace(/\.webp$/, '-preview.webp') : src;
-  const small = src.startsWith('/images/') || src.startsWith('/media/campus-aerial') ? src.replace(/\.webp$/, '-small.webp') : null;
+  const small = src.startsWith('/images/') ? src.replace(/\.webp$/, '-small.webp') : null;
   return <div className={`photo-frame ${className} ${loaded ? 'is-loaded' : ''} ${failed ? 'has-error' : ''}`} aria-busy={!loaded && !failed} data-image-treatment={isCampaignImage(source) ? 'GPT Image' : undefined}>
     {!loaded && !failed && <img className="photo-preview" src={preview} alt="" aria-hidden="true" loading={eager ? 'eager' : 'lazy'} />}
     {!failed && <img className="photo" src={src} srcSet={small ? `${small} 600w, ${src} ${rest.width || 1200}w` : undefined} sizes="(max-width: 767px) 100vw, 60vw" alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" onLoad={() => setLoaded(true)} onError={() => setFailed(true)} {...rest} />}
     {!loaded && !failed && <span className="photo-loading-sheen" aria-hidden="true" />}
+    {onInspect && !failed && (
+      <button
+        type="button"
+        className="photo-inspect-trigger"
+        aria-label={`Inspect photograph: ${alt}`}
+        onClick={() => onInspect({ src, alt, title: alt })}
+      >
+        <Maximize2 size={15} aria-hidden="true" />
+      </button>
+    )}
     {failed && <div className="photo-fallback"><span>{alt}</span></div>}
   </div>;
 }

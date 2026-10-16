@@ -1,0 +1,14 @@
+.supplement-page{width:min(100% - 40px,1080px);margin:auto;padding:145px 0 100px;color:var(--ink)}
+.supplement-page>header{margin-bottom:32px;max-width:760px}.supplement-eyebrow{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px;margin-bottom:18px}
+.supplement-page h1{font-size:clamp(32px,5vw,60px);line-height:1.12;letter-spacing:-.04em;text-wrap:balance;margin-bottom:20px}
+.supplement-page p{font-size:15px;line-height:1.8;color:var(--muted)}
+.supplement-glass{padding:28px;border:1px solid var(--glass-border);border-radius:28px;background:var(--glass-fill);backdrop-filter:blur(30px) saturate(150%);-webkit-backdrop-filter:blur(30px) saturate(150%)}
+.supplement-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.supplement-links li{min-width:0}.supplement-links a,.supplement-links strong{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:54px;padding:14px 16px;border-radius:16px;background:var(--glass-inner);border:1px solid var(--glass-border);font-size:14px;line-height:1.5}
+.supplement-links a{transition:background .2s,transform .2s}.supplement-links a:hover{background:var(--glass-button);transform:translateY(-2px)}
+.supplement-links .supplement-links{grid-template-columns:1fr;margin-top:10px;padding-left:12px}
+.supplement-directory{display:inline-flex;align-items:center;gap:14px;min-height:44px;margin:22px 18px 0 0;font-size:14px;text-decoration:underline;text-underline-offset:5px}
+.supplement-table{max-width:100%;overflow:auto;margin:22px 0}.supplement-table table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}.supplement-table caption{text-align:left;padding-bottom:16px;color:var(--muted)}
+.supplement-table th,.supplement-table td{padding:14px 10px;border-bottom:1px solid var(--line);line-height:1.5}.supplement-table tbody th{font-weight:500}.supplement-glass button{min-height:44px;padding:8px 16px;background:var(--glass-inner);border:1px solid var(--glass-border);color:var(--ink)}
+@media(max-width:600px){.supplement-page{width:calc(100% - 28px);padding-top:115px}.supplement-glass{padding:20px 16px;border-radius:24px}.supplement-links{grid-template-columns:1fr}.supplement-page p{font-size:14px}.supplement-table table{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.supplement-links a{transition:none}.supplement-links a:hover{transform:none}}

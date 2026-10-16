@@ -9,3 +9,6 @@ qa/
 *.tar.gz
 .openai/*.local.*
 output/video-change-1/*.zip
+
+# Preserved supplied snapshot; archived outside source control.
+/public.zip

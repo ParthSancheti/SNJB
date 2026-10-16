@@ -9,7 +9,7 @@
     "mist": "#E9F3F2"
   },
   "policy": "Every photographic UI asset is a processed derivative; no generative alteration of faces or scene content.",
-  "videoProvenance": "/media/media-provenance.json",
+  "videoProvenance": "/media/media-v10-provenance.json",
   "emblemProvenance": "/emblem-provenance.json",
   "publicationNote": "Official-site photographs are used for this institutional redesign preview; confirm current imagery and authorised publication assets before launch.",
   "missingAssets": [

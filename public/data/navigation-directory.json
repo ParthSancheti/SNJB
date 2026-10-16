@@ -158,7 +158,8 @@
                   "sourceUrl": "https://snjb.org/engineering/artificial-intelligence-data-science/autonomy_aids",
                   "href": "https://snjb.org/engineering/artificial-intelligence-data-science/autonomy_aids"
                 }
-              ]
+              ],
+              "href": "/ai-data-science"
             },
             {
               "id": "e81de215bcae",
@@ -278,7 +279,8 @@
                   "sourceUrl": "https://snjb.org/engineering/departments/bos-autonomy_es",
                   "href": "https://snjb.org/engineering/departments/bos-autonomy_es"
                 }
-              ]
+              ],
+              "href": "/first-year-engineering"
             },
             {
               "id": "d3da40599050",
@@ -442,7 +444,8 @@
                   "sourceUrl": "https://snjb.org/engineering/departments/autonomy-_civil",
                   "href": "https://snjb.org/engineering/departments/autonomy-_civil"
                 }
-              ]
+              ],
+              "href": "/civil-engineering"
             },
             {
               "id": "8320b5817a65",
@@ -793,7 +796,8 @@
                   "sourceUrl": "https://snjb.org/engineering/electronics-telecommunication/autonomy_etc",
                   "href": "https://snjb.org/engineering/electronics-telecommunication/autonomy_etc"
                 }
-              ]
+              ],
+              "href": "/electronics-telecommunication"
             },
             {
               "id": "97684951529b",
@@ -880,7 +884,8 @@
                   "sourceUrl": "https://snjb.org/engineering/first-year-engineering/photo-gallery",
                   "href": "https://snjb.org/engineering/first-year-engineering/photo-gallery"
                 }
-              ]
+              ],
+              "href": "/first-year-engineering"
             },
             {
               "id": "9b979f49023f",
@@ -1011,7 +1016,8 @@
                   "sourceUrl": "https://snjb.org/engineering/departments/autonomy_mech",
                   "href": "https://snjb.org/engineering/departments/autonomy_mech"
                 }
-              ]
+              ],
+              "href": "/mechanical-engineering"
             },
             {
               "id": "2298dafc5ab7",
@@ -1175,7 +1181,8 @@
                   "sourceUrl": "https://snjb.org/engineering/mba/industrial-visit-mba",
                   "href": "https://snjb.org/engineering/mba/industrial-visit-mba"
                 }
-              ]
+              ],
+              "href": "/mba"
             }
           ]
         },
